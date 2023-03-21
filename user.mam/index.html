@@ -1,0 +1,1336 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Medien verwalten - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aufbau-und-funktionsweise-des-mam" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Medien verwalten
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Medien verwalten
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Medien verwalten
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-mam" class="md-nav__link">
+    Aufbau und Funktionsweise des MAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-rubrikenbaum" class="md-nav__link">
+    Arbeiten mit dem Rubrikenbaum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assets-finden" class="md-nav__link">
+    Assets finden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mit-assets-arbeiten" class="md-nav__link">
+    Mit Assets arbeiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Mit Assets arbeiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assets-hochladen" class="md-nav__link">
+    Asset(s) hochladen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-veroffentlichen" class="md-nav__link">
+    Asset veröffentlichen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-eigenschaften-andern" class="md-nav__link">
+    Asset-Eigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-loschen" class="md-nav__link">
+    Asset löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fokuspunkt-setzen" class="md-nav__link">
+    Fokuspunkt setzen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder-bearbeiten" class="md-nav__link">
+    Bilder bearbeiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Bilder bearbeiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bildgroe-bestimmen" class="md-nav__link">
+    Bildgröße bestimmen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-beschriften" class="md-nav__link">
+    Bild beschriften
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-konvertieren" class="md-nav__link">
+    Bild konvertieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-zurechtschneiden" class="md-nav__link">
+    Bild zurechtschneiden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bildgroe-verandern" class="md-nav__link">
+    Bildgröße verändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bildsattigung-andern" class="md-nav__link">
+    Bildsättigung ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gammakorrektur-mit-farbkurven" class="md-nav__link">
+    Gammakorrektur mit Farbkurven
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-monochromes-bild-konvertieren" class="md-nav__link">
+    In monochromes Bild konvertieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passend-zuschneiden-mit-rand" class="md-nav__link">
+    Passend zuschneiden mit Rand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seitenverhaltnis-beim-skalieren-bewahren" class="md-nav__link">
+    Seitenverhältnis beim Skalieren bewahren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thumbnail-erzeugen" class="md-nav__link">
+    Thumbnail erzeugen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variante-hochladen" class="md-nav__link">
+    Variante hochladen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-standardvariante-bestimmen" class="md-nav__link">
+    Asset-Standardvariante bestimmen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qr-codes-im-mam-generieren" class="md-nav__link">
+    QR-Codes im MAM generieren
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-mam" class="md-nav__link">
+    Aufbau und Funktionsweise des MAM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-rubrikenbaum" class="md-nav__link">
+    Arbeiten mit dem Rubrikenbaum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assets-finden" class="md-nav__link">
+    Assets finden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mit-assets-arbeiten" class="md-nav__link">
+    Mit Assets arbeiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Mit Assets arbeiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assets-hochladen" class="md-nav__link">
+    Asset(s) hochladen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-veroffentlichen" class="md-nav__link">
+    Asset veröffentlichen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-eigenschaften-andern" class="md-nav__link">
+    Asset-Eigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-loschen" class="md-nav__link">
+    Asset löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fokuspunkt-setzen" class="md-nav__link">
+    Fokuspunkt setzen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder-bearbeiten" class="md-nav__link">
+    Bilder bearbeiten
+  </a>
+  
+    <nav class="md-nav" aria-label="Bilder bearbeiten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bildgroe-bestimmen" class="md-nav__link">
+    Bildgröße bestimmen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-beschriften" class="md-nav__link">
+    Bild beschriften
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-konvertieren" class="md-nav__link">
+    Bild konvertieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bild-zurechtschneiden" class="md-nav__link">
+    Bild zurechtschneiden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bildgroe-verandern" class="md-nav__link">
+    Bildgröße verändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bildsattigung-andern" class="md-nav__link">
+    Bildsättigung ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gammakorrektur-mit-farbkurven" class="md-nav__link">
+    Gammakorrektur mit Farbkurven
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-monochromes-bild-konvertieren" class="md-nav__link">
+    In monochromes Bild konvertieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passend-zuschneiden-mit-rand" class="md-nav__link">
+    Passend zuschneiden mit Rand
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seitenverhaltnis-beim-skalieren-bewahren" class="md-nav__link">
+    Seitenverhältnis beim Skalieren bewahren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thumbnail-erzeugen" class="md-nav__link">
+    Thumbnail erzeugen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variante-hochladen" class="md-nav__link">
+    Variante hochladen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asset-standardvariante-bestimmen" class="md-nav__link">
+    Asset-Standardvariante bestimmen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qr-codes-im-mam-generieren" class="md-nav__link">
+    QR-Codes im MAM generieren
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Medien verwalten</h1>
+                
+                <p>Im Media-Asset-Management (im Folgenden kurz <strong>MAM</strong>) werden Assets genau wie Dokumente verwaltet.</p>
+<p>Im Media-Asset-Management werden unstrukturierte Asset-Daten mit strukturierten, von <em>imperia</em> verwertbaren Daten angereichert. Zusätzlich versioniert und archiviert <em>imperia</em> alle Assets, so dass Sie ältere Versionen jederzeit im Archiv wiederfinden und importieren können. Auch können Sie verfolgen, ob und wo ein Asset in Dokumenten Verwendung findet.</br>
+Der Upload neuer Assets folgt einem definierten Workflow.</br></p>
+<p>Das MAM stellt also eine prozessorientierte Dokumenten-Management-Lösung dar.</p>
+<div class="admonition tip">
+<p class="admonition-title">Begriffsdefinition<p>Mit dem aus der Finanzwelt entlehnten Begriff <em>Asset</em> (engl. "Vermögenswert", "Anlage") fasst man beim Content Management beliebige digitale Inhalte, insbesondere Mediendateien wie Grafiken, Videos, Musikdateien und Texte zusammen.</p>
+</p>
+</div>
+<hr />
+<h2 id="aufbau-und-funktionsweise-des-mam">Aufbau und Funktionsweise des MAM<a class="headerlink" href="#aufbau-und-funktionsweise-des-mam" title="Permanent link">#</a></h2>
+<ul>
+<li>Öffnen Sie das MAM über <strong><em>Menü -&gt; MAM</em></strong>.</li>
+</ul>
+<p><img alt="Das Media-Asset-Management in der Listenansicht" src="../images/user/MAM/mam_list.png" /></p>
+<p>Im linken Bereich werden die "Asset-Rubriken" in einer Baumstruktur dargestellt, die Sie gleichzeitig als Navigation nutzen können:</p>
+<ul>
+<li>Klicken Sie auf den Rubriknamen, um den Inhalt der Rubrik im rechten Bereich anzuzeigen.</li>
+<li>Klicken Sie auf das Plussymbol, um eine Rubrik aufzuklappen und ihre untergeordneten Rubriken anzuzeigen. Um eine aufgeklappte Rubrik wieder einzuklappen, klicken Sie auf das Minussymbol.</li>
+</ul>
+<p>Im rechten Bereich werden die Assets angezeigt. Dort befindet sich auch das Vorschaufenster mit weiteren Details, das Sie über den Pfeil auf der rechten Seite einblenden können.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Vorgenommene Einstellungen werden individuell für jeden Benutzer gespeichert. Auch beim nächsten Aufruf sind die von Ihnen vorgenommenen Einstellungen noch erhalten.</p>
+</p>
+</div>
+<hr />
+<h2 id="arbeiten-mit-dem-rubrikenbaum">Arbeiten mit dem Rubrikenbaum<a class="headerlink" href="#arbeiten-mit-dem-rubrikenbaum" title="Permanent link">#</a></h2>
+<p>Assets werden in Verzeichnissen gespeichert, die den Rubriken der <em>imperia</em>-Dokumente entsprechen. Dabei werden die Rubriken auch in der gewohnten Baumstruktur abgebildet. Dort navigieren Sie wie gewohnt.</p>
+<p><img alt="Rubrikenbaum" src="../images/user/MAM/rubrikenbaum.png" /></p>
+<p>Sie können den Rubrikenbam durch einen Klick auf das Pfeilsymbol der Trennlinie aus- und wieder eingeblenden.</p>
+<ul>
+<li>Aktivieren Sie die Checkbox <strong><em>Einschließlich Unterrubriken</em></strong> unter dem Rubrikenbaum, wenn Sie die Unterordner auch angezeigt bekommen möchten.</li>
+</ul>
+<p>Mit Hilfe des Kontextmenüs einer Rubrik können Sie die <a href="../user.docbrowser/#rubrik-bearbeiten">Rubrikeigenschaften bearbeiten</a>, neue <a href="../user.docbrowser/#rubrik-anlegen">Unterrubriken erstellen</a> oder die <a href="../user.docbrowser/#rubrik-loeschen">Rubrik löschen</a>. Hier finden Sie auch die Optionen zum <a href="./#assets-hochladen">Hochladen der Assets</a>.</p>
+<p><img alt="Kontextmenü Rubrik" src="../images/user/MAM/kontextmenue_rubrik.png" /></p>
+<ul>
+<li>Die Option <strong>Archiv</strong> führt direkt in das Archiv der Rubrik, in dem Sie ein Asset auswählen und eine Vorgängerversion importieren können.</li>
+</ul>
+<hr />
+<h2 id="assets-finden">Assets finden<a class="headerlink" href="#assets-finden" title="Permanent link">#</a></h2>
+<p>Die Suche im Media-Asset-Management funktioniert analog zur Suche im Dokumenten-Browser: Um Assets zu finden, haben Sie die Wahl zwischen einer <a href="../user.docbrowser/#standardsuche">Standardsuche</a>, die mit Hilfe von Filtern weiter eingeschränkt werden kann, und einer <a href="../user.docbrowser/#erweiterte-suche">Erweiterten Suche</a>, mit der individuelle und komplexe Suchanfragen möglich sind.</p>
+<hr />
+<h2 id="mit-assets-arbeiten">Mit Assets arbeiten<a class="headerlink" href="#mit-assets-arbeiten" title="Permanent link">#</a></h2>
+<p>Die in einer Rubrik enthaltenen Assets sind in einer Tabelle aufgelistet. Informationen zu jedem Asset und mögliche Aktionen sind jeweils in Spalten hinterlegt.</p>
+<p><img alt="Assets" src="../images/user/MAM/assets_tabelle.png" /></p>
+<ul>
+<li>
+<p>Wenn Sie eine Spalte in der Tabelle hinzufügen möchten, nutzen Sie die Option <strong><em>Ansicht</em></strong> und aktivieren Sie anschließend die Checkbox vor der gewünschten Spalte, um diese einzublenden.</p>
+<p><img alt="Spalten einblenden" src="images/user/M/show_columns.png" /></p>
+</li>
+<li>
+<p>Ändern Sie optional die Anordnung einzelner Spalten innerhalb der Tabelle, indem Sie diese per <em>Drag &amp; Drop</em> verschieben. Alternativ können Sie die Anordnung der Spalten und der in ihnen angebotenen Auswahlfelder unter <strong><em>Ansicht / Anpassen</em></strong> ändern. Nutzen Sie auch hier <em>Drag &amp; Drop</em>, um die Spalten oder Felder an die gewünschte Position zu ziehen.</p>
+</li>
+</ul>
+<p>Sie haben die Möglichkeit, nach bestimmten Spalten wie zum Beispiel <em>Letzter Editor</em> oder <em>Erzeugungsdatum</em> zu sortieren.</br>Beachten Sie, dass die Sortierfunktion nicht in allen Spalten verfügbar ist.</p>
+<ol>
+<li>Klicken Sie auf die entsprechende Spaltenüberschrift.</br>
+<em>Die Spalte wird in aufsteigender alphabetischer Ordnung sortiert</em></li>
+<li>Klicken Sie erneut auf die Überschrift, um die Spalte in absteigender Ordnung zu sortieren.</li>
+</ol>
+<h3 id="assets-hochladen">Asset(s) hochladen<a class="headerlink" href="#assets-hochladen" title="Permanent link">#</a></h3>
+<p><comment: Shortcut "Ctrl. + u" noch gültig?  -- NEIN 09.10.17></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Um Assets hochladen zu dürfen, benötigen Sie die Schreibberechtigung für die Ziel-Rubrik im MAM.</p>
+</p>
+</div>
+<p>Falls Ihr Zielsystem auf Windows<sup>®</sup> läuft, setzen Sie die Variable <code>"DISABLE_8BIT_FILENAMES" = "1"</code>. Lesen Sie dazu auch im <a href="https://portal.pirobase-imperia.com/pb/imperia-cms-dokumentation/admin-de-11/admin.conf/#disable_8bit_filenames">Admin-Handbuch</a> weiter.</p>
+<p>Sie haben verschiedene Möglichkeiten, Assets hochzuladen. Für alle Möglichkeiten gelten die folgenden Benennungskonventionen:</p>
+<ul>
+<li>Umlaute im Dateinamen werden von <em>imperia</em> beim Ablegen der Datei im Filesystem durch zwei Unterstriche "__" ersetzt.</li>
+<li>Großbuchstaben werden in Kleinbuchstaben umgewandelt.</li>
+<li>Leerzeichen im Dateinamen werden durch einen einzelnen Unterstrich ersetzt. Im Namen, der im Media-Asset-Management erscheint, bleiben Leerzeichen jedoch erhalten. Beispiel:</br>
+    <code>hüsker_dü_-_eiffel_tower_high.mp3</code> wird umgewandelt in </br>
+    den Dateinamen <code>h__sker_d___-_eiffel_tower_high.mp3</code>.</br>
+    Als Titel wird automatisch vorgeschlagen: <code>Hüsker Dü - Eiffel Tower High</code>. Der vorgeschlagene Titel kann anschließend modifiziert werden.</li>
+<li>Die Informationen zu Asset-Verzeichnissen und Assets erfassen Sie über variable Templates, die der <em>imperia</em>-Administrator einrichtet.</li>
+</ul>
+<p><span class="steps">1.</span> <strong>Asset über den Dateimanager hochladen</strong></p>
+<ol>
+<li>Klicken Sie links im MAM auf die gewünschte Asset-Rubrik, in der Sie das Asset hinzufügen möchten.</li>
+<li>
+<p>Klicken Sie im Kontextmenü der Rubrik auf <strong><em>Hochladen</em></strong>.</p>
+<p><img alt="Datei hochladen" src="../images/user/MAM/hochladen_option.png" /></p>
+</li>
+<li>
+<p>Ziehen Sie per <em>Drag &amp; Drop</em> eine Datei in die gestrichelte Dropzone. Wählen Sie alternativ über <strong>Datei hochladen</strong> im Dateimanager die gewünschte Datei aus.</p>
+<p><img alt="Datei hochladen" src="../images/user/MAM/datei_hochladen_1.png" />
+<img alt="Datei hochladen" src="../images/user/MAM/datei_hochladen_2.png" /></p>
+</li>
+<li>
+<p>Tragen Sie dort die gewünschten Metainformationen wie den Dateinamen ein. Beachten Sie die <a href="./#assets-hochladen">Benennungskonvention</a>.</p>
+</li>
+<li>Klicken Sie auf <strong>Weiter zu ...</strong>, um zum nächsten Workflow-Schritt zu gelangen. </br>Ein Klick auf <strong>Schließen</strong> führt Sie auf den Schreibtisch, wo Sie das Asset weiterhin als Dokument im Workflow sehen.</li>
+</ol>
+<p><span class="steps">2.</span> <strong>Mehrere Assets per <em>Drag&amp;Drop</em> einfügen:</strong></p>
+<ol>
+<li>Klicken Sie im MAM auf die gewünschte Asset-Rubrik, in der Sie Assets hinzufügen möchten.</li>
+<li>
+<p>Ziehen Sie die ausgewählten Assets aus ihrem Dateisystem in den Anzeigebreich der Listenansicht mit den Assets.</br>
+<em>Dieser verwandelt sich in einen </em>Drag&amp;Drop<em>-Bereich, in den Sie nun die Assets ziehen können, die Sie hochladen möchten.</em></br></br>
+<img alt="Datei hochladen" src="../images/user/MAM/dropzone_dummy.png" /></p>
+</li>
+<li>
+<p>Ändern Sie gegebenenfalls in den Eingabefeldern unter <strong><em>Dateiname</em></strong> die Namen der Dateien.</p>
+</li>
+<li>Falls bereits ein Asset mit dem selben Namen im MAM existiert, können Sie den Namen durch Anklicken der Checkbox überschreiben oder alternativ den Namen löschen, indem Sie  <i class="fa fa-close"></i> anklicken.</li>
+<li>Klicken Sie auf <strong>Hochladen</strong>, um die Assets hinzuzufügen.</br></br>
+<img alt="Mehrere Dateien hochladen" src="../images/user/MAM/asset_upload_drag_and_drop.png" /></li>
+</ol>
+<p><em>Das Asset erscheint nun in der Asset-Liste.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Das Asset-Upload-Template könnte auf Ihrem System abweichen. Die oben genannte Möglichkeit basiert auf dem Standard-<em>imperia</em>-Template. Sie können hierfür selbst eigene Templates erstellen. Mehr Informationen hierzu lesen Sie in der Syntax-Referenz für <em>imperia</em>-Templates im <a href="https://portal.pirobase-imperia.com/pb/imperia-cms-dokumentation-private/programmer-en-11/programming.metafiles/#syntax-reference">Programmierhandbuch</a>.</p>
+</div>
+<p><span class="steps">3.</span> <strong>Mehrfachupload</strong></p>
+<p>Bei dieser Möglichkeit laden Sie mehrere Assets in einem Arbeitsgang in eine Asset-Rubrik hoch.</p>
+<ol>
+<li>Wählen Sie im Kontextmenü der Rubrik <strong><em>Mehrfachupload</em></strong>.</li>
+<li>
+<p>Geben Sie im Auswahlfeld <strong><em>Anzahl Uploads</em></strong> an, wie viele Assets Sie gleichzeitig in das Media-Asset-Management hochladen möchten.</br> <em>Entsprechend Ihrer Auswahl dupliziert imperia den Satz der Eingabefelder für den Upload eines Assets.</em></p>
+<p><img alt="Mehrere Dateien hochladen" src="../images/user/MAM/mehrfachupload.png" /></p>
+</li>
+<li>
+<p>Wählen Sie die Assets in Ihrem Dateisystem aus.</p>
+</li>
+<li>Klicken Sie auf <strong>Speichern</strong>, um den Mehrfachupload zu starten.</li>
+</ol>
+<h3 id="asset-veroffentlichen">Asset veröffentlichen<a class="headerlink" href="#asset-veroffentlichen" title="Permanent link">#</a></h3>
+<p>Im MAM haben Sie die Möglichkeit, Assets direkt und unabhängig von Dokumenten zu veröffentlichen. Lesen Sie hierzu auch im <a href="https://portal.pirobase-imperia.com/pb/imperia-cms-dokumentation/admin-de-11/admin.mam/#unabhangige-freischaltung-von-assets-aktivieren">Admin-Handbuch</a> weiter.</br>
+Das Asset wird dabei mit den entsprechenden Varianten für das Zielsystem veröffentlicht.</p>
+<ol>
+<li>Aktivieren Sie die Checkbox in der Zeile des Assets. </li>
+<li>
+<p>Führen Sie die Option <strong><em>Veröffentlichen</em></strong> in der Funktionsleiste unter der Asset-Tabelle aus.</p>
+<p><img alt="Asset veröffentlichen" src="../images/user/MAM/funktionsleiste.png" /></p>
+</li>
+</ol>
+<p><em>Das Asset wird direkt veröffentlicht. Eine neue Seite erscheint mit der Zusammenfassung der Veröffentlichung.</em></p>
+<h3 id="asset-eigenschaften-andern">Asset-Eigenschaften ändern<a class="headerlink" href="#asset-eigenschaften-andern" title="Permanent link">#</a></h3>
+<p>Asset-Eigenschaften ändern Sie über die Metafelder, die sich in den Details des jeweiligen Assets befinden.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Der <em>imperia</em>-Administrator kann Metafelder zum Editieren freigeben oder sperren.</p>
+</p>
+</div>
+<p><span class="steps">1.</span> <strong>Details öffnen</strong></p>
+<ul>
+<li>Führen Sie die Option <strong>Metaviewer</strong> im Kontextmenü des Assets aus.</li>
+</ul>
+<p><img alt="Asset-Details" src="../images/user/MAM/kontextmenue_asset.png" /></p>
+<p>Im Dialogfenster <em>Details</em> sehen Sie die Metainformationen des Assets:</br></br>
+<img alt="Asset-Details" src="../images/user/MAM/metafelder.png" /></p>
+<ul>
+<li>Tragen Sie die gewünschten Werte in den Eingabefeldern ein oder verändern Sie bestehende Werte.</li>
+<li>Löschen Sie gegebenenfalls ein Metafeld, indem Sie auf <strong><em>Metafeld löschen</em></strong> im Dropdown-Menü hinter dem Metafeld klicken. Metafelder ohne diese Option können Sie nicht ändern oder löschen.</li>
+<li>Legen Sie neue Metafelder für das Asset an, indem Sie auf <strong><em>Neues Metafeld</em></strong> klicken. Tragen Sie in dem sich öffnenden Dialog in das Eingabefeld <strong><em>Metafeld</em></strong> den Namen ein und vergeben Sie den Wert. Klicken Sie anschließend auf <strong>Erzeugen</strong>, um das Metafeld hinzuzufügen.</li>
+<li>Sichern Sie Ihre Angaben, indem Sie auf <strong>Speichern</strong> klicken.</li>
+</ul>
+<h3 id="asset-loschen">Asset löschen<a class="headerlink" href="#asset-loschen" title="Permanent link">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Für das Löschen von Assets benötigen Sie die entsprechenden Schreibrechte.</p>
+</p>
+</div>
+<ul>
+<li>Öffnen Sie in der Zeile des zu löschende Asset in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Asset. Führen Sie die Option <strong>Löschen</strong> aus.</li>
+</ul>
+<p><img alt="Kontextmenü Asset" src="../images/user/MAM/kontextmenue_asset.png" /></p>
+<ul>
+<li>
+<p>Wählen Sie alternativ mehrere Assets aus, indem Sie die Checkboxen in den Zeilen der gewünschten Assets aktivieren und anschließend in der Funktionsleiste unter der Asset-Tabelle auf <strong><em>Löschen</em></strong> klicken.</p>
+<p><img alt="Asset löschen" src="../images/user/MAM/funktionsleiste.png" /></p>
+</li>
+<li>
+<p>Nehmen Sie in dem sich öffnenden Dialogfenster weitere Einstellungen vor:</br></br><img alt="Löschen-Übersicht" src="../images/user/MAM/uebersicht_loeschen.png" /></p>
+<ul>
+<li>Für Assets, die in Dokumenten referenziert sind, haben Sie die Möglichkeit, die Referenzen zu ignorieren - dies wird jedoch ausdrücklich nicht empfohlen.</li>
+<li>Sie können Assets aus dem Workflow oder aus dem Archiv (unwiederruflich) löschen.</li>
+</ul>
+</li>
+</ul>
+<h3 id="fokuspunkt-setzen">Fokuspunkt setzen<a class="headerlink" href="#fokuspunkt-setzen" title="Permanent link">#</a></h3>
+<p><comment: https://jira.pirobase.de/jira/browse/ICMS-1356, https://jira.pirobase.de/jira/browse/ICMS-1360></p>
+<p>Die Funktion <strong><em>Fokuspunkt</em></strong> ist sehr hilfreich, wenn Sie ein und dasselbe Bild in mehreren Formaten benötigen, wie z. B. in 4:3, 16:9 oder 21:9.</p>
+<p>Mittels dieser Funktion werden Bilder mit einem von Ihnen ausgewählten Bildbereich für alle verfügbaren Formate generiert. </p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Die Funktion <em>Fokuspunkt</em> ist in einer Spalte hinterlegt. Stellen Sie sicher, dass Sie die Spalte hinzugefügt haben.</p>
+</p>
+</div>
+<ul>
+<li>
+<p>Öffnen Sie in der Zeile des Assets in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Asset. Führen Sie die Option <strong>Fokuspunkt</strong> aus.</p>
+<p><img alt="Kontextmenü Asset" src="../images/user/MAM/kontextmenue_asset.png" /></p>
+</li>
+<li>
+<p>Setzen Sie im linken Bereich des Bearbeitungsfensters den Fokuspunkt, indem Sie im Bild darauf klicken.</br> <em>Im rechten Bereich des Fensters können Sie beobachten, wie sich die Positionierung des Fokuspunktes auf die verschiedene Bildvarianten auswirkt.</em></p>
+</li>
+</ul>
+<p><img alt="Fokuspunkt setzen" src="../images/user/MAM/Fokuspunkt.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>Speichern</strong>, um die Einstellung für das Bild zu speichern und zurück zum MAM zu gelangen.</li>
+</ul>
+<p><em>Wenn Sie das Asset in ein Dokument einfügen, ist dieses mit dem fokussierten Abschnitt immer zu sehen.</em></p>
+<h3 id="bilder-bearbeiten">Bilder bearbeiten<a class="headerlink" href="#bilder-bearbeiten" title="Permanent link">#</a></h3>
+<p>Zu jedem Grafik-Asset stehen Ihnen eine Vielzahl an Aktionen zur Bearbeitung und Anpassung des Assets zur Verfügung.</p>
+<ul>
+<li>Öffnen Sie in der Zeile des Assets in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Asset. Führen Sie die Option <strong>Anpassen</strong> aus. Falls diese Aktion nicht zur Verfügung steht, aktivieren Sie in der Menüleiste die Spalte <strong>Benutzeraktion</strong> im Menü <strong><em>Ansicht</em></strong>.</li>
+</ul>
+<p><img alt="Kontextmenü Asset" src="../images/user/MAM/kontextmenue_asset.png" /></p>
+<ul>
+<li>Wählen Sie die Variante des Assets, die verändert werden soll. Sie können beispielsweise zwischen dem Original und dem Thumbnail wählen.</li>
+</ul>
+<p><img alt="Asset-Aktionen" src="../images/user/MAM/asset_actions.png" /></p>
+<ul>
+<li>Wählen Sie die gewünschte Aktion aus.</li>
+<li>Je nach gewählter Aktion, führen Sie in dem entsprechenden Bearbeitungsfenster die gewünschten Änderungen durch.</li>
+<li>Um die Änderungen anzuwenden, klicken Sie <strong>Weiter</strong>. </br><em>Die Änderungen werden direkt als neue Variante des Assets gespeichert</em>.</li>
+<li>Klicken Sie auf <strong>Schließen</strong>, um die Aktion zu beenden.</li>
+<li>Bestimmen Sie optional die neue Variante als Standard. Gehen Sie vor, wie im Abschnitt <a href="./#asset-standardvariante-bestimmen">Asset-Standardvariante bestimmen</a> beschrieben.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Der Button <strong>Zurück</strong> auf der letzten Seite des Dialogfensters erzeugt eine neue Variante. Auch wenn eine Variante dieser Asset-Aktion bereits existiert, wird diese dennoch nochmals erstellt.</p>
+</p>
+</div>
+<p>Im Folgenden werden alle Aktionen, die für Grafik-Assets zur Verfügung stehen, beschrieben. <comment: was bedeutet das Eingabefeld "Template-Tags der Variante"? erscheint bei jeder Asset-Aktion -- RAUSNEHMEN 09.10.17></p>
+<h4 id="bildgroe-bestimmen">Bildgröße bestimmen<a class="headerlink" href="#bildgroe-bestimmen" title="Permanent link">#</a></h4>
+<ol>
+<li>Tragen Sie im Bearbeitungsfenster der Aktion <strong><em>Bild auf gewünschte Größe bringen</em></strong> die gewünschten Maße ein.
+    <img alt="Eingabe der Abmessungen" src="../images/user/MAM/mam_action_fit2size01.png" /></li>
+<li>Klicken Sie auf <strong>Weiter</strong>, um sich das Ergebnis anzeigen zu lassen.</li>
+<li>Nutzen Sie <strong>Fertig</strong>, um zurück zum MAM zu gelangen.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Was passiert im Hintergrund?</p>
+<ul>
+<li>Das Seitenverhältnis der eingegebenen Maße wird ermittelt.</li>
+<li>Das MAM wählt einen möglichst großen, zentrierten Ausschnitt aus dem Originalbild im selben Seitenverhältnis.</li>
+<li>Mit dem gewählten Ausschnitt erzeugt das MAM eine auf die gewünschten Maße skalierte Variante des Original-Assets.</li>
+</ul>
+</div>
+<h4 id="bild-beschriften">Bild beschriften<a class="headerlink" href="#bild-beschriften" title="Permanent link">#</a></h4>
+<ol>
+<li>
+<p>Tragen Sie im Bearbeitungsfenster der Aktion <strong><em>Bild beschriften</em></strong> die gewünschten Informationen ein. </p>
+<p><img alt="Einstellungen für eine Textanmerkung" src="../images/user/MAM/mam_action_annotate01.png" /></p>
+<ul>
+<li><strong><em>X-Position, Y-Position</em></strong>: Tragen Sie jeweils einen Zahlenwert ein, um den Abstand der linken und der oberen Kante des Textes von der linken und der oberen Kante des Bildes in Pixeln zu bestimmen.</li>
+<li><strong><em>Text-Größe</em></strong>: Geben Sie einen Zahlenwert ein, der die Größe der Schrift in Pixeln bestimmt.</li>
+<li>
+<p><strong><em>Textfarbe</em></strong>: Geben Sie einen hexadezimalen Farbwert zur Bestimmung der Textfabe an.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Notieren Sie die Farbangabe unbedingt mit vorangestellter Raute (<code>#</code>).</p>
+</p>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p>Gehen Sie anschließend vor, wie unter <a href="./#bilder-bearbeiten">Bilder bearbeiten</a> beschrieben.</p>
+</li>
+</ol>
+<h4 id="bild-konvertieren">Bild konvertieren<a class="headerlink" href="#bild-konvertieren" title="Permanent link">#</a></h4>
+<p>Mit dieser Funktion können Sie das Bild in die Formate <code>jpeg</code>, <code>gif</code>, <code>png</code>, <code>tiff</code> und <code>bmp</code> konvertieren.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Die Formate <code>tiff</code> und <code>bmp</code> sind nicht empfehlenswert für Webanwendungen, da nicht alle Browser sie anzeigen können.</p>
+</p>
+</div>
+<p><img alt="Bestimmung des Bildformats" src="../images/user/MAM/mam_action_image_type.png" /></p>
+<h4 id="bild-zurechtschneiden">Bild zurechtschneiden<a class="headerlink" href="#bild-zurechtschneiden" title="Permanent link">#</a></h4>
+<p><img alt="Bestimmung des Ausschnitts" src="../images/user/MAM/bild_zurechtschneiden.png" /></p>
+<ol>
+<li>Ziehen Sie mit gedrückter linker Maustaste ein Viereck auf, um den Bildausschnitt zu bestimmen. </br>An den vier Ecken sowie in der Mitte jeder Kante des Auswahlrechtecks befinden sich Anfasser, mit denen sich die Größe des Ausschnitts durch Anklicken und Ziehen nachträglich ändern lässt.</li>
+<li>Geben Sie alternativ die gewünschten Dimensionen manuell ein. Nutzen Sie die Eingabefelder <strong><em>Breite, Höhe, X</em></strong> und <strong><em>Y</em></strong> unter dem Bild. <strong><em>X</em></strong> und <strong><em>Y</em></strong> bestimmen die Distanz zur linken und oberen Ecke des Bildes.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Wenn Sie die Aktion <strong><em>Bild zurechtschneiden</em></strong> über den Link <strong><em>Anpassen</em></strong> im MAM aufrufen, hat der initialisierte Bildausschnitt dasselbe Bildformat wie das Bild im Template.</p>
+</p>
+</div>
+<h4 id="bildgroe-verandern">Bildgröße verändern<a class="headerlink" href="#bildgroe-verandern" title="Permanent link">#</a></h4>
+<p>Mit dieser Aktion legen Sie eine skalierte Variante des Assets an. </p>
+<p><img alt="Eingabe der Abmessungen" src="../images/user/MAM/bildgroesse_veraendern.png" /></p>
+<ul>
+<li>Geben Sie die gewünschten Werte für <strong><em>Breite</em></strong> und <strong><em>Höhe</em></strong> ein.</li>
+</ul>
+<p><em>imperia</em> generiert eine Variante mit den von Ihnen eingegebenen Maßen.</br> 
+ Wenn Sie also beide Seitenlängen eintragen und das Ergebnis im Seitenverhältnis vom Original abweicht, erhalten Sie eine verzerrte Variante.
+Tragen Sie hingegen nur eine Seitenlänge ein, berechnet <em>imperia</em> die Länge der anderen Kante automatisch im richtigen Seitenverhältnis.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp<p>Sollten Sie eine Variante mit vorgegebener Höhe und Breite benötigen, sind in der Regel die Aktionen <strong><a href="./#bild-zurechtschneiden">Bild zurechtschneiden</a></strong> oder <strong><a href="./#bildgroe-bestimmen">Bildgröße bestimmen</a></strong> die bessere Wahl.</p>
+</p>
+</div>
+<h4 id="bildsattigung-andern">Bildsättigung ändern<a class="headerlink" href="#bildsattigung-andern" title="Permanent link">#</a></h4>
+<p>Sie haben die Möglichkeit, den Sättigungsgrad des Bildes zu bestimmen.</p>
+<p><img alt="Einstellung des Sättigungsgrads" src="../images/user/MAM/bildsaetting_aendern.png" /></p>
+<ul>
+<li>Geben Sie in das Eingabefeld <strong>*Sättigung</strong> den gewünschten Wert ein oder nutzen Sie alternativ die Pfeiltasten des Eingabefelds.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<ul>
+<li>Bei Werten von 0 bis 99 ist der Sättigungsgrad geringer als beim Original.</li>
+<li>Werte über 100 generieren eine Variante mit höherer Farbsättigung.</li>
+<li>Sie können also eine Schwarzweiß-Variante einer Farbaufnahme anlegen oder auch bei einem Bild mit blassen Farben diese etwas kräftiger machen.</li>
+</ul>
+</div>
+<h4 id="gammakorrektur-mit-farbkurven">Gammakorrektur mit Farbkurven<a class="headerlink" href="#gammakorrektur-mit-farbkurven" title="Permanent link">#</a></h4>
+<p>Diese Asset-Aktion erlaubt Ihnen eine Gammakorrektur durchzuführen.</p>
+<p><img alt="Gammakorrektur mit dem Farbkurven-Dialog." src="../images/user/MAM/asset_aktion_gamma.png" /></p>
+<ol>
+<li>Wählen Sie im Drop-down-Menü oberhalb des Kurvendiagramms den Kanal (<strong><em>Rot, Grün, Blau</em></strong> und <strong><em>Alpha</em></strong>), den Sie anpassen möchten.</li>
+<li>Verwenden Sie den Mauszeiger, um einen Punkt auf dem Kurvendiagramm zu erstellen und an die gewünschte Position zu ziehen.</li>
+<li>Sie können eine zuvor getätigte Anpassung mit <strong>Zurücksetzen</strong> rückgängig machen. Das Zurücksetzen betrifft nur die Kurve, die Sie gerade bearbeiten.</li>
+<li>Wenn Sie bereits eine Datei mit einer voreingestellte Kurve mithilfe von Photoshop oder Gimp erstellt haben, können Sie diese Datei per <em>Drag&amp;Drop</em> in das Graphen-Fenster einfügen.</br> Ihre Änderungen werden im Thumbnail auf der linken Seite angezeigt</li>
+<li>Klicken Sie auf das Thumbnail, wenn Sie sich die Variante in Originalgröße anzeigen lassen wollen. </br><em>Es öffnet sich ein Fenster mit der Bildvariante. Ein Klick auf das Bild schließt es wieder.</em></li>
+<li>Klicken Sie auf <strong>Weiter</strong>. </br>
+<em>Die Variante wird erstellt.</em></li>
+</ol>
+<h4 id="in-monochromes-bild-konvertieren">In monochromes Bild konvertieren<a class="headerlink" href="#in-monochromes-bild-konvertieren" title="Permanent link">#</a></h4>
+<p>Die Aktion <strong><em>Nach monochrom konvertieren</em></strong> erlaubt Ihnen, ein farbiges Bild in ein monochromes Bild umzuwandeln.</p>
+<p><img alt="&quot;Zu monochrom konvertieren&quot;-Dialog" src="../images/user/MAM/mam_action_monochrome.png" /></p>
+<ol>
+<li>Nutzen Sie den <strong><em>Rot, Grün</em></strong> oder <strong><em>Blau</em></strong> Kanal-Schieber um das Bild anzupassen. </br><em>Das Ergebnis wird in dem Thumbnail auf der linken Seite angezeigt.</em>
+2.Klicken Sie auf das Thumbnail, wenn Sie sich die Variante in Originalgröße anzeigen lassen wollen. </br><em>Es öffnet sich ein Fenster mit der Bildvariante. Ein Klick auf das Bild schließt es wieder.</em></li>
+<li>Klicken Sie auf <strong>Weiter</strong>. </br>
+<em>Die Variante wird erstellt.</em></li>
+</ol>
+<h4 id="passend-zuschneiden-mit-rand">Passend zuschneiden mit Rand<a class="headerlink" href="#passend-zuschneiden-mit-rand" title="Permanent link">#</a></h4>
+<p>Mit dieser Aktion erzeugen Sie eine Variante, die auf eine bestimmte Größe zugeschnitten wird, wobei die entstehenden Ränder mit einer vorgegebenen Farbe gefüllt werden.</br></br>
+<img alt="Größe vorgeben" src="../images/user/MAM/mam_action_with_border_1.png" /></p>
+<ol>
+<li>Tragen Sie in die Eingafelder <strong><em>Breite</em></strong> und <strong><em>Höhe</em></strong> die gewünschte Größe ein. </li>
+<li>Klicken Sie auf <strong>Weiter</strong>.</br></br><img alt="Farbe einstellen" src="../images/user/MAM/asset_aktion_zuschneiden_schritt_zwei.png" /></li>
+<li>Wählen Sie die gewünschten Einstellungen für den Hintergrund aus.</li>
+<li>Klicken Sie auf <strong>Weiter</strong>. </br></li>
+<li>Wenn Sie mit dem Ergebns einverstanden sind, klicken Sie auf <strong>Fertig</strong>
+    <img alt="Farbe einstellen" src="../images/user/MAM/asset_aktion_zuschneiden_schritt_drei.png" /></li>
+</ol>
+<p><em>Die Variante wird erstellt.</em></p>
+<h4 id="seitenverhaltnis-beim-skalieren-bewahren">Seitenverhältnis beim Skalieren bewahren<a class="headerlink" href="#seitenverhaltnis-beim-skalieren-bewahren" title="Permanent link">#</a></h4>
+<p>Mit dieser Aktion erzeugen Sie eine in der Größe veränderte Variante, bei der das Bild sein Seitenverhältnis beibehält. Hier kann ebenfalls eine Hintergrundfarbe gesetzt werden.</p>
+<p><img alt="Auswahl der Größe und der Hintergrundfarbe" src="../images/user/MAM/asset_aktion_seitenverhaeltnis.png" /></p>
+<ol>
+<li>Tragen Sie in die Eingafelder <strong><em>Breite</em></strong> und <strong><em>Höhe</em></strong> die gewünschte Größe ein.</li>
+<li>Geben Sie die Hintergrundfarbe oder den Wert <code>trans</code> ein.</li>
+</ol>
+<p><em>Wird als Hintergrundfarbe "transparent" (<code>trans</code>) gewählt, wird die Variante mit schwarzem Hintergrund dargestellt.</em></p>
+<h4 id="thumbnail-erzeugen">Thumbnail erzeugen<a class="headerlink" href="#thumbnail-erzeugen" title="Permanent link">#</a></h4>
+<p>Mit dieser Asset-Aktion können Sie ein neues Vorschaubild für das Asset generieren. Dabei werden die Standardmaße von Asset-Thumbnails genommen.</p>
+<p><img alt="Thumbnail-Vorschau" src="../images/user/MAM/mam_action_thumbnail01.png" /></p>
+<h4 id="variante-hochladen">Variante hochladen<a class="headerlink" href="#variante-hochladen" title="Permanent link">#</a></h4>
+<p>Nutzen Sie diese Asset-Aktion, um eine neue Variante des Bildes hochzuladen.</p>
+<ul>
+<li>Klicken Sie auf <strong>Durchsuchen</strong> und wählen Sie in Ihrem Dateiensystem die gewünschte Datei aus.</li>
+<li>Geben Sie für die Variante eine <strong><em>Beschreibung</em></strong> in das gleichnamige Feld ein.</li>
+</ul>
+<p><img alt="Thumbnail-Vorschau" src="../images/user/MAM/asset_aktion_variante_hochladen.png" /></p>
+<h3 id="asset-standardvariante-bestimmen">Asset-Standardvariante bestimmen<a class="headerlink" href="#asset-standardvariante-bestimmen" title="Permanent link">#</a></h3>
+<p>Mit den oben genannten Asset-Aktionen legen Sie unterschiedliche Varianten eines Assets an. Eine dieser Varianten ist die Standard-Variante, die Sie beim Import in ein Dokument durch Doppelklick auf das betreffende Symbol automatisch auswählen. In der Regel ist dies die unmodifizierte Version des Assets.</p>
+<ol>
+<li>
+<p>Führen Sie im Kontextmenü des Assets die Option <strong><em>Varianten anzeigen</em></strong> aus.</p>
+<p><img alt="Asset-Details" src="../images/user/MAM/kontextmenue_asset.png" /></p>
+</li>
+<li>
+<p>Klicken Sie in dem sich öffnenden Dialog in der Spalte <strong><em>Standard-Einstellung</em></strong> vor die gewünschte Variante, um diese als neuen Standard zu bestimmen.</p>
+<p><img alt="Der Dialog Assetvarianten" src="../images/user/MAM/mam_select_default_variant.png" /></p>
+</li>
+<li>
+<p>Lassen Sie sich durch Anklicken in der Spalte <strong><em>Details</em></strong> die einzelnen Varianten in einem neuen Fenster anzeigen; es öffnet sich jeweils ein Pop-up-Fenster. </p>
+</li>
+<li>
+<p>Lesen Sie in der Spalte <strong><em>Plug-Ins</em></strong>, mit welcher Aktion die betreffende Variante erzeugt wurde:</p>
+<table>
+<thead>
+<tr>
+<th>Plug-in Informationen</br> im Dialogfenster</th>
+<th>Asset-Aktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotate</td>
+<td>Textanmerkung</td>
+</tr>
+<tr>
+<td>Crop</td>
+<td>Bild zurechtschneiden</td>
+</tr>
+<tr>
+<td>FitToSize</td>
+<td>Bild auf gewünschte Größe bringen</td>
+</tr>
+<tr>
+<td>Resize</td>
+<td>Bildgröße verändern</td>
+</tr>
+<tr>
+<td>Saturation</td>
+<td>Sättigung</td>
+</tr>
+<tr>
+<td>Thumbnail</td>
+<td>Thumbnail erzeugen</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Geben Sie optional für die jeweilige Variante eine <strong><em>Beschreibung</em></strong> in der gleichnamigen Spalte ein und sichern Sie diese mi Klick auf das Speichern-Symbol.</p>
+</li>
+<li>Sie können Varianten löschen, indem Sie auf <strong>x</strong> hinter der Variante klicken. </li>
+<li>Schließen Sie das Dialogfenster. </li>
+</ol>
+<p><em><em>imperia</em> speichert die neue Einstellung automatisch.</em></p>
+<hr />
+<h2 id="qr-codes-im-mam-generieren">QR-Codes im MAM generieren<a class="headerlink" href="#qr-codes-im-mam-generieren" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Der QR-Code Generator ist ein optionales Feature, dass separat lizenziert werden muss. Ihre Kontaktperson im <em>imperia</em>-Vertrieb stellt Ihnen gerne weitergehende Informationen zur Verfügung.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Voraussetzung<p>Sie brauchen eine Asset-fähige Rubrik mit einen bestimmten Workflow, die das QR-Code Plug-in enthält, um QR-Codes im MAM generieren und speichern zu können. Kontaktieren Sie im Zweifelsfall Ihren Systemadministrator.</p>
+</p>
+</div>
+<ol>
+<li>Markieren Sie im MAM die Rubrik, in der die QR-Codes verwaltet werden:</br></br>
+<img alt="Rubrik QR-Code markieren" src="../images/user/MAM/mam_qr_code_markieren.png" /></li>
+<li>Klicken Sie unter <strong><em>Datei</em></strong> auf die Option <i class="fa fa-upload"></i> <strong><em>Hochladen</em></strong></br></br>
+<img alt="Option Hochladen" src="../images/user/MAM/mam_qr_hochladen.png" /> <br>
+<em>Sie werden dann durch den entsprechenden Workflow geführt, der für die Generierung von QR-Codes hinterlegt wurde.</em>
+<img alt="Workflow QR-Code" src="../images/user/MAM/qr_workflow.png" /></li>
+<li>Tragen Sie in das Eingabefeld <strong><em>Text</em></strong> die Webseite ein, auf die verlinkt werden soll, (z.B. <code>www.pirobase-imperia.de</code>) oder die zu kodierende Datei oder einen Text. Dies ist ein Pflichtfeld und muss entsprechend ausgefüllt werden.</li>
+<li>Ändern Sie gegebenenfalls das Bildformat (<code>png</code>, <code>jpeg</code>, <code>ASCII</code>).</li>
+<li>
+<p>Passen Sie unter <strong><em>Weitere Optionen</em></strong> die Darstellung des QR-Codes an:</p>
+<ul>
+<li>
+<p>Wählen Sie unter <strong><em>Niveau Fehlerkorrektur</em></strong> die gewünschte Fehlerkorrektur-Genauigkeit aus der Drop-down Liste aus. Verfügbare Werte sind <code>L</code>, <code>M</code>, <code>Q</code> und <code>H</code> ( niedrige bis hohe Genauigkeit).</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Für den Fall, dass Sie den Öl-Filter verwenden, um den QR-Code stilisierter aussehen zu lassen, stellen Sie sicher, dass die Fehlerkorrektur einen höheren Wert hat.</p>
+</p>
+</div>
+</li>
+<li>
+<p>Definieren Sie die <strong><em>Farbe</em></strong> des generierten QR-Codes (#hexadezimal als #RRGGBB).</p>
+</li>
+<li>
+<p>Wählen Sie den <strong><em>Radius</em></strong> des Ölfarbenfilters. Mögliche Werte liegen im Bereich von <code>0</code> (Voreinstellung) bis <code>2</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Höhere Werte können den QR-Code verfälschen und für QR-Code Scanner unlesbar machen. Es wird empfohlen kleinere Werte zu nutzen, kombiniert mit einem hohen Fehlerkorrekturlevel.</p>
+</p>
+</div>
+</li>
+<li>
+<p>Legen Sie unter <strong><em>Randgröße</em></strong> einen Seitenrand für den generierten QR-Code fest. Der Wertebereich liegt zwischen <code>0</code> und <code>255</code>.</p>
+</li>
+<li>
+<p>Definieren Sie mit dem <strong><em>Skalierungsfaktor</em></strong> eine Skalierung für den generierten QR-Code. Der Wertebereich liegt zwischen <code>1</code> und <code>255</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Klicken Sie auf <strong>Speichern &amp; Weiter</strong>.</p>
+</li>
+<li>Geben Sie den Dateinamen inklusive der Dateierweiterung ein, z.B. <code>Imperia.de.png</code>.</li>
+<li>Klicken Sie auf <strong>Speichern</strong>.</li>
+</ol>
+<p><em>Im MAM ist nun der QR-Code als Asset verfügbar.</em></br></br>
+<img alt="MAM QR Code Rubrik" src="../images/user/MAM/mam_qr_code.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.docbrowser/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dokumente verwalten
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.linkconsistency/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Link-Konsistenz prüfen
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

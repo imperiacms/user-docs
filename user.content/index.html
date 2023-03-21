@@ -1,0 +1,1160 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Dokumentinhalt erstellen - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#beispielhafter-aufbau-eines-dokuments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Dokumentinhalt erstellen
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dokumentinhalt erstellen
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Dokumentinhalt erstellen
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beispielhafter-aufbau-eines-dokuments" class="md-nav__link">
+    Beispielhafter Aufbau eines Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-des-formulars-zur-inhaltserstellung" class="md-nav__link">
+    Aufbau des Formulars zur Inhaltserstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodule-in-ein-dokument-einfugen-und-bearbeiten" class="md-nav__link">
+    Inhaltsmodule in ein Dokument einfügen und bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-positionieren" class="md-nav__link">
+    Inhaltsmodul positionieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-duplizieren" class="md-nav__link">
+    Inhaltsmodul duplizieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-verschieben" class="md-nav__link">
+    Inhaltsmodul verschieben
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-kopieren" class="md-nav__link">
+    Inhaltsmodul kopieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste-erstellen" class="md-nav__link">
+    Liste erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bild-einfugen" class="md-nav__link">
+    Bild einfügen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texte-bearbeiten-mit-dem-iwe2" class="md-nav__link">
+    Texte bearbeiten mit dem iWE2
+  </a>
+  
+    <nav class="md-nav" aria-label="Texte bearbeiten mit dem iWE2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assets-einfugen" class="md-nav__link">
+    Assets einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabellen-einfugen" class="md-nav__link">
+    Tabellen einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttons-einfugen" class="md-nav__link">
+    Buttons einfügen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linktool" class="md-nav__link">
+    Linktool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suchmaschinenoptimierung" class="md-nav__link">
+    Suchmaschinenoptimierung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags-hinzufugen" class="md-nav__link">
+    Tags hinzufügen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beispielhafter-aufbau-eines-dokuments" class="md-nav__link">
+    Beispielhafter Aufbau eines Dokuments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-des-formulars-zur-inhaltserstellung" class="md-nav__link">
+    Aufbau des Formulars zur Inhaltserstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodule-in-ein-dokument-einfugen-und-bearbeiten" class="md-nav__link">
+    Inhaltsmodule in ein Dokument einfügen und bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-positionieren" class="md-nav__link">
+    Inhaltsmodul positionieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-duplizieren" class="md-nav__link">
+    Inhaltsmodul duplizieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-verschieben" class="md-nav__link">
+    Inhaltsmodul verschieben
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inhaltsmodul-kopieren" class="md-nav__link">
+    Inhaltsmodul kopieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#liste-erstellen" class="md-nav__link">
+    Liste erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bild-einfugen" class="md-nav__link">
+    Bild einfügen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texte-bearbeiten-mit-dem-iwe2" class="md-nav__link">
+    Texte bearbeiten mit dem iWE2
+  </a>
+  
+    <nav class="md-nav" aria-label="Texte bearbeiten mit dem iWE2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assets-einfugen" class="md-nav__link">
+    Assets einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabellen-einfugen" class="md-nav__link">
+    Tabellen einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttons-einfugen" class="md-nav__link">
+    Buttons einfügen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linktool" class="md-nav__link">
+    Linktool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suchmaschinenoptimierung" class="md-nav__link">
+    Suchmaschinenoptimierung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags-hinzufugen" class="md-nav__link">
+    Tags hinzufügen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Dokumentinhalt erstellen</h1>
+                
+                <p>In diesem Workflow-Schritt erstellen Sie den Inhalt ihres Dokuments.</p>
+<p>Die konkrete Eingabeansicht kann variabel an die Benutzeranforderungen angepasst werden und somit einfacher oder komplexer aufgebaut sein. Aus diesem Grund sind die im Folgenden beschriebenen Abläufe beispielhaft zu verstehen. In Ihrem System können die Abläufe und das Design demnach davon abweichen.</p>
+<p>Die zentralen Vorlagen für die Eingabe von Inhalten sind die <strong>Templates</strong>: Sie enthalten häufig das Layout der fertigen Dokumente und geben die Bereiche vor, die vom Benutzer bearbeitet werden.</p>
+<h2 id="beispielhafter-aufbau-eines-dokuments">Beispielhafter Aufbau eines Dokuments<a class="headerlink" href="#beispielhafter-aufbau-eines-dokuments" title="Permanent link">#</a></h2>
+<p>In unserem Beispiel ist das Dokument in drei Ebenen aufgebaut:</p>
+<ul>
+<li>
+<p>In der ersten Ebene wird mit Hilfe von Slotmodulen das Layout des Dokuments in Form von Spalten vorgegeben. Diese Ebene bildet den strukturellen Rahmen für die Inhaltsmodule. Slotmodule erkennen Sie an dem dunkelgrauen Rahmen und der stets sichtbaren Modulleiste rechts.</p>
+</li>
+<li>
+<p>Auf einer zweiten Ebene finden sich mit den Flexmodulen die eigentlichen Inhaltsmodule wie Überschriften, Textabsätze, Listen, Bilder, Videos, etc., die beliebig oft und in beliebiger Reihenfolge kombinierbar sind.</p>
+</li>
+<li>
+<p>Die dritte Ebene enthält so genannte Blockmodule, die für wiederholbare Inhaltsmodule genutzt werden können. Blockmodule können zum Beispiel zur Erzeugung von Bildergalerien oder Listen verwendet werden. Dabei werden die Bild- oder Listenelemente einfach dupliziert.<br />
+Blockmodule sind vordefiniert und werden auf dieselbe Weise wie Flexmodule eingefügt und sind wie diese durch einen hellgrauen Header gekennzeichnet.</p>
+</li>
+</ul>
+<p>Beispiel für den Aufbau eines Dokuments:</p>
+<p><img alt="Dokumentaufbau" src="../images/user/content/edit_mode_de.gif" /></p>
+<h2 id="aufbau-des-formulars-zur-inhaltserstellung">Aufbau des Formulars zur Inhaltserstellung<a class="headerlink" href="#aufbau-des-formulars-zur-inhaltserstellung" title="Permanent link">#</a></h2>
+<p><img alt="Dokument bearbeiten" src="../images/user/content/edit_content.png" /></p>
+<p><strong>Werkzeugleiste:</strong></br>
+Im Workflow-Schritt "Inhalt erstellen" gibt es eine zusätzliche Werkzeugleiste, deren Optionen sich nur auf diesen Bearbeitungsschritt beziehen:</p>
+<p><img alt="Werkzeugleiste" src="../images/user/content/edit_menubar.png" /></p>
+<!--
+**Inhaltsansicht/Strukturansicht:** Wenn Sie sich einen besseren Überblick über den Aufbau Ihres Dokuments verschaffen möchten, wechseln Sie von der Inhaltsansicht in die Strukturansicht. Hier werden Struktur- und Inhaltselemente ohne die enthaltenen Inhalte angezeigt. Lediglich Header und Rahmen der Elemente sind sichtbar.
+Diese Sicht ist beispielsweise sinnvoll, wenn Elemente neu positioniert werden sollen.
+
+![Strukturansicht](images/user/content/edit_structure.png)
+-->
+
+<p><strong>Sprachauswahl:</strong> Wählen Sie bei mehrsprachigen Dokumenten hier eine Sprachversion des Dokuments aus. Die anschließend vorgenommenen Änderungen beziehen sich auf diese Sprachversion.</p>
+<p><strong>Sprachoptionen:</strong> Mit dieser Option können Sie Inhalte aus anderen Sprachversionen kopieren.</p>
+<p><strong>Vorschau:</strong> Diese Option öffnet ein zusätzliches Fenster mit der Ausgabeansicht.</p>
+<p><strong>Speichern:</strong> Führen Sie diese Option aus, wenn Sie den aktuellen Bearbeitungsstand sichern möchten.</p>
+<p><strong>Modulleiste:</strong></br>
+An jedem Struktur- und Inhaltselement befindet sich eine eigene Modulleiste mit Optionen für das ausgewählte Modul.
+Um eine bessere Übersicht zu gewährleisten, erscheint die Modulleiste für die Flex- und Blockmodulen erst, wenn Sie mit der Maus über den Modul-Header fahren.</p>
+<p><img alt="Modulleiste Flex und Block" src="../images/user/content/edit_element_toolbar.png" /></p>
+<p>Für Slotmodule, die das Layout und damit den Rahmen für die Inhaltsmodule bilden, ist die Modulleiste dagegen immer sichtbar:</p>
+<p><img alt="Modulleiste Slot" src="../images/user/content/edit_slot_toolbar.png" /></p>
+<p><strong>Module minimieren:</strong></p>
+<p>Sie können für ein Modul den Inhaltsbereich ausblenden, so dass nur noch der Modul-Header zu sehen ist.</p>
+<ul>
+<li>Klicken Sie auf den Doppelpfeil vor dem Modultitel, um den Inhaltsbereich zu verstecken.</li>
+</ul>
+<p><img alt="Modul minimieren" src="../images/user/content/module_minimize_1.png" /></p>
+<ul>
+<li>Klicken Sie erneut auf den nun waagrechten Pfeil, um den Inhaltsbereich wieder einzublenden. </li>
+</ul>
+<p><img alt="Modul maximieren" src="../images/user/content/module_minimize_2.png" /></p>
+<h2 id="inhaltsmodule-in-ein-dokument-einfugen-und-bearbeiten">Inhaltsmodule in ein Dokument einfügen und bearbeiten<a class="headerlink" href="#inhaltsmodule-in-ein-dokument-einfugen-und-bearbeiten" title="Permanent link">#</a></h2>
+<p>Für das Erstellen eines Dokuments kann ein Benutzer auf zahlreiche Inhaltsmodule zugreifen.</p>
+<p>Dabei hängt es von der Konfiguration des Templates ab, das dem Dokument zugrunde liegt, welche Module und auf welchen Ebenen diese eingefügt werden können.</p>
+<p>Sie haben zwei Möglichkeiten, ein neues Inhaltsmodul einzufügen: Über die Toolbar eines bereits vorhandenen Inhaltsmodul und über die im Leerzustand eines Dokuments vom Template zur Verfügung gestellten Platzhalter.</p>
+<ul>
+<li>Klicken Sie in der Toolbar auf das Plussymbol <strong><em>Modul hinzufügen</em></strong>.</li>
+</ul>
+<p><img alt="Hinzufügen" src="../images/user/content/edit_element_new_option.png" /></p>
+<ul>
+<li>Legen Sie fest, ob Sie das neue Modul vor oder hinter das aktuelle Modul einfügen möchten.</li>
+</ul>
+<p><img alt="Hinzufügen" src="../images/user/content/edit_element_new.png" /> </p>
+<p><em>Auf dem vordersten Tab des Dialogs werden Ihnen alle in der Flexmodulverwaltung festgelegten Module angeboten.</em></p>
+<p><em>Die Option </em><em>Aus der Zwischenablage einfügen</em><em> bietet die Möglichkeit, zuvor kopierte oder ausgeschnittene Module mitsamt Inhalt einzufügen.</em></p>
+<p><em>Zur leichteren Auswahl können auf verschiedenen Reitern wie </em><strong>Einfach</strong><em>, </em><strong>Liste</strong><em> und </em><strong>Spalten</strong><em> die verfügbaren Flexmodule nach Typen gefiltert angezeigt werden.</em></p>
+<ul>
+<li>
+<p>Blättern Sie in der Moduleliste weiter, indem Sie auf die Seitenangabe unten klicken.</p>
+</li>
+<li>
+<p>Wählen Sie das gewünschte Modul aus, indem Sie es anklicken.</p>
+</li>
+</ul>
+<p><em>Das Modul wird in das Dokument eingefügt.</em></p>
+<p>Der andere Weg führt über die im Template vorgesehenen Platzhalter: </p>
+<ul>
+<li>Führen Sie in einem leeren Dokument die Option <strong>BLOCK HINZUFÜGEN</strong> oder <strong>FLEX HINZUFÜGEN</strong> aus. </li>
+</ul>
+<p><img alt="Hinzufügen" src="../images/user/content/add_element_option.png" /></p>
+<h2 id="inhaltsmodul-positionieren">Inhaltsmodul positionieren<a class="headerlink" href="#inhaltsmodul-positionieren" title="Permanent link">#</a></h2>
+<p>Verschieben Sie optional ein Inhaltsmodul an eine andere Position.</p>
+<ul>
+<li>Nutzen Sie hierzu die Pfeilsymbole in der Modulleiste.</li>
+</ul>
+<p><img alt="Positioning" src="../images/user/content/element_positionieren_option.png" /></p>
+<ul>
+<li>Sie können Inhaltsmodule auch einfach per <em>Drag &amp; Drop</em> verschieben.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Grundsätzlich bleiben beim Verschieben von Inhaltsmodulen bereits eingegebene Inhalte erhalten.</p>
+</p>
+</div>
+<h2 id="inhaltsmodul-duplizieren">Inhaltsmodul duplizieren<a class="headerlink" href="#inhaltsmodul-duplizieren" title="Permanent link">#</a></h2>
+<ul>
+<li>Duplizieren Sie ein Inhaltsmodul, indem Sie auf das Symbol für zusätzliche Optionen in der Modulleiste und anschließend auf <strong>Duplizieren</strong> klicken. </li>
+</ul>
+<p><img alt="Duplizieren" src="../images/user/content/element_optionen.png" /></p>
+<p><em>Das Inhaltsmodul wird mit dem eingegebenen Inhalt kopiert und unterhalb des Originals eingefügt.</em></p>
+<ul>
+<li>Stellen Sie die benötigten Parameter für das gewählte Modul ein.</li>
+</ul>
+<h2 id="inhaltsmodul-verschieben">Inhaltsmodul verschieben<a class="headerlink" href="#inhaltsmodul-verschieben" title="Permanent link">#</a></h2>
+<ul>
+<li>Verschieben Sie ein Inhaltsmodul, indem Sie auf das Symbol für zusätzliche Optionen in der Modulleiste und anschließend auf <strong>Ausschneiden</strong> klicken. </li>
+</ul>
+<p><em>Das Inhaltsmodul befindet sich nun in der Zwischenablage.</em></p>
+<ul>
+<li>Setzen Sie den Mauszeiger an die Stelle, an die das Element verschoben werden soll und wählen Sie in den zusätzlichen Optionen <strong>Einfügen</strong>.</li>
+</ul>
+<p><em>Das Inhaltsmodul wird mit dem eingegebenen Inhalt ausgeschnitten und an der gewünschten Position eingefügt.</em> </br>
+<em>Im Gegensatz zum Verschieben von Elementen mit Hilfe der Positionspfeile (Inhaltsmodul positionieren) können Sie mit den Optionen </em><em>Ausschneiden</em><em> und </em><em>Einfügen</em><em> Elemente auch modulübergreifend verschieben.</em></p>
+<h2 id="inhaltsmodul-kopieren">Inhaltsmodul kopieren<a class="headerlink" href="#inhaltsmodul-kopieren" title="Permanent link">#</a></h2>
+<ul>
+<li>Kopieren Sie ein Inhaltsmodul, indem Sie auf das Symbol für zusätzliche Optionen in der Modulleiste und anschließend auf <strong>Kopieren</strong> klicken.</li>
+</ul>
+<p><em>Das Inhaltsmodul befindet sich nun in der Zwischenablage.</em></p>
+<ul>
+<li>Setzen Sie den Mauszeiger an die Stelle, an die das Element kopiert werden soll und wählen Sie in den zusätzlichen Optionen <strong>Einfügen</strong>.</li>
+</ul>
+<p><em>Das Inhaltsmodul wird mit dem eingegebenen Inhalt kopiert und an der gewünschten Position eingefügt.</em></p>
+<h2 id="liste-erstellen">Liste erstellen<a class="headerlink" href="#liste-erstellen" title="Permanent link">#</a></h2>
+<p>Die Liste in unserem Beispiel wird mit Hilfe des Flexmoduls „Liste“ und mit Blockmodulen für die Listeneinträge erstellt.</p>
+<ul>
+<li>Klicken Sie in der Toolbar auf das Plussymbol <strong><em>Modul hinzufügen</em></strong> und legen Sie fest, ob Sie die Liste vor oder hinter das aktuelle Modul einfügen möchten.</li>
+</ul>
+<p><img alt="Liste" src="../images/user/content/edit_element_new.png" /></p>
+<ul>
+<li>Klicken Sie „Liste“ als das Modul an, das Sie hinzufügen möchten.
+<em>Das Flexmodul „Liste“ wird in das Dokument eingefügt.</em></li>
+</ul>
+<p><img alt="Liste" src="../images/user/content/listelement.png" /></p>
+<ul>
+<li>Befüllen Sie nun die vorkonfigurierten Listenelemente mit Inhalt oder fügen Sie weitere Listenelemente hinzu, indem Sie auf <strong>BLOCK HINZUFÜGEN</strong> unter den Listenelementen klicken.</li>
+</ul>
+<p><em>Das Listenelement wird hinzugefügt.</em></p>
+<h2 id="bild-einfugen">Bild einfügen<a class="headerlink" href="#bild-einfugen" title="Permanent link">#</a></h2>
+<p>Sie haben zwei Möglichkeiten, ein Bild in ein Dokument einzufügen:</p>
+<ul>
+<li>
+<p>Aus dem Media Asset Management durch Klick auf <strong>BILD HINZUFÜGEN</strong>.</p>
+</li>
+<li>
+<p>Als einfachen Bild-Upload durch Klick auf <strong>Bildoptionen/Hochladen</strong>.</p>
+</li>
+</ul>
+<p>Beide Varianten sind im Template über den Aufruf des Media-Asset-Managements verfügbar.</br> Der Entwickler des Templates kann das entsprechende Bedienelement allerdings so konfigurieren, dass nur eine der beiden Möglichkeiten zur Auswahl steht.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Platzhalterbilder können vom Template-Entwickler konfiguriert werden und können in der Darstellung abweichen.</p>
+</p>
+</div>
+<p><strong> Bild aus dem Media-Asset-Management einfügen</strong></p>
+<ul>
+<li>Um ein Bild aus dem Media-Asset-Management (MAM) in das Dokument einzufügen, klicken Sie auf <strong>BILD HINZUFÜGEN</strong> unter dem Bild. Wenn Sie ein vorhandenes Bild lediglich ersetzen möchten, klicken Sie auf <strong>AUSTAUSCHEN</strong> an gleicher Stelle.</br> </li>
+</ul>
+<p><img alt="Bild hinzufügen" src="../images/user/content/add_image_option.png" /></p>
+<p><img alt="Bild austauschen" src="../images/user/content/update_image_option.png" /></p>
+<p><em>Das MAM wird in einem neuen Fenster geöffnet.</em></p>
+<ul>
+<li>
+<p>Wechseln Sie gegebenenfalls in das Verzeichnis mit dem gewünschten Bild.</p>
+</li>
+<li>
+<p>Doppelklicken Sie auf das Thumbnail des gewünschten Assets, um die derzeitig als Standard bestimmte Variante direkt ins Dokument zu importieren. </br>Lesen Sie im Kapitel <em>Medien verwalten</em> den Abschnitt <a href="../user.mam/#asset-standardvariante-bestimmen">Asset-Standardvariante bestimmen</a>, wenn Sie wissen möchten, wie Sie eine Variante eines Assets als Standard festlegen können.</p>
+</li>
+</ul>
+<p><strong> Bild über den Bild-Upload einfügen</strong></p>
+<p>Mit Hilfe des Bild-Uploads können Sie Bilder auf Ihrem Rechner in ein Dokument einfügen, die nicht im Media-Asset-Management abgelegt sind. <em>imperia</em> überträgt diese Bilder beim Publizieren des Dokuments zusammen mit der HTML-Datei auf das Zielsystem.</p>
+<div class="admonition warning">
+<p class="admonition-title">Wichtig<p>Das Bild ist dabei nur mit dem entsprechenden Dokument verbunden und wird auch nachträglich nicht im MAM abgelegt. D.h. das Entfernen des Dokuments im System löscht auch das Bild unwiderruflich.</p>
+</p>
+</div>
+<ul>
+<li>Klicken Sie auf das Symbol für zusätzliche Optionen unter dem Bild und anschließend auf <strong>Hochladen</strong>.</li>
+</ul>
+<p><img alt="Bild hochladen" src="../images/user/content/upload_image_option.png" /></p>
+<p><img alt="Bild hochladen" src="../images/user/content/image_upload.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>Datei auswählen</strong>, um die gewünschte Datei auf Ihrem Rechner zu suchen.</br>Sind bereits ein oder mehrere Bilder mittels Bild-Upload in das Dokument eingebunden worden, erscheinen diese in der Liste <strong><em>Verfügbare Dateien</em></strong>:</li>
+</ul>
+<p><img alt="Bild-Upload mit Auswahl bereits verlinkter Bilder" src="../images/user/content/image_upload_2.png" />.</p>
+<p>Statt ein neues Bild einzubinden, können Sie eines der bereits vorhandenen Bilder auswählen:
+    * Mit <i class="fa fa-exchange"></i> binden Sie diese ins Dokument ein.</br>
+    * Mit <i class="fa fa-close"></i> können Sie ein Bild aus der Liste entfernen.<br />
+<em> Klicken Sie nach Auswahl des Bilds auf </em><em>Hochladen</em>*.</br>
+* Ändern Sie in dem sich öffnenden Dialog gegebenenfalls den Dateinamen des Bilds.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Eventuell ist der Bild-Upload so konfiguriert, dass die Möglichkeit zur Änderung des Dateinamens deaktiviert ist. Der entsprechende Dialog erscheint dann trotzdem, damit Sie den Dateinamen kontrollieren können.</p>
+</p>
+</div>
+<ul>
+<li>Klicken Sie auf <strong>OK</strong>, um das Bild ins Dokument einzufügen und das Dialogfenster zu schließen.</li>
+</ul>
+<p><em>Das Bild erscheint anschließend anstelle des Platzhalters im Dokument.</em></p>
+<p><img alt="Eingefügtes Bild" src="../images/user/content/add_image_2.png" /></p>
+<p>Sollte bereits eine Datei dieses Namens in das Dokument eingebunden sein, erscheint folgende Meldung: </p>
+<p><img alt="Überschreiben bestätigen" src="../images/user/docs/dlg_upload_confirm_overwrite.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>OK</strong>, um das vorhandene Bild zu überschreiben und den Dialog zu schließen.</li>
+<li>Klicken Sie auf <strong><em>Zurück</em></strong>, um das Bild beizubehalten. In diesem Fall können Sie zur Dateiauswahl zurückkehren, um ein anderes Bild auszuwählen.</li>
+</ul>
+<p><strong>Bild entfernen</strong></p>
+<ul>
+<li>Entfernen Sie ein eingefügtes Bild, indem Sie auf das Symbol für zusätzliche Optionen unter dem Bild und anschließend auf <strong>Löschen</strong> klicken. </li>
+</ul>
+<p><img alt="Bild entfernen" src="../images/user/content/image_options.png" /></p>
+<p><strong>Bild konfigurieren</strong></p>
+<ul>
+<li>Bearbeiten Sie ein eingefügtes Bild, indem Sie auf das Symbol für zusätzliche Optionen unter dem Bild und anschließend auf <strong>Anpassen</strong> klicken. </li>
+</ul>
+<p><em>Der Dialog </em>Asset-Aktionen<em> öffnet sich, in dem Sie die gewünschte Aktion auswählen können.</em> </br>
+Lesen Sie dazu <a href="../user.mam/#bilder-bearbeiten">Bilder bearbeiten</a> im Kapitel <a href="../user.mam/">Medien verwalten</a></p>
+<hr />
+<h2 id="texte-bearbeiten-mit-dem-iwe2">Texte bearbeiten mit dem iWE2<a class="headerlink" href="#texte-bearbeiten-mit-dem-iwe2" title="Permanent link">#</a></h2>
+<p>Der <em>imperia</em>-WYSIWYG-Editor (iWE2) ermöglicht komfortables Bearbeiten von Texten in einem Template. Sie können in einer WYSIWYG-Ansicht schnell und einfach Text formatieren, Bilder einbinden und Verlinkungen mit anderen Dokumenten setzen. Die Bedienung orientiert sich an gängiger Textverarbeitungs-Software, sodass ein intuitiver Einstieg ohne große Umgewöhnung möglich ist. HTML-Kenntnisse sind nicht notwendig, Sie können bei Bedarf jedoch den HTML-Quellcode direkt bearbeiten.</p>
+<p>Technische Grundlage ist der Texteditor “CKEditor” (ckeditor.com).
+</br>Dieses Kapitel beschreibt die <em>imperia</em>-spezifischen Funktionen. Eine detaillierte Beschreibung des “CKEditor” finden Sie im <a href="http://docs.cksource.com/CKEditor_3.x/Users_Guide">Benutzerhandbuch</a> des ckeditors(Stand der Quellenangabe: Mai 2017).</p>
+<p>Die Benutzeroberfläche ist an gebräuchliche Textverarbeitungs-Software angelehnt.</p>
+<p><img alt="*imperias* iWE2" src="../images/user/docs/iwe_editor.png" /></p>
+<p>Alle Funktionen lassen sich durch Klick auf einen der Buttons aus den Symbolleisten ausführen.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Welche der hier gezeigten Buttons tatsächlich verfügbar sind, hängt von der Konfiguration des iWE-Editors im jeweiligen Template bzw. der zugehörigen Konfigurationsdatei ab. </p>
+</p>
+</div>
+<p>Die Symbolleisten können in folgende Kategorien unterteilt werden:</p>
+<ul>
+<li><strong>Steuerfunktionen</strong>: Hierzu gehören die Funktionen <em>Rückgängig</em> und <em>Wiederherstellen</em>, <em>Suchen und Ersetzen</em>, und <em>Einfügen aus der Zwischenablage</em>.</li>
+<li><strong>Strukturfunktionen</strong>: Diese beinhalten beispielsweise das Erstellen von Listen sowie Zitate oder Blockelemente.</li>
+<li><strong>Funktionen für Textformatierungen</strong>: Fett, Kursivschrift, Einrückungen und Textausrichtung.</li>
+<li><strong>Funktionen für Farben</strong>: Mit diesen Funktionen können Sie die Text- und Hintergrundfarbe festlegen.</li>
+<li><strong>Funktionen zum Einfügen von Objekten und Texten</strong>: Neben dem Einfügen von Assets, Sonderzeichen und Tabellen umfasst diese Funktionsgruppe auch das Einfügen von unformatiertem Text oder formatiertem Text aus Word<sup>®</sup>-Dokumenten über die Zwischenablage, siehe Abschnitt <a href="../user.documents/#assets-einfugen">Assets einfügen</a> bzw. <a href="../user.documents/#tabellen-einfugen">Tabellen einfügen</a>.</li>
+<li><strong>Funktion zum Einfügen von Links</strong>: Mit dem iWE2 lassen sich Links innerhalb eines Dokuments zu anderen (<em>imperia</em>-internen) Dokumenten oder (externen) Websites erstellen sowie Links auf <em>imperia</em>-Assets und Mailto-Links generieren.</li>
+<li><strong>Formularfunktionen</strong>: Mit den Formularfunktionen fügen Sie Formulare und Formularelemente in Ihr Dokument ein.</li>
+</ul>
+<h3 id="assets-einfugen">Assets einfügen<a class="headerlink" href="#assets-einfugen" title="Permanent link">#</a></h3>
+<ol>
+<li>Setzen Sie den Cursor an die gewünschte Stelle.</li>
+<li>
+<p>Klicken Sie auf <img alt="MAM - Asstes einfügen" src="../images/user/iwe2/insert_MAM_btn.png" />, um ein Bild aus dem Media-Asset-Management einzufügen. </p>
+<p><img alt="Bild aus dem MAM einfügen" src="../images/user/iwe2/dlg_insert_MAM_asset.png" /></p>
+</li>
+<li>
+<p>Wählen Sie das Asset aus.</p>
+</li>
+<li>Wechseln Sie auf den <strong>Reiter</strong> <strong><em>Bildinfo</em></strong>, um das Asset aus dem MAM auszuwählen.</li>
+<li>Klicken Sie auf den Button <strong>Browse MAM</strong> (MAM durchsuchen).</li>
+<li>Führen Sie einen Doppelklick auf ein Thumbnail aus, um die Standardvariante des Assets in das Dokument zu importieren.</li>
+<li>Klicken Sie auf das Symbol in der Spalte <strong><em>Auswahl</em></strong>, um eine der verfügbaren Varianten eines Assets für den Import auszuwählen.</br><em>Das Asset und die dazugehörige URL werden automatisch hinzugefügt. Sie können die URL auch manuell eingeben.</em></li>
+<li>
+<p>Im Vorschaufenster können Sie das eingefügte Asset nun sehen und weitere Optionen anpassen.</p>
+<ul>
+<li>Tragen Sie optional einen <strong><em>Alternativen Text</em></strong> ein. Wenn Sie ein Asset ausgewählt haben, ist dieses Feld automatisch mit dem Titel vorbelegt, unter dem es im MAM geführt wird.</li>
+<li>Tragen Sie optional unter <strong><em>Breite/Höhe</em></strong> die gewünschten Abmessungen ein, in denen das Asset im Dokument erscheinen soll. </br>Wenn Sie nur eine Seitenlänge angeben, errechnet das   System die andere Seitenlänge ausgehend vom Seitenverhältnis des ursprünglichen Assets.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Tragen Sie die Größenangaben <em>vor</em> der Auswahl des Assets ein. Das System generiert dann automatisch eine neue Variante des ausgewählten Assets mit den gewünschten Abmessungen. Auf diese Weise erzielen Sie die bestmögliche Darstellungsqualität. </br>Eine nachträgliche Bildbearbeitung ist in <em>imperia</em> auch gegeben, siehe <strong><a href="../user.mam/#bilder-bearbeiten">Bilder bearbeiten</a></strong>.</p>
+</p>
+</div>
+<ul>
+<li>Tragen Sie optional unter <strong><em>Rahmen</em></strong> einen Wert ein (z.B. 5px), um das eingefügte Asset mit einem Rahmen zu versehen.</li>
+<li>Tragen Sie optional unter <strong><em>H-Abstand/V-Abstand</em></strong> die gewünschten Werte ein (z.B. 5px), um das Asset mit einem Abstand zum umgebenden Element einzufügen.</li>
+<li>
+<p>Bestimmen Sie optional unter <strong><em>Textfluss</em></strong> die Ausrichtung des Assets.</p>
+<p><em>In der Vorschau wird das zu importierenden Asset angezeigt.</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Wechseln Sie auf den <strong>Reiter</strong> <strong><em>Caption</em></strong>, um eine Beschriftung festzulegen.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Stellen Sie sicher, dass Sie bei Bildunterschriften die Checkbox <em>Bild mit Bildunterschrift</em> aktivieren. Andernfalls wird die eingetragene Beschriftung nicht angezeigt. <comment: in imperia heisst es "Bild mit Überschrift"?></p>
+</p>
+</div>
+<ul>
+<li>Aktivieren Sie die Checkbox <strong><em>Bild mit Bildunterschrift</em></strong>.</li>
+<li>Ändern Sie gegebenenfalls die Ausrichtung der eingegebenen Beschriftung.</li>
+</ul>
+</li>
+<li>
+<p>Wechseln Sie auf den <strong>Reiter</strong> <strong><em>Link</em></strong>, um das ausgewählte Asset gegebenenfalls zu verlinken.</p>
+<ul>
+<li>Tragen Sie unter <strong><em>URL</em></strong> die Ziel-URL für den zu erstellenden Link ein und wählen Sie den Linktyp.</li>
+</ul>
+</li>
+<li>
+<p>Wechseln Sie auf den <strong>Reiter</strong> <strong><em>Erweitert</em></strong>, um zusätzliche Einstellungen vorzunehmen. </p>
+<ul>
+<li>Hier können Sie zum Beispiel das Asset mit Style-Klassen versehen oder erweiterte Eigenschaften wie ein Sprachkürzel und eine Beschreibung angeben.</li>
+</ul>
+</li>
+</ol>
+<h3 id="tabellen-einfugen">Tabellen einfügen<a class="headerlink" href="#tabellen-einfugen" title="Permanent link">#</a></h3>
+<p>Mit dieser Funktion können Sie im iWE2 HTML-Tabellen anlegen.</p>
+<ol>
+<li>
+<p>Klicken Sie auf <img alt="Tabellen einfügen" src="../images/user/iwe2/table_btn.png" />, um eine Tabelle einzufügen.</p>
+<p><img alt="Tabelleneigenschaften" src="../images/user/iwe2/dlg_table_properties.png" /></br>
+2. Geben Sie  die gewünschten Eigenschaften der zu erstellenden Tabelle ein. Dies beinhaltet u.a. die Größe der Tabelle, die Anzahl der Zeilen und Spalten, die Dicke des Rahmens, der Zeilenabstand, die Ausrichtung und die Beschriftungen.</p>
+</li>
+</ol>
+<h3 id="buttons-einfugen">Buttons einfügen<a class="headerlink" href="#buttons-einfugen" title="Permanent link">#</a></h3>
+<p>Im iWE2 haben Sie die Möglichkeit, einen Button hinzuzufügen und diesem ein Asset aus dem MAM zuzuweisen. Die verfügbaren Optionen sind (abgesehen vom Reiter <em>Link</em>) dieselben wie unter <a href="../user.documents/#assets-einfugen">Assets einfügen</a> beschrieben.</p>
+<p><img alt="Grafische Button Einstellungen" src="../images/user/iwe2/dlg_insert_MAM_btn.png" /></p>
+<h2 id="linktool">Linktool<a class="headerlink" href="#linktool" title="Permanent link">#</a></h2>
+<p>Das Linktool dient dazu, Inhalte aus dem Quelldokument an verschiedene Zielpositionen des Zieldokuments zu kopieren.</br>Das Linktool wird im Zieldokument geöffnet.</p>
+<ul>
+<li>Das <em>Quelldokument</em> ist das Dokument, aus dem Inhalt kopiert werden soll. </li>
+<li>Das <em>Zieldokument</em> ist das Dokument, das den kopierten Inhalt danach aufnimmt.</li>
+</ul>
+<p>Inhalt, der mit Hilfe des Linktools in das Zieldokument kopiert wird, wird nicht automatisch aktualisiert, falls sich der Inhalt im Quelldokument ändert. In einem solchen Fall ist man gezwungen, das Zieldokument erneut zu bearbeiten oder mit dynamischen Inhalten zu arbeiten (SiteActive).</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<ul>
+<li>Abhängig von der Konfiguration des Linktools und der Gestaltung des Zieldokuments können Bedienungsfunktionen unterschiedlich ausgeprägt sein. Wenden Sie sich bei Fragen an den Programmierer des Templates.</li>
+<li>Je nachdem, welche Filter und Einschränkungen von Ihrem Template-Entwickler eingestellt wurden, können Sie nur Teile des Rubrikenbaums sehen.</li>
+</ul>
+</p>
+</div>
+<p>Das Linktool öffnet wahlweise das MAM oder den Dokumenten-Browser, in Abhängigkeit von dem, was im entsprechenden Template spezifiziert ist. </p>
+<p>Fügen Sie Inhalte mit dem Linktool ein:</p>
+<ol>
+<li>Klicken Sie auf <img alt="Linktool - Dokumenten-Browser" src="../images/user/docs/linktool.gif" /> (Dokumenten-Browser) oder alternativ auf <img alt="Linktool - MAM" src="../images/user/docs/mam_linktool.gif" /> (MAM).</li>
+<li>
+<p>Das Linktool wird jeweils in einem eigenen Dialog geöffnet. Gehen Sie je nach Konfiguration wie folgt vor:</p>
+<table>
+<thead>
+<tr>
+<th>Dokumenten-Browser</th>
+<th>MAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Pop-up-Fenster &quot;Linktool&quot;" src="../images/user/docs/docBrowser_linktool.png" /></td>
+<td><img alt="Pop-up-Fenster &quot;Linktool&quot;" src="../images/user/docs/mam_linktool_dlg.png" /></td>
+</tr>
+<tr>
+<td>Klicken Sie in der Spalte <em>Einfügen</em> auf <img alt="Icon" src="../images/user/docs/icon_dok_einfugen.png" />, um das gewünschte Asset einzufügen.</br></br>Klicken Sie alternativ auf die URI des gewünschten Dokuments oder Assets, das Sie verlinken wollen, um es im Ziel-Dokument einzubinden.</td>
+<td>Doppelklicken Sie auf ein Thumbnail, um die Standard-Variante eines Assets in das Dokument zu importieren.</td>
+</tr>
+<tr>
+<td>Darüber hinaus gibt es im Linktool den zusätzlichen Menüpunkt <em>Template</em>, der genutzt wird, um einen Link in Ihrem Zieldokument <em>zurückzusetzen</em>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Sie können immer nur ein Item auf einmal einfügen.</br>
+Sie können im Linktool auch die Volltext-Suche und Filter dazu nutzen, Dokumente und Assets zu suchen.
+Weitere Informationen zu diesen Optionen finden Sie im Kapitel <a href="../user.mam/#im-media-asset-management-suchen">Im Media-Asset-Management suchen</a>.</p>
+</li>
+</ol>
+<h2 id="suchmaschinenoptimierung">Suchmaschinenoptimierung<a class="headerlink" href="#suchmaschinenoptimierung" title="Permanent link">#</a></h2>
+<p>Das SEO-Workflow-Plug-in ist ein Workflow-Schritt, der Ihnen hilft, Ihre Webseite für Suchmaschinen wie Google oder Startpage zu optimieren. Es validiert Ihre Seite anhand einer Checkliste und bietet Ihnen Vorschläge zur Verbesserung an. <comment Kriterien aus Vorgang dokumentieren oder besser verweisen? https://jira.pirobase.de/jira/browse/ICMS-86></p>
+<p>Wenn Ihr Workflow das SEO-Workflow-Plug-in beinhaltet, erscheint es auf dem <a href="../user.desktop/">Schreibtisch</a> in der Spalte <strong><em>Nächster Schritt</em></strong> (in der Regel nach dem Schritt <strong><em>Bearbeiten</em></strong>):</p>
+<p><img alt="SEO-Schritt" src="../images/user/docs/seo-desktop.png" /></p>
+<p><span class="steps">1.</span> <strong>Schlüsselwörter eintragen</strong></p>
+<p><img alt="SEO-Schlüsselwörter" src="../images/user/docs/seo-keywords.png" /></p>
+<ol>
+<li>Tragen Sie im ersten SEO-Schritt eines oder mehrere Schlüsselwörter als Grundlage für den SEO-Check ein.</li>
+<li>Wählen Sie zudem eines Ihrer Zielsysteme auswählen, um Informationen über den Status der robot.txt file zu importieren.</li>
+<li>Klicken Sie auf <strong><em>Aktivieren</em></strong> um den Check zu starten.</li>
+</ol>
+<p><span class="steps">2.</span> <strong>Vorschau wird erzeugt</strong></p>
+<p><img alt="SEO-Vorschau" src="../images/user/docs/seo-preview.png" /></p>
+<p>Im nächsten SEO-Schritt wird Ihnen eine <em>Vorschau</em> des Dokumenteneintrags angezeigt, wie er als Ergebnis in einer Suchmaschine aussehen könnte. </br>
+Dabei werden verschiedene Teile des Dokuments nach den definierten Schlüsselwörtern untersucht. </br>
+Für alle Instanzen eines Schlüsselworts der jeweiligen Stelle wird der entsprechende Zähler um 1 hochgezählt. Dementsprechend erhalten Sie ein "Keine", wenn kein Schlüsselwort gefunden wurde.</p>
+<p><span class="steps">3.</span> <strong>Dokument wird validiert</strong></p>
+<p><img alt="SEO-Checkliste" src="../images/user/docs/seo-checklist.png" /></p>
+<p>Die letzte Auswahl validiert Ihr Dokument und das Zielsystem auf Basis der SEO-Checkliste. Rote Einträge weisen auf ernsthafte Verstöße gegen die SEO-Richtlinien hin. Gelbe Einträge sind Warnungen. Grüne Einträge geben an, dass dieser Aspekt mit den SEO-Richtlinien übereinstimmt.</p>
+<p>Anhand der Checkliste sehen Sie, welche Punkte erfüllt wurden und welche noch zu verbessern sind.</p>
+<p><span class="steps">4.</span> <strong>SEO-Workflow-Schritt beenden</strong></p>
+<p><img alt="SEO-Buttons" src="../images/user/docs/seo-buttons.png" /></p>
+<ul>
+<li>Beenden Sie den SEO-Workflow, indem Sie auf <strong>Speichern</strong> klicken. Sie gelangen anschließend zum nächsten Schritt. </li>
+<li>Mit einem Klick auf <strong>Ablehnen</strong> gelangen Sie zum vorherigen Workflow-Schritt(in der Regel der Editier-Schritt).</li>
+<li>Mit einem Klick auf <strong><em>Abbruch</em></strong> gelangen Sie zum Schreibtisch, ohne die Änderungen gespeichert zu haben.    </li>
+</ul>
+<hr />
+<h2 id="tags-hinzufugen">Tags hinzufügen<a class="headerlink" href="#tags-hinzufugen" title="Permanent link">#</a></h2>
+<p>Mit Hilfe von Tags lassen sich in einer Website thematische Übersichtsseiten generieren, von denen aus Website-Besucher zu inhaltlich verwandten Seiten springen können.
+Tags werden im Bearbeiten-Schritt oder in einem eigens konfigurierten Workflow-Schritt hinzugefügt. Dabei können Sie Tags wahlweise frei hinzufügen oder aus einer definierten Liste auswählen.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Beim "freien" Hinzufügen der Tags wird die Tag-Liste von allen Redakteuren gemeinsam durch das Hinzufügen erweitert.
+Die "definierte" Tag-Liste wird durch einen Administrator fest vorgegeben.
+Die Unterscheidung der beiden Möglichkeiten wird technisch in jeder einzelnen Tag-Processing Instruction vorgegeben.</p>
+</p>
+</div>
+<p>Tags können für bestimmte Domänen vergeben werden. Domänen sind hierbei als übergeordnete thematische Bereiche zu verstehen, für die Tags zugewiesen werden können.</br>
+So könnten Sie einem Dokument beispielsweise ausgesuchte Autoren als Tags für die Domäne <em>Autor</em> oder bestimmte Prioritäten als Tags für die Domäne <em>Wichtigkeit</em> zuweisen.</p>
+<p><img alt="Tag-Domänen" src="../images/user/docs/tagging_tagdomaenen.png" /></p>
+<ul>
+<li>Geben Sie in das Eingabefeld der gewünschten Domäne den Tag-Begriff ein. Während der Eingabe wird die Tag-Liste nach dem Begriff durchsucht und entsprechend gefiltert.</li>
+</ul>
+<p><img alt="Filter bei der Eingabe des Tags" src="../images/user/docs/tagging_filtering.png" /></p>
+<p><img alt="Aus Liste ausgewähltes Tag" src="../images/user/docs/tagging_ausgewaehlt.png" /></p>
+<p>Gibt es den eingegebenen Begriff in der Tag-Liste noch nicht, können Sie ihn der Liste hinzufügen.</p>
+<ul>
+<li>Gehen Sie zunächst mit Hilfe der ESC-Taste aus der Liste heraus oder klicken Sie an eine Stelle außerhalb der Liste. </li>
+<li>Geben Sie den gewünschten Tag-Begriff in das Eingabefeld ein und klicken Sie auf ENTER.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Das Tag wird erst zu der Tag-Liste hinzugefügt wenn Sie <strong>Speichern</strong> ausgeführt haben.     </p>
+</p>
+</div>
+<ul>
+<li>Mit Hilfe des Kreuz-Symbols hinter dem Namen können Sie ein Tag auch wieder aus dem Eingabefeld entfernen. </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Um die Tag-Zuweisung aus dem Dokument zu entfernen, müssen Sie <strong>Speichern</strong> ausführen.</p>
+</p>
+</div>
+<p><em>Die zugewiesenen Tags werden nun in der Seite dargestellt.</em></p>
+<p><img alt="Zugewiesene Tags" src="../images/user/docs/tagging_preview.png" /></p>
+<p>Sie können Tags auch nutzen, um Ihren Schreibtisch nach inhaltlichen Themen zu filtern. Lesen Sie hierzu auch den Abschnitt <a href="../user.desktop/#schreibtisch-filter">Schreibtisch-Filter</a> im Kapitel <a href="../user.desktop/">Arbeiten mit dem Schreibtisch</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.documents/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dokumente erstellen und bearbeiten
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.desktop/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Arbeiten mit dem Schreibtisch
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

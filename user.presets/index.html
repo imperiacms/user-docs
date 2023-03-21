@@ -1,0 +1,780 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Vorlagen erstellen und verwalten - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#feature-aktivieren" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Vorlagen erstellen und verwalten
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="./" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Vorlagen erstellen und verwalten
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Vorlagen erstellen und verwalten
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-aktivieren" class="md-nav__link">
+    Feature aktivieren
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature aktivieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#den-workflow-schritt-vorlagen-hinzufugen" class="md-nav__link">
+    Den Workflow-Schritt Vorlagen hinzufügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#die-oce-aktion-vorlage-aktivieren" class="md-nav__link">
+    Die OCE-Aktion Vorlage aktivieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oce-update-durchfuhren" class="md-nav__link">
+    OCE-Update durchführen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-erstellen" class="md-nav__link">
+    Vorlage erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-bearbeiten" class="md-nav__link">
+    Vorlage bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-teilen" class="md-nav__link">
+    Vorlage teilen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-loschen" class="md-nav__link">
+    Vorlage löschen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-informationen-festlegen" class="md-nav__link">
+    Meta-Informationen festlegen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-aktivieren" class="md-nav__link">
+    Feature aktivieren
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature aktivieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#den-workflow-schritt-vorlagen-hinzufugen" class="md-nav__link">
+    Den Workflow-Schritt Vorlagen hinzufügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#die-oce-aktion-vorlage-aktivieren" class="md-nav__link">
+    Die OCE-Aktion Vorlage aktivieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oce-update-durchfuhren" class="md-nav__link">
+    OCE-Update durchführen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-erstellen" class="md-nav__link">
+    Vorlage erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-bearbeiten" class="md-nav__link">
+    Vorlage bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-teilen" class="md-nav__link">
+    Vorlage teilen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorlage-loschen" class="md-nav__link">
+    Vorlage löschen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meta-informationen-festlegen" class="md-nav__link">
+    Meta-Informationen festlegen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Vorlagen erstellen und verwalten</h1>
+                
+                <p><em>imperia</em> CMS bietet Ihnen die Möglichkeit, auf Basis von <em>imperia</em>-<a href="../user.basics/#templates">Templates</a> Dokumentvorlagen zu erstellen. Vorlagen kann man sich wie ein mit Modulen und Inhalten vorbelegtes imperia Dokument vorstellen. Dabei können zu jedem Template beliebig viele Vorlagen erstellt werden. </p>
+<p>Vorlagen eignen sich besonders für Newsartikel, Stellenanzeigen oder Projektbeschreibungen. Wenn Sie regelmäßig Seiten erstellen, die denselben Seitentyp haben, also von der Struktur ähnlich aufgebaut sind, dann lohnt es sich dafür eine oder mehrere Vorlagen zu erstellen.</p>
+<p>Vorlagen werden mit Hilfe des <a href="../user.oneclickedit/">One-Click-Edit (OCE)</a> erstellt und können für eine oder mehrere Rubriken vorgeschlagen werden. Darüber hinaus ist es möglich, eine Dokumentvorlage zu erzwingen, sodass die Vorlage ohne Auswahlmöglichkeit gesetzt wird.</p>
+<hr />
+<h2 id="feature-aktivieren">Feature aktivieren<a class="headerlink" href="#feature-aktivieren" title="Permanent link">#</a></h2>
+<p>Um das Feature zu aktivieren, müssen folgende Schritte durchgeführt werden:</p>
+<ol>
+<li>Den Workflow-Schritt <em>Vorlagen</em> hinzufügen</li>
+<li>Die OCE-Aktion <em>Vorlage</em> aktivieren</li>
+<li>Ein OCE-Update durchführen (optional), um den vollen Funktionsumfang zu erhalten.</li>
+</ol>
+<h3 id="den-workflow-schritt-vorlagen-hinzufugen">Den Workflow-Schritt <em>Vorlagen</em> hinzufügen<a class="headerlink" href="#den-workflow-schritt-vorlagen-hinzufugen" title="Permanent link">#</a></h3>
+<ol>
+<li>Öffnen Sie den Workflow-Editor mit dem Menü <strong><em>Workflow</em></strong> und führen Sie für den gewünschten Workflow die Option <strong>Bearbeiten</strong> aus.</li>
+<li>Fügen Sie das Workflow-Plugin <strong><em>Vorlagen</em></strong> unmittelbar vor dem zentralen Bearbeiten-Schritt ein.</li>
+<li>Speichern Sie Ihre Änderungen.</li>
+</ol>
+<h3 id="die-oce-aktion-vorlage-aktivieren">Die OCE-Aktion <em>Vorlage</em> aktivieren<a class="headerlink" href="#die-oce-aktion-vorlage-aktivieren" title="Permanent link">#</a></h3>
+<ol>
+<li>Öffnen Sie die OCE-Konfiguration im Menü unter <strong><em>System &gt; One-Click-Edit</em></strong>.</li>
+<li>Aktivieren Sie die Checkbox <strong><em>Vorlage</em></strong>.</li>
+</ol>
+<h3 id="oce-update-durchfuhren">OCE-Update durchführen<a class="headerlink" href="#oce-update-durchfuhren" title="Permanent link">#</a></h3>
+<p>Grundsätzlich funktioniert das Feature in allen Browsern auch ohne ein Update des OCE.</p>
+<p>Es ist jedoch ein Update erforderlich, um bei der Erstellung einer Vorlage automatisch ein Screenshot der Seite anfertigen zu können.</p>
+<p>Ein Update des OCE ist daher empfohlen, da die automatische Erstellung eines Screenshots die Gebrauchstauglichkeit entscheidend verbessert.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Die Funktion "Screenshot automatisch erstellen" steht systembedingt derzeit nur im Firefox und Chrome zur Verfügung.</p>
+</div>
+<hr />
+<h2 id="vorlage-erstellen">Vorlage erstellen<a class="headerlink" href="#vorlage-erstellen" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Bevor Sie Vorlagen für Dokumente nutzen können, müssen Sie Ihren Browser um One-Click-Edit erweitern. In der OCE-Toolbar wird Ihnen anschließend die Option <strong>Vorlage</strong> angeboten.</p>
+<p><img alt="Vorlage erstellen" src="../images/user/presets/oce_toolpar_preset.png" /></p>
+</p>
+</div>
+<ol>
+<li>
+<p>Navigieren Sie zu der Seite, die als Basis für Ihre Dokumentvorlage dienen soll.</p>
+<p><img alt="Vorlage erstellen" src="../images/user/presets/presets_create_1.png" /></p>
+</li>
+<li>
+<p>Führen Sie in der OCE-Toolbar die Option <strong>Vorlage</strong> aus.        </p>
+<p><em>Ein Screenshot wird von der Seite erstellt.</em></br> 
+<em>Der Screenshot skaliert die Seite in der Breite automatisch auf 300 Pixel.</em></br>
+<em>Der Dialog zum Konfigurieren der Vorlage wird geöffnet.</em></p>
+</li>
+<li>
+<p>Gehen Sie weiter vor, wie unter <a href="./#vorlage-bearbeiten">Vorlage bearbeiten</a> beschrieben.    </p>
+</li>
+</ol>
+<hr />
+<h2 id="vorlage-bearbeiten">Vorlage bearbeiten<a class="headerlink" href="#vorlage-bearbeiten" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<p>Öffnen Sie über <strong><em>Struktur &gt; Vorlagen</em></strong> die Liste der Dokumentvorlagen.</br>
+    Je nach Berechtigung sehen Sie wahlweise nur Ihre eigenen Vorlagen, die mit Ihrer Gruppe geteilten Vorlagen, oder alle Systemvorlagen.</br>
+    Für jede Vorlage wird ihr Name, ihre Beschreibung und das Template angezeigt, auf dem die Vorlage basiert. Darüber hinaus sehen Sie die Anzahl der Dokumente, die mit der Vorlage erstellt wurden.  </p>
+<p><img alt="Vorlage konfigurieren" src="../images/user/presets/presets_list.png" />  </p>
+</li>
+<li>
+<p>Um die Eigenschaften der Vorlage anzupassen, klicken Sie in der Dropdown-Box auf die Option <strong>Bearbeiten</strong> für die gewünschte Vorlage.</p>
+<p><img alt="Vorlage bearbeiten" src="../images/user/presets/preset_edit_option.png" /></p>
+<p><em>Es öffnet sich rechts ein Benutzerformular, in dem Sie die Vorlage konfigurieren können:</em></p>
+<p><img alt="Vorlage bearbeiten" src="../images/user/presets/preset_edit_1.png" /></p>
+<p><img alt="Vorlage bearbeiten" src="../images/user/presets/preset_edit_2.png" /></p>
+</li>
+<li>
+<p>Laden Sie gegebenenfalls einen neuen Screenshot der Seite für Ihre Dokumentvorlage hoch, indem Sie auf <strong>Hochladen</strong> klicken.</p>
+</li>
+<li>Geben Sie im Eingabefeld <strong><em>Titel</em></strong> der Vorlage einen Namen.</li>
+<li>Tragen Sie unter <strong><em>Beschreibung</em></strong> eine Beschreibung der Vorlage ein.</li>
+<li>Nehmen Sie die <strong><em>Inhaltseinstellungen</em></strong> vor. Hierzu werden Ihnen drei Varianten angeboten:<ul>
+<li><strong><em>Originalinhalt</em></strong>: Wählen Sie diese Möglichkeit, wenn Sie den Originalinhalt des Ausgangsdokuments verwenden möchten.</li>
+<li><strong><em>Leere Struktur</em></strong>: Bei Auswahl dieser Option wird der gesamte Inhalt (Texte und Medien) aus den Metainformationen gelöscht.</li>
+<li><strong><em>Musterinhalt</em></strong>: Nutzen Sie diese Variante, wenn Sie den Textinhalt durch einen Standardtext ("Lorem ipsum") und die Bilder durch Standardbilder ersetzen möchten.</li>
+</ul>
+</li>
+<li>Wählen Sie unter <strong><em>In Rubriken vorschlagen</em></strong> die Rubriken aus, in denen die Vorlage beim Erstellen eines Dokuments angeboten werden soll.</li>
+<li>
+<p>Wenn Sie über die entprechenden Rechte verfügen, können Sie die Vorlage mit anderen Benutzern teilen. Aktivieren Sie hierzu einen der folgenden Radiobuttons:</p>
+<ul>
+<li><strong><em>jeder</em></strong>: Alle können die Vorlage nutzen.</li>
+<li><strong><em>bestimmte Gruppen</em></strong>: Nur Mitglieder ausgewählter Gruppen können die Vorlage nutzen.
+Tragen Sie in diesem Fall die Gruppen in das Eingabefeld ein, mit denen die Vorlage geteilt werden soll oder wählen Sie sie aus der Dropdown-Liste des Eingabefelds aus.</li>
+<li><strong><em>nur Sie</em></strong>: Nur Sie selbst können die Vorlage nutzen.</li>
+</ul>
+</li>
+</ul>
+<p><em>Das Template, auf dem die Dokumentvorlage basiert, und die Vorlagen-ID werden schreibgeschützt ausgelesen.</em></p>
+<ul>
+<li>Klicken Sie auf <strong>Speichern</strong>, um Ihre Einstellungen zu sichern</li>
+</ul>
+<p><em>Sie gelangen zur Übersicht der Dokumentvorlagen.</em></p>
+<hr />
+<h2 id="vorlage-teilen">Vorlage teilen<a class="headerlink" href="#vorlage-teilen" title="Permanent link">#</a></h2>
+<p>Wenn Ihre Berechtigungen dies erlauben, können Sie Lese- und Schreibrechte an Gruppen vergeben und die Vorlage auf diese Weise mit anderen Benutzern teilen. Nutzen Sie hierzu die Option <strong>Teilen</strong> in der Dropdown-Box hinter der Vorlage.</p>
+<p><img alt="Vorlage teilen" src="../images/user/presets/presets_share_option.png" /></p>
+<p><em>Es öffnet sich rechts ein Benutzerformular für die Rechteeinstellungen:</em></p>
+<p><img alt="Vorlage teilen" src="../images/user/presets/presets_share.png" /></p>
+<ul>
+<li>Legen Sie unter <strong><em>Anzeigerechte</em></strong> fest, wer diese Vorlage anzeigen darf.</li>
+<li>Definieren Sie unter <strong><em>Schreibrechte</em></strong>, wer die Vorlage bearbeiten darf.</li>
+<li>Sichern Sie Ihre Einstellungen mit <strong>Speichern</strong>. </li>
+</ul>
+<hr />
+<h2 id="vorlage-loschen">Vorlage löschen<a class="headerlink" href="#vorlage-loschen" title="Permanent link">#</a></h2>
+<ul>
+<li>Öffnen Sie die Liste der Dokumentvorlagen wie unter <a href="#vorlage-bearbeiten">Vorlage bearbeiten </a> beschrieben.</li>
+<li>
+<p>Klicken Sie auf die Option <strong>Löschen</strong> in der Dropdown-Box hinter der Vorlage.</p>
+<p><img alt="Vorlage löschen" src="../images/user/presets/presets_delete_option.png" /></p>
+</li>
+<li>
+<p>Bestätigen Sie die erscheinende Sicherheitsabfrage.</p>
+</li>
+</ul>
+<p><em>Die Dokumentvorlage ist gelöscht.</em></p>
+<hr />
+<h2 id="meta-informationen-festlegen">Meta-Informationen festlegen<a class="headerlink" href="#meta-informationen-festlegen" title="Permanent link">#</a></h2>
+<ul>
+<li>Öffnen Sie die Liste der Dokumentvorlagen wie unter <a href="#vorlage-bearbeiten">Vorlage bearbeiten </a> beschrieben.</li>
+<li>Klicken Sie auf die Option <strong>Meta-Informationen</strong> in der Dropdown-Box hinter der Vorlage.</li>
+<li>
+<p>Vergeben Sie Werte für die Metafelder, fügen Sie neue Metafelder hinzu oder löschen Sie nicht mehr benötigte Metafelder.</p>
+<p><img alt="Metainformationen" src="../images/user/presets/presets_metainfo.png" /></p>
+</li>
+<li>
+<p>Sichern Sie Ihre Einstellungen mit <strong>Speichern</strong>.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.archive/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Arbeiten mit dem Archiv
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.docsearch/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Dokumente durchsuchen
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,896 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Dokumente erstellen und bearbeiten - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dokument-erstellen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Dokumente erstellen und bearbeiten
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dokumente erstellen und bearbeiten
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Dokumente erstellen und bearbeiten
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-erstellen" class="md-nav__link">
+    Dokument erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-bearbeiten" class="md-nav__link">
+    Dokument bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-schritt-meta-informationen" class="md-nav__link">
+    1. Schritt: Meta-Informationen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-schritt-vorlage-auswahlen" class="md-nav__link">
+    2. Schritt: Vorlage auswählen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-schritt-inhalt-erstellen" class="md-nav__link">
+    3. Schritt: Inhalt erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-schritt-tags-definieren" class="md-nav__link">
+    4. Schritt: Tags definieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-schritt-dokument-genehmigen" class="md-nav__link">
+    5. Schritt: Dokument genehmigen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-schritt-veroffentlichen" class="md-nav__link">
+    6. Schritt: Veröffentlichen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument in der Vorschau ansehen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-erstellen" class="md-nav__link">
+    Dokument erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-bearbeiten" class="md-nav__link">
+    Dokument bearbeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-schritt-meta-informationen" class="md-nav__link">
+    1. Schritt: Meta-Informationen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-schritt-vorlage-auswahlen" class="md-nav__link">
+    2. Schritt: Vorlage auswählen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-schritt-inhalt-erstellen" class="md-nav__link">
+    3. Schritt: Inhalt erstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-schritt-tags-definieren" class="md-nav__link">
+    4. Schritt: Tags definieren
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-schritt-dokument-genehmigen" class="md-nav__link">
+    5. Schritt: Dokument genehmigen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-schritt-veroffentlichen" class="md-nav__link">
+    6. Schritt: Veröffentlichen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokument-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument in der Vorschau ansehen
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Dokumente erstellen und bearbeiten</h1>
+                
+                <p>Die Arbeit mit <em>imperia</em> ist im wesentlichen abhängig vom verwendeten Workflow und den Rechten, die Sie durch Ihre aktuelle Gruppe innehaben. <em>imperia</em> verwaltet und kontrolliert anhand dieser Rahmenbedingungen den gesamten Produktionsablauf ("Workflow") von Inhalten, deren Übertragung auf die Zielsysteme bzw. deren Export in andere Formate.</p>
+<p>Wurde ein Dokument einmal erzeugt, kann es den bei der Erzeugung zugewiesenen Workflow nicht mehr verlassen. Alle Workflow-Schritte, die für die Fertigstellung dieses Dokuments vorgesehen sind, werden automatisch auf Knopfdruck in der vorgesehenen Reihenfolge ausgeführt, sodass Sie sich auf die Erstellung des eigentlichen Inhalts konzentrieren können.</p>
+<hr />
+<h2 id="dokument-erstellen">Dokument erstellen<a class="headerlink" href="#dokument-erstellen" title="Permanent link">#</a></h2>
+<p>Mit dem Erstellen eines neuen Dokuments wird das Dokument initiiert und zeitgleich der konfigurierte Workflow gestartet.</p>
+<p>Sie haben zwei Möglichkeiten, ein neues Dokument zu erstellen.</p>
+<p><strong>1. Dokument erstellen via <em>Menü -&gt; Dokumente -&gt; Neues Dokument erstellen</em> </strong></p>
+<p>Wählen Sie in einem ersten Schritt eine Rubrik aus, in der das neue Dokument angelegt werden soll. Diese Rubriken wurden von Ihrem Unternehmen oder Ihrer Organisation erstellt und korrespondieren häufig mit einem Bereich auf Ihrer Webseite. </p>
+<p>Die Rubriken sind in Form einer Baumstruktur aufgelistet:</p>
+<p><img alt="Neues Dokument erzeugen" src="../images/user/docs/document_rubric.png" /></p>
+<ul>
+<li>Navigieren Sie zu der gewünschten Rubrik. Nutzen Sie alternativ das Suchfeld.</li>
+<li>Klicken Sie auf die Rubrik.</li>
+<li>Klicken Sie auf <strong>WEITER</strong>, um das Dokument zu erzeugen. </li>
+</ul>
+<p>Das Dokument befindet sich nun im Workflow. Solange sich das Dokument im Workflow befindet, finden Sie es auch auf Ihrem <a href="../user.desktop/">Schreibtisch</a>.</p>
+<p><strong>2. Dokument erstellen via <em>Menü -&gt; Dokumente -&gt; <a href="../user.docbrowser/">Dokumenten-Browser</a></em> </strong></p>
+<ul>
+<li>Klicken Sie auf die gewünschte Rubrik.</li>
+<li>Klicken Sie im Kontextmenü  <strong><em>Weitere Optionen</em></strong> der Rubrik auf  <strong><em>Neues Dokument erstellen</em></strong>.</li>
+</ul>
+<p><img alt="Neues Dokument erzeugen" src="../images/user/docs/document_create_option_2.png" /></p>
+<hr />
+<h2 id="dokument-bearbeiten">Dokument bearbeiten<a class="headerlink" href="#dokument-bearbeiten" title="Permanent link">#</a></h2>
+<p>Nachdem ein Dokument erstellt oder importiert wurde, befindet es sich im Workflow. Dies bedeutet, dass in einer bestimmten Reihenfolge Aufgaben erfüllt werden müssen, bevor das Dokument fertiggestellt ist. </p>
+<p>Der Workflow unterteilt den Vorgang „Dokument erstellen“ in mehrere Teilaufgaben, die so genannten Workflow-Schritte: </p>
+<p><img alt="Workflow" src="../images/user/docs/worflow_model_de.gif" /></p>
+<p>Weitere Workflow-Schritte können sein, ein Freischalt- oder Ablaufdatum festzulegen, an dem das Dokument automatisch veröffentlicht wird oder automatisch abgelaufen ist. Darüber hinaus könnte in einem Workflow-Schritt ein Wiederveröffentlichungsdatum benannt werden, an dem der Dokumenteninhalt erneut angepasst werden soll. Auch das Prüfen, ob das Dokument die Standards zur Suchmaschinenoptimierung (SEO) erfüllt, kann in einem Workflow-Schritt durchgeführt werden.</p>
+<p>Während des gesamten Workflows wird eine Statusleiste angezeigt, die Sie durch den Workflow geleitet. Sie zeigt an, in welchem Workflow-Schritt Sie sich aktuell befinden und welcher Schritt der nächste ist.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tipp<p>Navigieren Sie mit Hilfe der Tastatur zum nächsten Workflow-Schritt. Nutzen Sie die folgende Tastenkombination: </br>
+CTRL + RECHTS (Pfeil) (MS Windows) oder </br>
+CONTROL + RECHTS bzw. CONTROL + OPTION + RECHTS (Mac OS).</p>
+</p>
+</div>
+<p><img alt="Statusleiste" src="../images/user/docs/wf_navigation.png" /></p>
+<ul>
+<li>Um zum nächsten Schritt zu gelangen, klicken Sie in der Statusleiste jeweils auf <strong>WEITER</strong>.</li>
+<li>Über das <strong>Zurück</strong>-Pfeilsymbol können Sie jederzeit zum vorherigen Schritt zurück springen ohne den Workflow verlassen zu müssen.</li>
+</ul>
+<p><img alt="Zurück" src="../images/user/docs/back.png" /></p>
+<ul>
+<li>
+<p>Führen Sie <strong>SCHLIESSEN</strong> aus, wenn Sie die bisherigen Inhalte speichern möchten, das Dokument aber erst später weiter bearbeiten möchten.</p>
+</li>
+<li>
+<p>Wenn Sie die Bearbeitung des Dokuments abbrechen möchten, klicken Sie auf <strong>VERWERFEN</strong>. Sobald Sie einen Workflow-Schritt verwerfen, geht der in diesem Schritt eingegebene Inhalt verloren und das System gibt das Dokument wieder für andere Benutzer zur Bearbeitung frei.</p>
+<div class="admonition warning">
+<p class="admonition-title">Hinweis<p>Ein Browser-Fenster zu schließen entspricht nicht dem Button <strong>VERWERFEN</strong>. Zwar wird auch die Bearbeitung abgebrochen, aber das System kann dies nicht registrieren, denn beim Schließen des Browser-Fensters übermittelt dieser keine Nachricht an den Webserver, auf dem <em>imperia</em> läuft. </br> Folglich bleibt das von Ihnen zuletzt bearbeitete Dokument weiterhin gesperrt. Mehr dazu unter <a href="../user.desktop/#gesperrte-dokumente">Gesperrte Dokumente</a>.</p>
+</p>
+</div>
+</li>
+</ul>
+<p>Nachdem das Dokument erstellt wurde, wird es automatisch zum ersten Workflow-Schritt weitergeleitet. 
+Im Folgenden wird anhand des obigen Beispiel-Workflows beschrieben, in welchen Schritten ein Dokument mit <em>imperia</em> bearbeitet und veröffentlicht wird.</p>
+<hr />
+<h2 id="1-schritt-meta-informationen"><span class="steps">1.</span> Schritt: Meta-Informationen<a class="headerlink" href="#1-schritt-meta-informationen" title="Permanent link">#</a></h2>
+<p><img alt="Metainformationen" src="../images/user/docs/wf_metainfo.png" /></p>
+<ul>
+<li>Geben Sie in das dafür vorgesehene Eingabefeld den <strong><em>Dokumenten-Titel</em></strong> ein.</li>
+<li>Wählen Sie aus der Drop-Down-Box ein oder mehrere <strong><em>Tags</em></strong> aus oder fügen Sie Tags frei hinzu, indem Sie sie in das Eingabefeld eingeben. Mit Hilfe von <a href="../user.content/#tags-hinzufugen">Tags</a> lassen sich in einer Website thematische Übersichtsseiten generieren, von denen aus Website-Besucher zu inhaltlich verwandten Seiten springen können.</li>
+<li>Legen Sie unter <strong><em>Veröffentlichungsdatum</em></strong> gegebenenfalls einen Veröffentlichungszeitpunkt für das Dokument fest. Nutzen Sie wahlweise die Drop-Down-Listen oder die Kalenderfunktion, um den Zeitpunkt auszuwählen.</li>
+<li>Auf die gleich Weise können Sie festlegen, ob das Dokument ein <strong><em>Ablaufdatum</em></strong> haben soll.</li>
+<li>Legen Sie fest, in welchen Sprachen sie das Dokument erzeugen möchten. Die grundsätzlich möglichen Sprachen werden über die zuvor ausgewählte Rubrik vorgegeben.</li>
+<li>Klicken Sie auf <strong>WEITER</strong>.</li>
+</ul>
+<p><em>Das Dokument wird zum nächsten Schritt weitergeleitet, in unserem Fall zum Schritt „Vorlage auswählen“</em></p>
+<hr />
+<h2 id="2-schritt-vorlage-auswahlen"><span class="steps">2.</span> Schritt: Vorlage auswählen<a class="headerlink" href="#2-schritt-vorlage-auswahlen" title="Permanent link">#</a></h2>
+<p>Bevor Sie den eigentlichen Inhalt Ihres Dokuments erstellen, können Sie für das Dokument eine Vorlage auswählen. <a href="../user.presets/">Vorlagen</a> basieren auf Templates und werden zur automatischen Gestaltung von Seiten genutzt, die für ihren Inhalt ein bestimmtes Layout bekommen sollen. In diesem Workflow-Schritt werden Ihnen die Vorlagen vorgeschlagen, die der Rubrik des Dokuments zuvor zugewiesen wurden.</p>
+<div class="admonition warning">
+<p class="admonition-title">Hinweis<p>Die Auswahl der Vorlage kann in den anschließenden Schritten nicht angepasst werden.</p>
+</p>
+</div>
+<p><img alt="Vorlage auswählen" src="../images/user/docs/wf_template.png" /></p>
+<ul>
+<li>Klicken Sie in der gewünschten Dokumentvorlage die Option <strong>Auswahl</strong> an. </li>
+</ul>
+<p><em>Die ausgewählte Vorlage erhält den Status „Ausgewählt“ und ist zusätzlich durch ein Häkchen gekennzeichnet.</em></p>
+<div class="admonition warning">
+<p class="admonition-title">Hinweis<p>Wenn Sie das Dokument ohne Dokumentvorlage erstellen möchten, können Sie je nach Template-Konfiguration diesen Schritt auch überspringen.</p>
+</p>
+</div>
+<ul>
+<li>Klicken Sie auf <strong>WEITER</strong>.</li>
+</ul>
+<p><em>Das Dokument wird zum nächsten Schritt weitergeleitet, in unserem Fall zum Schritt „Inhalt erstellen“. Die zuvor ausgewählte Dokumentvorlage dient lediglich als Vorschlag und kann weiter angepasst werden.</em></p>
+<hr />
+<h2 id="3-schritt-inhalt-erstellen"><span class="steps">3.</span> Schritt: Inhalt erstellen<a class="headerlink" href="#3-schritt-inhalt-erstellen" title="Permanent link">#</a></h2>
+<p>In diesem Workflow-Schritt erstellen und gestalten Sie den Inhalt Ihres Dokuments. Lesen Sie zu Vorgehen und Möglichkeiten im Editiermodus das Kapitel <a href="../user.content/">Dokumentinhalt erstellen</a>.</p>
+<ul>
+<li>Klicken Sie nach der Erstellung des Inhalts auf WEITER.
+<em>Das Dokument wird zum nächsten Schritt weitergeleitet, in unserem Fall zum Schritt „Tags definieren“.</em></li>
+</ul>
+<!--
+__
+## <span class="steps">4.</span> Schritt: Teaser bearbeiten
+
+Mit einem Teaser können Sie die Neugier der Leser wecken. Er ist ein wichtiger Teil eines Dokuments, da sich oft an ihm entscheidet, ob die Leser weiterscrollen, wegklicken oder den Inhalt wirklich lesen. Mit Hilfe der Übersschrift und des Teaser-Textes erhält der Leser einen ersten Eindruck des Inhalts.
+
+![Teaser bearbeiten](images/user/docs/wf_teaser.png)
+
+* Legen Sie ein ***Anzeigedatum*** für den Teaser fest. Nutzen Sie gegebenenfalls die Kalenderfunktion.
+* Legen Sie eine ***Teaser-Überschrift*** fest.
+* Geben Sie den eigentlichen ***Teaser-Text*** ein. Dieser sollte kurz und knapp formuliert sein und die Neugier der Leser wecken. Unterhalb des Eingabefelds wird die Anzahl der verbleibenden Zeichen eingeblendet.
+
+Im rechten Bereich sehen Sie in der ***Teaservorschau***, wie der von Ihnen erstellte Teaser in der Ausgabe angezeigt wird.
+
+In der Werkzeugleiste werden Ihnen Optionen angeboten, die sich auf diesen Bearbeitungsschritt beziehen:
+
+***Sprachauswahl***: Wählen Sie bei mehrsprachigen Dokumenten hier eine Sprachversion des Dokuments aus. Die anschließend vorgenommenen Änderungen beziehen sich auf diese Sprachversion.
+
+***Sprachoptionen***: Mit dieser Option können Sie Inhalte aus anderen Sprachversionen kopieren.
+
+***Speichern***: Führen Sie diese Option aus, wenn Sie den aktuellen Bearbeitungsstand sichern möchten.
+
+* Klicken Sie auf **WEITER**.
+*Das Dokument wird zum nächsten Schritt weitergeleitet, in unserem Fall zum Schritt „Dokument genehmigen“.*
+
+-->
+
+<hr />
+<h2 id="4-schritt-tags-definieren"><span class="steps">4.</span> Schritt: Tags definieren<a class="headerlink" href="#4-schritt-tags-definieren" title="Permanent link">#</a></h2>
+<p>Mit Hilfe von Tags lassen sich in einer Website thematische Übersichtsseiten generieren, von denen aus Website-Besucher zu inhaltlich verwandten Seiten springen können.</p>
+<p>In diesem Workflow-Schritt können Sie dem Dokument Tags hinzufügen. Diese können frei gewählt oder einer definierten Liste entnommen werden. Lesen Sie zu Vorgehen und Möglichkeiten beim "Tagging" das Kapitel <a href="../user.content/#tags-hinzufügen">Dokumentinhalt erstellen</a>.</p>
+<p><img alt="Tags definieren" src="../images/user/docs/wf_tagging.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>WEITER</strong>.
+<em>Das Dokument wird zum nächsten Schritt weitergeleitet, in unserem Fall zum Schritt „Dokument genehmigen“.</em></li>
+</ul>
+<hr />
+<h2 id="5-schritt-dokument-genehmigen"><span class="steps">5.</span> Schritt: Dokument genehmigen<a class="headerlink" href="#5-schritt-dokument-genehmigen" title="Permanent link">#</a></h2>
+<p>Im nächsten Schritt werden Sie als <strong>Redakteur</strong> darüber informiert, dass das Dokument fertig bearbeitet ist und nun auf Genehmigung wartet. Der zugewiesene Workflow sieht vor, dass die von Ihnen erstellten Inhalte redaktionell von einem Chefredakteur abgenommen werden müssen.</p>
+<p><img alt="Dokument genehmigen Redakteur" src="../images/user/docs/wf_review_editor_view.png" /></p>
+<p>Der <strong>Chefredakteur</strong> erhält entsprechend eine Benachrichtigung und findet das Dokument mit dieser Aufgabe auf seinem Schreibtisch. Nach Sichtung kann er das Dokument genehmigen oder an den im Workflow vorgesehenen Bearbeiter zur Korrektur zurückverweisen.</p>
+<p>In der Statusleiste werden nun die beiden Optionen <strong>ABLEHNEN</strong> und <strong>GENEHMIGEN</strong> angeboten.</p>
+<p>Unter <strong><em>Details</em></strong> kann der Chefredakteur sich die einzelnen Sprachvarianten des Dokuments in der <a href="./#dokument-in-der-vorschau-ansehen"><strong>Vorschau</strong></a> ansehen oder die durchgeführten <strong>Änderungen</strong> für die verschiedenen Varianten nachverfolgen, um sich ein genaues Bild zu machen, bevor er das Dokument genehmigt.</br> Die hier angebotenen Optionen sind rechteabhängig und werden nicht für jede Rolle angeboten.</p>
+<p><img alt="Dokument genehmigen Chefredakteur" src="../images/user/docs/wf_review_chief-editor_view.png" /></p>
+<p>Lehnt der Chefredakteur das Dokument durch Klick auf <strong>ABLEHNEN</strong> ab, erscheint eine Meldung, dass es zurück in den Schritt "Inhalt bearbeiten" gelegt wird, damit der Redakteur die gewünschten Korrekturen vornehmen kann.</p>
+<ul>
+<li>Geben Sie als Chefredakteur einen Kommentar ein und klicken Sie auf <strong>SENDEN</strong>.</li>
+</ul>
+<p><img alt="Kommentar absenden" src="../images/user/docs/wf_review_deny.png" /></p>
+<p>Dieser Kommentar kann anschließend über die Option <strong>Ablehnungs-Kommentar</strong> in der Statusleiste aufgerufen werden.</p>
+<p><img alt="Kommentar ansehen" src="../images/user/docs/wf_deny_comment_option.png" /></p>
+<p>Der Redakteur wird benachrichtigt und findet das Dokument erneut auf seinem Schreibtisch.</p>
+<p>Ist der Chefredakteur einverstanden mit dem Dokument, klickt er auf <strong>GENEHMIGEN</strong> in der Statusleiste.</p>
+<p>Das Dokument ist nun bereit zur Veröffentlichung.</p>
+<hr />
+<h2 id="6-schritt-veroffentlichen"><span class="steps">6.</span> Schritt: Veröffentlichen<a class="headerlink" href="#6-schritt-veroffentlichen" title="Permanent link">#</a></h2>
+<p>Wenn ein Dokument fertiggestellt ist und genehmigt wurde, verlässt es den Workflow und somit den Schreibtisch. Das Dokument steht jetzt zum Veröffentlichen auf ein Zielsystem bereit. </br></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Um Dokumente zu publizieren benötigen Sie die <em>Schreib</em>rechte für die Rubrik, in der das Dokument erstellt wurde und mindestens <em>Lese</em>rechte für die Rubriken der verknüpften Dateien (normalerweise MAM-Objekte).</p>
+</p>
+</div>
+<p>Wurde ein Veröffentlichungsdatum angegeben, wird dieses hier ausgelesen. Sie können das Datum und die Uhrzeit jedoch noch ändern.</p>
+<p><img alt="Veröffentlichen" src="../images/user/docs/wf_publish.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>Datum bearbeiten</strong>.</li>
+</ul>
+<p><img alt="Veröffentlichungsdatum bearbeiten" src="../images/user/docs/wf_publish_date.png" /></p>
+<ul>
+<li>Geben Sie das geplante Veröffentlichungsdatum ein oder nutzen Sie die Kalenderfunktion.</li>
+<li>Klicken Sie auf <strong>SPEICHERN</strong>. In diesem Fall wird das Dokument zum angegebenen Zeitpunkt veröffentlicht. </li>
+<li>MIt <strong>LEEREN</strong> entfernen Sie das Datum aus dem Eingabefeld.</li>
+<li>Klicken Sie auf <strong>JETZT FREISCHALTEN</strong> in der Statusleiste, wenn Sie das Dokument zum jetzigen Zeitpunkt online stellen möchten.</li>
+<li>Sie können auch das Ablaufdatum noch einmal ändern. Klicken Sie hierzu unter <strong>Status-Bericht</strong> in der Zeile des Ablaufdatums auf <strong>Datum bearbeiten</strong> und legen Sie das gewünschte Ablaufdatum fest. Nutzen Sie auch hier gegebenenfalls die Kalenderfunktion.</li>
+</ul>
+<p><img alt="Veröffentlichungsdatum bearbeiten" src="../images/user/docs/wf_publish_date_2.png" /></p>
+<p><em>Das Dokument wird veröffentlicht. Sie erhalten eine entsprechende Meldung, wenn der Vorgang beendet ist.</em></p>
+<p><img alt="Dokument veröffentlicht" src="../images/user/docs/wf_publish_done.png" /></p>
+<p><strong>Anstehende Veröffentlichungen</strong></p>
+<p>Sie finden zusätzlich Sie alle zu veröffentlichenden Dokumente unter dem Menüpunkt <strong><em>Dokumente</em></strong> -&gt; <strong><em>Dokumente veröffentlichen</em></strong> in einer Liste.
+Eine Ausnahme bilden Dokumente, deren Workflow das Plug-in <em>Auto-Publisher</em> enthält. Diese werden in der Regel sofort veröffentlicht und erscheinen nicht in der Freischaltliste. </p>
+<p><img alt="Freischaltliste" src="../images/user/docs/dlg_publish.png" /></p>
+<p><strong>Liste der anstehenden Veröffentlichungen anpassen</strong></p>
+<ul>
+<li>
+<p>Im Bereich <strong><em>Die Anzahl der angezeigte Dokumente einschränken</em></strong> finden Sie Filteroptionen, mit deren Hilfe Sie die Anzahl der in der Liste angezeigten Dokumente begrenzen können.</br>Um einen Filter wieder zurückzusetzen, klicken Sie auf <i class="fa fa-refresh"></i> neben dem Eingabefeld.</p>
+<ul>
+<li><strong><em>URI-Maske</em></strong>: Nutzen Sie dieses Eingabefeld, um Dokumente nach ihrer URI zu filtern. </br>Wenn Sie zum Beispielnur Dokumente mit der Dateierweiterung <code>html</code> anzeigen möchten, tragen Sie <code>.html</code> in das Feld ein. </br>Klicken Sie auf <strong>Filter</strong>. Die Freischaltliste wird neu geladen und es werden nur Dokumente aufgelistet, die mit eingetragenen Kriterium übereinstimmen.</li>
+<li><strong><em>Rubriken</em></strong>: Geben Sie in dieses Eingabefeld die Rubriken ein, deren Dokumente angezeigt werden sollen. </br>Um die ausgewählten Rubriken einzutragen stehen Ihnen zwei Optionen bereit.<ul>
+<li>Tragen Sie eine mit Semicolon abgetrennte Liste der Rubrik-Node-IDs (Beispiel: <code>/4; /4/16; /4/22</code>) ein. </li>
+<li>Nutzen Sie alternativ den Button <strong>Rubrik wählen</strong>: Dieser öffnet ein Popup-Fenster mit dem Rubrikenbaum, in dem Sie die Checkboxen vor den gewünschten Rubriken anklicken können. Bestätigen Sie Ihre Angaben mit <strong>OK</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortierung der Dokumente ändern</strong>: Ändern Sie die Sortierung der Dokmentenliste, indem Sie auf eines der Kriterien (<strong><em>Beendet, Freischaltdatum, Ablaufdatum</em></strong>) klicken. Das gewählte Kriterium erhält einen Pfeil, dessen Richtung anzeigt, wie die Sortierreihenfolge ist.</p>
+</li>
+<li>
+<p><strong>Anzeigemodus der Liste ändern</strong>: Legen in der Drop-Down-Box fest, in welchem Anzeigemodus die Dokumente gelistet werden sollen:</p>
+<ul>
+<li>Wählen Sie <strong><em>Ein Eintrag pro imperia Dokument</em></strong>, wenn die Dokumente nach ihrem "Master-Dokument" sortiert werden sollen, d.h. die Copy-Seiten werden zu dem entsprechenden Dokument angezeigt.</li>
+<li>Wählen Sie <strong><em>Ein Eintrag pro Datei</em></strong>, wenn jedes Dokument einzeln aufgelistet werden soll.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Dokument veröffentlichen</strong></p>
+<ul>
+<li>Um ein einzelnes Dokument zu veröffentlichen, klicken Sie auf <strong>Veröffentlichen</strong> im Dropdown-Menü am Ende der Zeile des Dokuments.</li>
+<li>Um mehrere Dokumente zu veröffentlichen, aktivieren Sie die Checkboxen vor den gewünschten Dokumenten und klicken Sie auf <strong>Veröffentlichen</strong> unter der Liste.</li>
+<li>Um alle Dokumente zu veröffentlichen, aktivieren Sie Checkbox <strong><em>Alle Auswählen</em></strong> neben den Spaltentiteln und klicken Sie auf <strong>Veröffentlichen</strong> unter der Liste.</li>
+</ul>
+<p>Sobald ein Dokument ausgewählt ist, stehen Ihnen am Ende der Zeile des Dokuments unter <i class="fa fa-caret-square-o-down"></i> zusätzlich die  Optionen <strong><em>Entfernen</em></strong> und <strong>Neu erzeugen</strong> zur Verfügung.</p>
+<ul>
+<li>Nutzen Sie <strong><em>Entfernen</em></strong>, um das Dokument aus der Liste der anstehenden Veröffentlichungen zu löschen. </li>
+<li>
+<p>Nutzen Sie <strong>Neu erzeugen</strong>, um das Dokument neu zu generieren. Nehmen Sie im Dialog <em>Reparse-Einstellungen</em> die gewünschten Einstellungen vor:</br></br></p>
+<p><img alt="Reparse-Einstellungen" src="../images/user/docs/reparse_einstellungen.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="dokument-in-der-vorschau-ansehen">Dokument in der Vorschau ansehen<a class="headerlink" href="#dokument-in-der-vorschau-ansehen" title="Permanent link">#</a></h2>
+<p>Sie haben die Möglichkeit, wahlweise vom <a href="../user.desktop/#dokumentenvorschau">Schreibtisch</a> oder vom <a href="../user.archive/">Archiv</a> aus die Vorschau zu öffnen, indem Sie auf den Titel des Dokuments klicken.</p>
+<p>Das ausgewählte Dokument öffnet sich in einem neuen Tab in Ihrem Internet-Browser. Eine Symbolleiste am oberen Rand bietet für den Vorschau-Modus Ihres Dokuments verschiedenen Ausgabeformate und weitere Optionen an:</p>
+<p><img alt="Preview-Menü" src="../images/user/docs/preview_toolbar.png" /></p>
+<ul>
+<li>
+<p><strong><em>Smartphone</em></strong>: Nutzen Sie diese Option, um Ihr Dokument so anzuzeigen, wie es auf einem Smartphone dargestellt wird. Die Werte für die Höhe und Breite werden in der Symbolleiste entsprechend angepasst.</p>
+</li>
+<li>
+<p><strong><em>7''-Tablet</em></strong>: Nutzen Sie diese Option, um Ihr Dokument so anzuzeigen, wie es auf einem 7-Zoll-großen Tablet-Display dargestellt wird. Die Werte für die Höhe und Breite werden in der Symbolleiste entsprechend angepasst.</p>
+</li>
+<li>
+<p><strong><em>10''-Tablet</em></strong>: Nutzen Sie diese Option, um Ihr Dokument so anzuzeigen, wie es auf einem 10-Zoll-großen Tablet-Display dargestellt wird. Die Werte für die Höhe und Breite werden in der Symbolleiste entsprechend angepasst.</p>
+</li>
+<li>
+<p><strong><em>Computer</em></strong>: Nutzen Sie diese Option, um Ihr Dokument so anzuzeigen, wie es auf einem Computer dargestellt wird. Diese Option ist standardmäßig aktiviert, wenn Sie den Vorschau-Modus öffnen. Während die Werte für Höhe und Breite für die mobile und die Tablet-Vorschau fix sind, sind sie für die Desktop-Option dynamisch und sind abhängig von der Auflösung des Bildschirms, auf dem Ihr Browser geöffnet ist.</p>
+</li>
+<li>
+<p><strong><em>Orientierung umschalten</em></strong>: Nutzen Sie diese Option, wenn Sie darstellen möchten, wie die Dokumentenansicht aussieht, wenn Sie das Mobilgerät oder Tablet zur Seite drehen. Diese Option funktioniert nicht für die Computervorschau. Aktivieren Sie die Checkbox <em>Orientierung umschalten</em>, wenn Sie die Orientierung dauerhaft in der gedrehten Position halten möchten.</p>
+</li>
+<li>
+<p><strong><em>Eingabefelder für Breite und Höhe</em></strong>: Hier können Sie die Höhe und Breite manuell ändern. Bestätigen Sie Ihre Angaben mit einem Klick auf das Häckchen.</p>
+</li>
+<li>
+<p><strong><em>Live Reload</em></strong>: Aktivieren Sie diese Option, wenn Sie möchten, dass die Vorschau automatisch neu geladen wird, wenn das Dokument im Bearbeitungsmodus geändert wurde.</p>
+</li>
+<li>
+<p><strong><em>Änderungen verfolgen</em></strong>: Nutzen Sie diese Option, um die Unterschiede zwischen der aktuellen Version des Dokuments und der zuletzt beendeten Version anzuzeigen.</br>Bei Änderungen am Dokument wird es sofort neu geladen.</br>Wird diese Funktion nicht aus dem Editmode aus aufgerufen, wird der Unterschied zwischen <em>last_version</em> und <em>last_finished_version</em> dargestellt.</p>
+</li>
+</ul>
+<p>Beispiel für die Anzeige im Tablet:</p>
+<p><img alt="Preview Tablet" src="../images/user/docs/preview_tablet.png" /></p>
+<p>Beispiel für die Anzeige auf dem Smartphone:</p>
+<p><img alt="Preview Smartphone" src="../images/user/docs/preview_smartphone.png" /></p>
+<p><strong>Vorschau teilen</strong></p>
+<p>Sie können die Vorschau des Dokuments auch mit anderen teilen. Dies kann beispielsweise sinnvoll sein, wenn Kollegen oder ein Vorgesetzter sich die Website ansehen sollen, um das Layout oder den Inhalt zu überprüfen - ohne dafür einen eigenen <em>imperia</em> CMS Zugang haben zu müssen. Senden Sie den Kollegen einfach einen Vorschau-Link. Der Vorschau-Link ist 14 Tage gültig und die Vorschau aktualisiert sich auch bei allen späteren Änderungen im Dokument. </p>
+<ul>
+<li>Klicken Sie auf <strong>Vorschau teilen</strong> in der Symbolleiste der Vorschau, um einen Link auf die Vorschau des Dokuments zu erzeugen.</li>
+</ul>
+<p><img alt="Share Preview" src="../images/user/docs/preview_share_option.png" /></p>
+<p><em>Ein Dialog öffnet sich mit dem generierten Vorschau-Link, den Sie nun für die Weiterverwendung kopieren können.</em></p>
+<p><img alt="Share Preview" src="../images/user/docs/preview_share.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>Kopieren</strong>, um den Link in die Zwischenablage zu speichern.</li>
+</ul>
+<p>Anschließend können Sie den Link beispielsweise in eine E-Mail einfügen und an den gewünschten Adressaten schicken.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.dashboard/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Schneller Überblick mit dem Dashboard
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.content/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Dokumentinhalt erstellen
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
