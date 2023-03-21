@@ -1,0 +1,38 @@
+site_name: Benutzer
+#theme: readthedocs
+theme: material
+
+extra:
+  #logo: 'images/logo.png'
+  palette:
+    primary: 'cyan'
+
+extra_css: 
+  - stylesheets/extra.css
+  - stylesheets/font-awesome.min.css
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: '#'
+
+
+nav:
+- 'Über diese Dokumentation': 'index.md'
+- 'Basiswissen imperia': 'user.basics.md'
+- 'Schneller Überblick mit dem Dashboard': 'user.dashboard.md'
+- 'Dokumente erstellen und bearbeiten': 'user.documents.md'
+- 'Dokumentinhalt erstellen': 'user.content.md' 
+- 'Arbeiten mit dem Schreibtisch': 'user.desktop.md'
+- 'Dokumente verwalten': 'user.docbrowser.md'
+- 'Medien verwalten': 'user.mam.md'
+- 'Link-Konsistenz prüfen': 'user.linkconsistency.md'
+- 'Dokumentvorlage erstellen und nutzen': 'user.presets.md'
+- 'Arbeiten mit dem Archiv': 'user.archive.md'
+- 'Vorlagen erstellen und verwalten': 'user.presets.md'
+- 'Dokumente durchsuchen': 'user.docsearch.md'
+- 'E-Mails senden und empfangen': 'user.mailing.md'
+- 'Formulare erstellen': 'user.formgenerator.md'
+- 'One-Click-Edit': 'user.oneclickedit.md'
+- 'Glossar': 'glossary.md'
+# 'OCE': 'README.md'
