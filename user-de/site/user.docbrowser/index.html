@@ -1,0 +1,1275 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Dokumente verwalten - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aufbau-und-funktionsweise-des-dokumenten-browsers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Dokumente verwalten
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Dokumente verwalten
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Dokumente verwalten
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-dokumenten-browsers" class="md-nav__link">
+    Aufbau und Funktionsweise des Dokumenten-Browsers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-rubrikenbaum" class="md-nav__link">
+    Arbeiten mit dem Rubrikenbaum
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit dem Rubrikenbaum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neues-dokument-erstellen" class="md-nav__link">
+    Neues Dokument erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-anlegen" class="md-nav__link">
+    Rubrik anlegen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-bearbeiten" class="md-nav__link">
+    Rubrik bearbeiten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archiv" class="md-nav__link">
+    Archiv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-loschen" class="md-nav__link">
+    Rubrik löschen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumente-finden" class="md-nav__link">
+    Dokumente finden
+  </a>
+  
+    <nav class="md-nav" aria-label="Dokumente finden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standardsuche" class="md-nav__link">
+    Standardsuche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erweiterte-suche" class="md-nav__link">
+    Erweiterte Suche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-speichern" class="md-nav__link">
+    Filter speichern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gespeicherte-filter-anwenden" class="md-nav__link">
+    Gespeicherte Filter anwenden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gespeicherte-filter-loschen" class="md-nav__link">
+    Gespeicherte Filter löschen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dokumenten" class="md-nav__link">
+    Arbeiten mit Dokumenten
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit Dokumenten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informationen-zu-dokument-ansehen" class="md-nav__link">
+    Informationen zu Dokument ansehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument in der Vorschau ansehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-reimportieren" class="md-nav__link">
+    Dokument reimportieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-loschen" class="md-nav__link">
+    Dokument löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-reparser-starten" class="md-nav__link">
+    Template-Reparser starten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokumenteigenschaften-andern" class="md-nav__link">
+    Dokumenteigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenzen-anzeigen" class="md-nav__link">
+    Referenzen anzeigen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungen-anzeigen" class="md-nav__link">
+    Änderungen anzeigen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-erneut-veroffentlichen" class="md-nav__link">
+    Dokument (erneut) veröffentlichen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-auf-dem-live-system-loschen" class="md-nav__link">
+    Dokument auf dem Live-System löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historie-eines-dokuments-ansehen" class="md-nav__link">
+    Historie eines Dokuments ansehen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-dokumenten-browsers" class="md-nav__link">
+    Aufbau und Funktionsweise des Dokumenten-Browsers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-rubrikenbaum" class="md-nav__link">
+    Arbeiten mit dem Rubrikenbaum
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit dem Rubrikenbaum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neues-dokument-erstellen" class="md-nav__link">
+    Neues Dokument erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-anlegen" class="md-nav__link">
+    Rubrik anlegen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-bearbeiten" class="md-nav__link">
+    Rubrik bearbeiten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archiv" class="md-nav__link">
+    Archiv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rubrik-loschen" class="md-nav__link">
+    Rubrik löschen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumente-finden" class="md-nav__link">
+    Dokumente finden
+  </a>
+  
+    <nav class="md-nav" aria-label="Dokumente finden">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standardsuche" class="md-nav__link">
+    Standardsuche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erweiterte-suche" class="md-nav__link">
+    Erweiterte Suche
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-speichern" class="md-nav__link">
+    Filter speichern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gespeicherte-filter-anwenden" class="md-nav__link">
+    Gespeicherte Filter anwenden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gespeicherte-filter-loschen" class="md-nav__link">
+    Gespeicherte Filter löschen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dokumenten" class="md-nav__link">
+    Arbeiten mit Dokumenten
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit Dokumenten">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#informationen-zu-dokument-ansehen" class="md-nav__link">
+    Informationen zu Dokument ansehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument in der Vorschau ansehen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-reimportieren" class="md-nav__link">
+    Dokument reimportieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-loschen" class="md-nav__link">
+    Dokument löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-reparser-starten" class="md-nav__link">
+    Template-Reparser starten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokumenteigenschaften-andern" class="md-nav__link">
+    Dokumenteigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenzen-anzeigen" class="md-nav__link">
+    Referenzen anzeigen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungen-anzeigen" class="md-nav__link">
+    Änderungen anzeigen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-erneut-veroffentlichen" class="md-nav__link">
+    Dokument (erneut) veröffentlichen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dokument-auf-dem-live-system-loschen" class="md-nav__link">
+    Dokument auf dem Live-System löschen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historie-eines-dokuments-ansehen" class="md-nav__link">
+    Historie eines Dokuments ansehen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Dokumente verwalten</h1>
+                
+                <p><em>imperia</em> bietet Ihnen mit dem Dokumenten-Browser eine übersichtliche Verwaltung aller Dokumente und Assets in einer Ordnerstruktur. Eine Ausnahme bilden gelöschte Dokumente, die im <a href="../user.archive/">Archiv</a> zu finden sind.</p>
+<hr />
+<h2 id="aufbau-und-funktionsweise-des-dokumenten-browsers">Aufbau und Funktionsweise des Dokumenten-Browsers<a class="headerlink" href="#aufbau-und-funktionsweise-des-dokumenten-browsers" title="Permanent link">#</a></h2>
+<p>Im Dokumenten-Browser stehen Ihnen die gewohnten Funktionalitäten zur Verfügung, die Sie zum redaktionellen Arbeiten benötigen. Sie können von hier aus Dokumente erstellen, veröffentlichen, reparsen oder löschen.<br> Optional können Sie weitere Spalten in der Übersichtstabelle einblenden, wenn Sie weitere Informationen zum Workflow-Status des Dokuments einsehen möchten.</p>
+<ul>
+<li>Öffnen Sie über <strong><em>Dokumente -&gt; Dokumenten-Browser</em></strong> den Dokumenten-Browser.</li>
+</ul>
+<p><img alt="Dokumenten-Browser" src="../images/user/docs/dokumentenbrowser.png" /></p>
+<p>Der Dokumenten-Browser weist im linken Bereich die Rubriken in Form eines hierarchischen Baums oder einer Verzeichnisliste auf. 
+Im rechten Bereich finden Sie die Dokumentenliste der ausgewählten Rubrik in einer Tabelle, sowie einen Vorschaubereich, in dem zusätzliche Informationen zu dem Dokument angezeigt werden und Aktionen ausgeführt werden können:</p>
+<p><img alt="Vorschaubereich" src="../images/user/docs/preview_details.png" /></p>
+<p>Sowohl der Rubrikenbaum, als auch der Vorschaubereich können durch einen Klick auf das Pfeilsymbol der Trennlinie aus- und wieder eingeblendet werden.</p>
+<p><img alt="Bereich einblenden" src="../images/user/docs/trennlinie.png" /></p>
+<p>Im oberen Bereich können Sie innerhalb der Suchfunktionen <em>Einfache Suche</em> und <em>Erweiterte Suche</em> ihre persönliche Suche konfigurieren und anschließend als Filter speichern, um auf einfachem Weg jederzeit die von Ihnen benötigten Dokumente und Assets zu finden.</p>
+<hr />
+<h2 id="arbeiten-mit-dem-rubrikenbaum">Arbeiten mit dem Rubrikenbaum<a class="headerlink" href="#arbeiten-mit-dem-rubrikenbaum" title="Permanent link">#</a></h2>
+<p>Rubriken bilden die inhaltliche Struktur Ihres Projekts, indem Sie Themen für die Dokumente vorgeben.</p>
+<p><img alt="Rubrikenbaum" src="../images/user/docs/rubrikenbaum.png" /></p>
+<p>Sie können den Rubrikenbaum in verschiedenen Ansichten darstellen lassen:</p>
+<ul>
+<li>Aktivieren Sie oberhalb des Rubrikenbaums die Option <strong><em>Rubriken</em></strong>, wenn Sie die Rubriken in einer Baumstruktur angeordnet haben möchten, oder die Option <strong><em>Verzeichnisse</em></strong>, wenn sie in Form von Verzeichnissen als Liste erscheinen sollen.</li>
+</ul>
+<p><img alt="Modus wechseln" src="../images/user/docs/modus_wechseln.png" /></p>
+<ul>
+<li>Aktivieren Sie die Checkbox <strong><em>Einschließlich Unterrubriken</em></strong> unter dem Rubrikenbaum, wenn Sie die Unterordner auch angezeigt bekommen möchten.</li>
+</ul>
+<p>Mit Hilfe des Kontextmenüs einer Rubrik können Sie die Rubrikeigenschaften bearbeiten, in der Rubrik neue Dokumente anlegen oder neue Unterrubriken erstellen:</p>
+<p><img alt="Kontextmenü Rubrik" src="../images/user/docs/kontextmenue_rubrik.png" /></p>
+<h3 id="neues-dokument-erstellen">Neues Dokument erstellen<a class="headerlink" href="#neues-dokument-erstellen" title="Permanent link">#</a></h3>
+<p>Mit dieser Option gelangen Sie direkt in den für die ausgewählte Rubrik hinterlegten Workflow. Stellen Sie  sicher, dass Sie sich in der richtigen Rubrik befinden. </p>
+<ul>
+<li>Gehen Sie vor wie unter <a href="../user.documents/#dokument-erstellen"><em>Dokument erstellen</em></a> beschrieben.</li>
+</ul>
+<h3 id="rubrik-anlegen">Rubrik anlegen<a class="headerlink" href="#rubrik-anlegen" title="Permanent link">#</a></h3>
+<p>Nutzen Sie diese Option, wenn Sie eine neue Unterrubrik zu der ausgewählten Rubrik erstellen möchten.</p>
+<ul>
+<li>Vergeben Sie einen <strong><em>Namen</em></strong> und eine <strong><em>Beschreibung</em></strong> für die neue Rubrik.</li>
+<li>Geben Sie unter <strong><em>Verzeichnis</em></strong> den Verzeichnispfad an, in dem die Dateien dieser Rubrik gespeichert werden sollen.</li>
+<li>Legen Sie unter <strong><em>Dateiname</em></strong> einen Standard-Dateinamen für die Dokumente fest, die in dieser Rubrik erstellt werden.</li>
+</ul>
+<p><img alt="Rubrik anlegen" src="../images/user/docs/rubrik_neu.png" /></p>
+<ul>
+<li>Legen Sie fest, ob Sie <strong><em>Medien-Dateien</em></strong> für die Rubrik zulassen möchten, um diese anschließend in das Media-Asset-Management aufzunehmen.</li>
+<li>Mit dem Schalter <strong><em>Nur ein Dokument</em></strong> lassen Sie nur ein einziges Dokument in die Rubrik zu.</li>
+<li>Die Einstellung <strong><em>Nur Unterrubriken</em></strong> erlaubt bei Aktivierung nur Unterrubriken in der Rubrik, nicht aber Dokumente.</li>
+</ul>
+<p><img alt="Rubrik bearbeiten" src="../images/user/docs/rubrik_bearbeiten_1.png" /></p>
+<ul>
+<li>Nehmen Sie Einstellungen für den Workflow vor. Wählen Sie den <strong><em>Workflow</em></strong> aus, den die Dokumente in dieser Rubrik durchlaufen sollen.</li>
+<li>Entscheiden Sie sich für eine <strong><em>Metadatei</em></strong> für den Schritt METAEDIT im gewählten Workflow.</li>
+<li>Wählen Sie unter <strong><em>Template</em></strong> für den EDIT-Schritt des Workflows eine Vorlage aus.</li>
+</ul>
+<p><img alt="Rubrik bearbeiten" src="../images/user/docs/rubrik_bearbeiten_2.png" /></p>
+<ul>
+<li>Vergeben Sie <strong><em>Lese- und Schreibrechte</em></strong> für die Rubrik und die darin enthaltenen Dokumente. Klicken Sie in das Eingabefeld und wählen Sie aus der Dropdown-Liste der verfügbaren Gruppen die gewünschten Gruppen aus.</li>
+<li>Bestimmen Sie unter <strong><em>Dokumenten-Berechtigung bearbeiten</em></strong>, wer Dokumente in der Rubrik erstellen, bearbeiten und löschen darf. Klicken Sie in das Eingabefeld und wählen Sie aus der Dropdown-Liste der verfügbaren Gruppen die gewünschten Gruppen aus.</li>
+</ul>
+<p><img alt="Rubrik bearbeiten" src="../images/user/docs/rubrik_bearbeiten_3.png" /></p>
+<ul>
+<li>Sichern Sie Ihre Einstellungen, indem Sie auf <strong>Speichern</strong> klicken.</li>
+</ul>
+<h3 id="rubrik-bearbeiten">Rubrik bearbeiten<a class="headerlink" href="#rubrik-bearbeiten" title="Permanent link">#</a></h3>
+<p>Die Eigenschaften der ausgewählten Rubrik können mit dieser Option bearbeitet werden. Neben Name, Beschreibung, Verzeichnispfad und Standard-Dateiname können Sie hier weitere Einstellungen vornehmen - vorausgesetzt, Sie haben die entsprechenden Rechte.</p>
+<ul>
+<li>Vergeben Sie Rubrikeigenschaften, wie unter <a href="./#rubrik-anlegen">Rubrik anlegen</a> beschrieben.</li>
+<li>Vergeben Sie zusätzlich <strong><em>Metavariablen</em></strong> für die Rubrik, indem Sie auf den nachfolgenden Link <strong><em>Bearbeiten</em></strong> klicken. Tragen Sie in dem sich öffnenden Fenster die gewünschten Werte für die Variablen ein.</li>
+<li>Sichern Sie Ihre Einstellungen, indem Sie auf <strong>Speichern</strong> klicken.</li>
+</ul>
+<h3 id="archiv">Archiv<a class="headerlink" href="#archiv" title="Permanent link">#</a></h3>
+<p>Mit dieser Option gelangen Sie direkt in das Archiv der ausgewählten Rubrik und können von dort ein Dokument auswählen und eine Vorgängerversion importieren.</p>
+<h3 id="rubrik-loschen">Rubrik löschen<a class="headerlink" href="#rubrik-loschen" title="Permanent link">#</a></h3>
+<p>Nutzen Sie diese Option, um eine Rubrik zu löschen. Bestätigen Sie die Sicherheitsabfrage mit <strong>OK</strong>. Beachten Sie, dass Sie alle Archiveinträge und Dokumente auf dem Schreibtisch, die in dieser Rubrik liegen, zuvor gelöscht werden müssen.</p>
+<hr />
+<h2 id="dokumente-finden">Dokumente finden<a class="headerlink" href="#dokumente-finden" title="Permanent link">#</a></h2>
+<p>Um Dokumente oder Dateien zu finden, haben Sie die Wahl zwischen einer Standardsuche, die mit Hilfe von Filtern weiter eingeschränkt werden kann, und einer erweiterten Suche, mit der individuelle und komplexe Suchanfragen möglich sind.</p>
+<h3 id="standardsuche">Standardsuche<a class="headerlink" href="#standardsuche" title="Permanent link">#</a></h3>
+<p>Für eine schnelle Suchanfrage bietet der Dokumenten-Browser die einfache Freitextsuche an.</p>
+<ul>
+<li>Geben Sie in das Eingabefeld der Freitextsuche den gewünschten Suchbegriff ein und klicken Sie anschließend auf <img alt="Plus" src="../images/user/docs/symbol_search.png" />.</li>
+</ul>
+<p><img alt="Einfache Freitextsuche" src="../images/user/docs/einfache_suche.png" /></p>
+<p>Die Standardsuche ermöglicht es Ihnen zusätzlich, über Dropdown-Felder eine Suchabfrage mit ausgewählten Filtern einzurichten und dadurch die Suche weiter einzuschränken.</p>
+<ul>
+<li>Klicken Sie auf die Option <strong><em>Filter setzen</em></strong> in der Suchleiste.</li>
+</ul>
+<p><img alt="Filterleiste einblenden" src="../images/user/docs/filter_option.png" /></p>
+<p><em>Eine zusätzliche Leiste für die Filtersuche wird eingeblendet.</em></p>
+<p><img alt="Filterleiste" src="../images/user/docs/filterleiste_1.png" /></p>
+<ul>
+<li>Geben Sie den gewünschten Suchbegriff in das Eingabefeld ein.</li>
+<li>
+<p>Öffnen Sie über <img alt="Plus" src="../images/user/docs/symbol_plus.png" /> die Liste der Suchfilter und wählen Sie per Checkbox die gewünschten Suchfelder aus, in denen nach dem Suchbegriff gesucht werden soll. </p>
+<p><img alt="Filterleiste" src="../images/user/docs/filter_konfigurieren.png" /></p>
+</li>
+</ul>
+<p><em>Die ausgewählten Filter werden anschließend als Dropdown-Felder angeboten, in denen Sie die Suche weiter einschränken können:</em></p>
+<p><img alt="Dropdown-Felder" src="../images/user/docs/dropdown_felder.png" /></p>
+<ul>
+<li>
+<p>Um weitere Suchkriterien festzulegen, klicken Sie innerhalb eines Dropddown-Suchfelds je nach Typ des Filters die gewünschten Einträge an (Filter "Tagging" in der Abbildung oben) oder geben Sie einen Suchbegriff ein (Filter "Titel" in der Abbildung unten).</p>
+<p><img alt="Filter &quot;Titel&quot;" src="../images/user/docs/titel_filter.png" /></p>
+</li>
+<li>
+<p>Wenden Sie das Suchkriterium anschließend mit Klick auf <strong>Aktivieren</strong> an. </p>
+</li>
+<li>
+<p>Mit <strong>Leeren</strong> setzen Sie den Filter jeweils wieder zurück.   </p>
+</li>
+<li>
+<p>Nutzen Sie innerhalb des Dropdown-Feldes den Schnellfilter, um die Anzahl der gelisteten Einträge zu reduzieren. Tippen Sie in das Eingabefeld oben den gewünschten Begriff ein. Die Liste reagiert bereits während des Eintippens und blendet die nicht passenden Einträge aus:</p>
+<p><img alt="Schnellfilter" src="../images/user/docs/schnellfilter.png" /></p>
+</li>
+<li>
+<p>Fügen Sie weitere Dropdown-Felder zur Suchanfrage hinzu, indem Sie auf <img alt="Plus" src="../images/user/docs/symbol_plus.png" /> klicken.</p>
+</li>
+<li>Entfernen Sie ein Dropdown-Feld aus der Filterleiste, indem Sie auf <strong>x</strong> hinter dem jeweiligen Filter klicken.</li>
+</ul>
+<p><em>Die Dokumententabelle zeigt nun die passenden Suchergebnisse an:</em></p>
+<p><img alt="Suchergebnisse" src="../images/user/docs/suchergebnisse.png" /></p>
+<ul>
+<li>Um die Filterleiste wieder auszublenden, führen Sie <strong><em>Clear Filter</em></strong> aus.</li>
+</ul>
+<p><img alt="Filterleiste ausblenden" src="../images/user/docs/filterleiste_ausblenden.png" /></p>
+<h3 id="erweiterte-suche">Erweiterte Suche<a class="headerlink" href="#erweiterte-suche" title="Permanent link">#</a></h3>
+<p>Die erweiterte Suche ermöglicht es Ihnen, individuellere und komplexere Suchabfragen zu stellen.</p>
+<ul>
+<li>Um in die erweiterte Suche zu wechseln, klicken Sie zunächst auf <strong><em>Filter</em></strong>, um die Filterleiste einzublenden.</li>
+<li>Wählen Sie unter <img alt="Weitere Optionen" src="../images/user/docs/symbol_more.png" /> das Untermenü <strong><em>Erweiterte Suche</em></strong>.</li>
+</ul>
+<p><img alt="Erweiterte Suche" src="../images/user/docs/erweiterte_suche.png" /></p>
+<ul>
+<li>Mit <img alt="Weitere Optionen" src="../images/user/docs/symbol_more.png" /> und dem Untermenü <strong><em>Standard-Modus</em></strong> wechseln Sie zurück in die Standard-Filtersuche. </li>
+</ul>
+<p><img alt="Umschalten in einfache Suche" src="../images/user/docs/umschalten_option.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Ein Umschalten mit der Übernahme der Suchkriterien ist nur von der einfachen Suche in die erweiterte Suche möglich, da im umgekehrten Fall die erweiterte Suche oft zu komplex ist, um als einfache Suche abgebildet zu werden.</p>
+</p>
+</div>
+<p>Mit der erweiterten Suche können Sie strukturierte Suchanfragen nach Dokumenten durchführen.<br>
+Bei der erweiterten Suche verwenden Sie für die Suchanfrage ein Feld, einen Operator und einen oder mehrere Werte:</p>
+<p><img alt="Erweiterte Suche" src="../images/user/docs/erweiterte_suche_syntax.png" /></p>
+<h3 id="filter-speichern">Filter speichern<a class="headerlink" href="#filter-speichern" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Nachdem Sie die Suchanfrage fertiggestellt haben, können Sie über <img alt="Plus" src="../images/user/docs/symbol_more.png" /> und das Untermenü <strong><em>Filter speichern</em></strong> Ihre Suchabfrage speichern, um sie zu einem anderen Zeitpunkt wiederzuverwenden.</p>
+<p><img alt="Filter speichern" src="../images/user/docs/filter_speichern_option.png" /></p>
+</li>
+<li>
+<p>Geben Sie Ihrem neuen Filter einen Namen und klicken Sie auf <strong>Speichern</strong>.</p>
+<p><img alt="Filter speichern" src="../images/user/docs/filter_speichern.png" /></p>
+</li>
+</ul>
+<h3 id="gespeicherte-filter-anwenden">Gespeicherte Filter anwenden<a class="headerlink" href="#gespeicherte-filter-anwenden" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Wenden Sie bereits gespeicherte Filter an, indem Sie auf <strong><em>Filter</em></strong> und anschließend auf den Namen des gewünschten Filters klicken:</p>
+<p><img alt="Filter anwenden" src="../images/user/docs/filter_anwenden.png" /></p>
+</li>
+</ul>
+<h3 id="gespeicherte-filter-loschen">Gespeicherte Filter löschen<a class="headerlink" href="#gespeicherte-filter-loschen" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Wenn Sie einen Filter nicht mehr brauchen, können Sie diesen löschen.  Führen Sie hierzu <strong><em>Filter</em></strong> und dann <strong><em>Filter verwalten</em></strong> aus.</p>
+<p><img alt="Filter verwalten" src="../images/user/docs/filter_verwalten_option.png" /></p>
+</li>
+<li>
+<p>Klicken Sie in der Übersicht der gespeicherten Filter auf <strong>Löschen</strong> hinter dem gewünschten Filter.</p>
+<p><img alt="Filter speichern" src="../images/user/docs/gespeicherte_filter.png" /></p>
+</li>
+</ul>
+<hr />
+<h2 id="arbeiten-mit-dokumenten">Arbeiten mit Dokumenten<a class="headerlink" href="#arbeiten-mit-dokumenten" title="Permanent link">#</a></h2>
+<p>Die Dokumente, die in einer Rubrik enthalten sind, werden in einer Tabelle aufgelistet. Informationen zu jedem Dokument und mögliche Aktionen sind jeweils in Spalten hinterlegt.</p>
+<p><img alt="Vorschau im Dokumenten-Browser" src="../images/user/docs/dokumentenbrowser_1.png" /></p>
+<ul>
+<li>Wenn Sie eine Spalte in der Tabelle hinzufügen möchten, nutzen Sie die Option <strong><em>Ansicht</em></strong> und aktivieren Sie anschließend die Checkbox vor der gewünschten Spalte, um diese einzublenden. </li>
+</ul>
+<p>Auch die Handlungsoptionen in der Dropdown-Box der Spalte <strong><em>Aktionen</em></strong> für ein Dokument werden auf diese Weise aktiviert. Sollte also bei einer der folgenden Aktionen, die Aktion nicht sichtbar sein, müssen Sie zunächst über <strong><em>Ansicht</em></strong> den Eintrag einblenden, indem Sie die entsprechende Checkbox aktivieren. </p>
+<p><img alt="Spalten auswählen" src="../images/user/docs/spalten_auswaehlen.png" /></p>
+<ul>
+<li>Ändern Sie optional die Anordnung einzelner Spalten innerhalb der Tabelle, indem Sie diese per <em>Drag &amp; Drop</em> verschieben. Alternativ können Sie die Anordnung der Spalten und der in ihnen angebotenen Auswahlfelder unter <strong><em>Ansicht / Anpassen</em></strong> ändern. Nutzen Sie auch hier <em>Drag &amp; Drop</em>, um die Spalten oder Felder an die gewünschte Position zu ziehen.</li>
+</ul>
+<p><strong>In Spalten angebotene Informationen:</strong></p>
+<ul>
+<li>
+<p><a href="./#arbeiten-mit-dokumenten"><strong><em>Aktionen</em></strong></a>: In einer Drop-Down-Box werden die für das Dokument möglichen Handlungsoptionen angeboten.</p>
+</li>
+<li>
+<p><strong><em>Icon</em></strong>: Mit einem Klick auf das in der Spalte angezeigte Symbol öffnet sich das Dokument in einem Vorschaufenster.</p>
+</li>
+<li>
+<p><strong><em>Titel</em></strong>: Enthält den Namen des Dokuments.</p>
+</li>
+<li>
+<p><strong><em>Dateiname</em></strong>: Liest den Dateinamen des Dokuments aus. Wenn Sie den Pfad anklicken, öffnet sich das Dokument in der Vorschau.</p>
+</li>
+<li>
+<p><strong><em>Verzeichnis</em></strong>: Zeigt den Pfad im Asset Management an.</p>
+</li>
+<li>
+<p><strong><em>Rubrik</em></strong>: Ruft die Vorschau des Dokuments in einem separaten Fenster auf.</p>
+</li>
+<li>
+<p><strong><em>Vorschau</em></strong>: Calls the preview of the document in a separate window.</p>
+</li>
+<li>
+<p><strong><em>URI</em></strong>: Enthält den Pfad und Dateinamen des Dokuments. </p>
+</li>
+<li>
+<p><strong><em>Aktuell</em></strong>: Ein Symbol (grünes Häkchen oder rotes Ausrufungszeichen) zeigt in dieser Spalte an, ob das Dokument auf dem Zielsystem mit dem auf dem Entwicklungssystem übereinstimmt. Mit einem Klick auf das Symbol erhalten Sie Informationen zum Publikationsstatus:</p>
+<p><img alt="Dialogfenster &quot;Publikationsstatus&quot;" src="../images/user/docs/publikationsstatus.png" /></p>
+<p>Die erste Spalte enthält eine Liste aller Copy-Seiten des Dokuments. In den weiteren Spalten werden die verfügbaren Zielsysteme mit dem jeweiligen Status angezeigt:</p>
+<ul>
+<li><strong><em>Aktuell</em></strong>: Die Dokumentenversionen auf dem Entwicklungssystem und auf dem Zielsystem stimmen überein.</li>
+<li><strong><em>Veraltet</em></strong>: Die Dokumentenversion auf dem Zielsystem ist älter als die auf dem Entwicklungssystem.</li>
+<li><strong><em>N/A</em></strong>: Es sind keine Informationen verfügbar.</li>
+<li><strong><em>Manuell gelöscht</em></strong>: Das Dokument wurde manuell vom Zielsystem gelöscht.</li>
+<li><strong><em>Bedingung nicht erfüllt</em></strong>: Dieser Status erscheint, wenn der Freischalttrigger für das entsprechende Zielsystem definiert ist, aber das Dokument (oder die Copy-Seite) nicht den Bedinungen entspricht und folglich nicht freigeschaltet wird.</li>
+<li><strong><em>Fehlt auf Develop</em></strong>: Das Dokument wurde auf dem Entwicklungssystem gelöscht, ist jedoch noch auf dem Zielsystem vorhanden.</li>
+</ul>
+</li>
+<li>
+<p><strong><em>Zuletzt beendet</em></strong>: Zeitpunkt zu dem der Dokumenten-Workflow zuletzt beendet wurde.</p>
+</li>
+<li>
+<p><strong><em>Veröffentlichungsdatum</em></strong>: Das aktuelle Veröffentlichungsdatum.</p>
+</li>
+<li>
+<p><strong><em>Ablaufdatum</em></strong>: Zeitpunkt, zu dem die Gültigkeit des Dokuments erlischt.</p>
+</li>
+<li>
+<p><strong><em>Wiedervorlagedatum</em></strong>: Zeitpunkt, zu dem das Dokument erneut vorgelegt werden soll.</p>
+</li>
+<li>
+<p><strong><em>Erzeugt von</em></strong>: Ersteller des Dokuments.</p>
+</li>
+<li>
+<p><strong><em>Letzter Editor</em></strong>: Letzter Bearbeiter des Dokuments.</p>
+</li>
+<li>
+<p><strong><em>Live-URI</em></strong>: Diese Spalte enthält den Dokumentenpfad. Wenn Sie diesen anklicken, öffnet sich das Dokument im Vorschaumodus.</p>
+</li>
+<li>
+<p><strong><em>Erstellungsdatum</em></strong>: Zeitpunkt zu dem das Dokument erstellt wurde.</p>
+</li>
+</ul>
+<hr />
+<p>Für jedes Dokument können Sie in der gleichnamigen Spalte bestimmte Aktionen durchführen. </p>
+<ul>
+<li>Wählen Sie in der Drop-Down-Box in der Spalte <strong><em>Aktionen</em></strong> die gewünschte Option aus.</li>
+</ul>
+<p><img alt="Aktionen" src="../images/user/docs/aktionen.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Fehlt eine der im Folgenden beschriebenen Aktionen, aktivieren Sie im Menü <strong><em>Ansicht</em></strong> die Checkbox vor dem Aktionsnamen.</p>
+</p>
+</div>
+<h3 id="informationen-zu-dokument-ansehen">Informationen zu Dokument ansehen<a class="headerlink" href="#informationen-zu-dokument-ansehen" title="Permanent link">#</a></h3>
+<p>Über die Aktion <strong><em>Info</em></strong> in der Drop-Down-Box der gleichnamigen Spalte erreichen Sie in einem eigenen Dialog auf einen Blick alle Informationen zu dem gewählten Dokument, die in den anderen Spalten enthalten sind. </p>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Info</strong> aus.</li>
+</ul>
+<p><img alt="Dokumenten-Information" src="../images/user/docs/aktionen_info.png" /></p>
+<ul>
+<li>Klicken Sie auf <strong>x</strong>, um den Dialog wieder zu schließen.</li>
+</ul>
+<h3 id="dokument-in-der-vorschau-ansehen">Dokument in der Vorschau ansehen<a class="headerlink" href="#dokument-in-der-vorschau-ansehen" title="Permanent link">#</a></h3>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Vorschau</strong> aus. </li>
+</ul>
+<p><em>Zu dem gewählten Dokument wird in einem eigenen Fenster die Ausgabeansicht des Dokuments angezeigt.</em></p>
+<h3 id="dokument-reimportieren">Dokument reimportieren<a class="headerlink" href="#dokument-reimportieren" title="Permanent link">#</a></h3>
+<p>Reimportierte Dokumente werden vom Zielsystem an den ersten Schritt des Original-Workflows gesetzt. Falls der Workflow in der Zwischenzeit verändert wurde, durchlaufen reimportierte Dokumente den neuen Workflow.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Falls das importierte Dokument sich im Workflow befindet (und somit auch auf dem Schreibtisch liegt), ist diese Reimport-Option nicht möglich. Beim Versuch das Dokument zu reimportieren, erhalten Sie die Fehlermeldung "Im Workflow".</p>
+</p>
+</div>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. </li>
+<li>Führen Sie die Option <strong>Reimportieren</strong> aus. </li>
+</ul>
+<p><em>Der Reimport wird durchgeführt. Sie gelangen zum ersten Workflow-Schritt des Dokuments, z.B. Meta-Edit.</em></p>
+<h3 id="dokument-loschen">Dokument löschen<a class="headerlink" href="#dokument-loschen" title="Permanent link">#</a></h3>
+<p>Sie können ein oder mehrere Dokumente vom Entwicklungssystem löschen.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Zum Löschen eines Dokuments benötigen Sie sowohl die Schreib- als auch die Löschrechte für die entsprechende Kategorie.         </p>
+</p>
+</div>
+<ul>
+<li>
+<p>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Löschen</strong> aus.</p>
+</li>
+<li>
+<p>Um mehrere Dokumente zu löschen, aktivieren Sie die Checkboxen vor den Dokumenten, um diese auszuwählen, und wählen Sie <strong>Löschen</strong> in der Funktionsleiste unter der Tabelle.</p>
+</li>
+</ul>
+<p><img alt="Dokument löschen" src="../images/user/docs/loeschen_mehrere.png" /></p>
+<ul>
+<li>
+<p>Wählen Sie, ob Sie die Dokumente aus dem Workflow oder aus dem Archiv löschen möchten.</p>
+</li>
+<li>
+<p>Bestätigen Sie die Auswahl mit <strong>Löschen</strong>.</p>
+</li>
+</ul>
+<p><img alt="Dokument löschen" src="../images/user/docs/dokument_loeschen.png" /></p>
+<p><em>Wurde das Dokument erfolgreich gelöscht, erscheint ein Statusreport mit grünem Balken. Wurde das Dokument nicht gelöscht, erscheint ein roter Balken. Zu beiden Status erhalten Sie weitere Informationen.</em></p>
+<h3 id="template-reparser-starten">Template-Reparser starten<a class="headerlink" href="#template-reparser-starten" title="Permanent link">#</a></h3>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Reparsen</strong> aus.</li>
+</ul>
+<p><em>Der Statusbericht des Template-Reparsers wird geöffnet.</em></p>
+<p><img alt="Statusbericht Reparser" src="../images/user/docs/reparsen_bericht.png" /></p>
+<h3 id="dokumenteigenschaften-andern">Dokumenteigenschaften ändern<a class="headerlink" href="#dokumenteigenschaften-andern" title="Permanent link">#</a></h3>
+<p>Dokumenteigenschaften ändern Sie über die Metafelder, die sich in den Details des jeweiligen Dokuments befinden.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Der <em>imperia</em>-Administrator kann Metafelder zum Editieren freigeben oder sperren.</p>
+</p>
+</div>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Metaviewer</strong> aus.</li>
+</ul>
+<p>Im Dialogfenster <em>Details</em> sehen Sie die Metainformationen des Dokuments:</p>
+<p><img alt="Dokumenten-Information" src="../images/user/docs/dokument_metafelder.png" /></p>
+<ul>
+<li>Tragen Sie die gewünschten Werte in den Eingabefeldern ein oder ändern Sie bestehende Werte.</li>
+<li>Fügen Sie ein weiteres Feld innerhalb des Metafelds hinzu, indem Sie auf <strong>Wert anhängen</strong> in der Dropdown-Box hinter einem Wert klicken.</li>
+<li>Löschen Sie gegebenenfalls ein Metafeld, indem Sie in der Dropdown-Box die Option <strong>Metafeld löschen</strong> ausführen.</li>
+<li>Verschieben Sie die Werte innerhalb eines Metafelds, indem Sie in der Dropdown-Box die Optionen <strong>Nach oben</strong>, <strong>Nach untern</strong> oder <strong>Ans Ende</strong> wählen.</li>
+<li>
+<p>Legen Sie ein neues Metafeld für das Dokument an, indem Sie auf <strong>Neues Metafeld</strong> oben klicken. Geben Sie in dem sich öffnenden Dialog im Eingabefeld <strong><em>Metafeld</em></strong> den Namen und dann einen Wert ein. Klicken Sie anschließend auf <strong>Erzeugen</strong>, um das Metafeld hinzuzufügen.</p>
+<p><img alt="Dokumenten-Information" src="../images/user/docs/dokument_metafelder_2.png" /></p>
+</li>
+<li>
+<p>Sichern Sie Ihre Angaben, indem Sie auf <strong>Speichern</strong> klicken.</p>
+</li>
+</ul>
+<h3 id="referenzen-anzeigen">Referenzen anzeigen<a class="headerlink" href="#referenzen-anzeigen" title="Permanent link">#</a></h3>
+<p>Sie können sich ansehen, ob das aktuelle Dokument in einem anderen Dokument referenziert wird.</p>
+<ul>
+<li>
+<p>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>Referenzen</strong> aus.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Beachten Sie, dass es sich bei diesen Referenzen nur um Referenzen in anderen Dokumenten handelt und nicht um Assets, auf die das aktuelle Dokument referenziert. Referenzierte Assets im Dokument können Sie in der Spalte <em>Info</em> im Punkt <em>Referenzen</em> einsehen. <comment: aus https://jira.pirobase.de/jira/browse/IMPSUP-3093></p>
+</p>
+</div>
+</li>
+</ul>
+<h3 id="anderungen-anzeigen">Änderungen anzeigen<a class="headerlink" href="#anderungen-anzeigen" title="Permanent link">#</a></h3>
+<p>Wählen Sie diese Option, um die Unterschiede zwischen der aktuellen Version des Dokuments und der zuletzt beendeten Version anzuzeigen. Die Funktion <a href="../user.documents/#dokument-in-der-vorschau-ansehen"><strong><em>Änderungen verfolgen</em></strong></a> ist Teil der Vorschau.</p>
+<h3 id="dokument-erneut-veroffentlichen">Dokument (erneut) veröffentlichen<a class="headerlink" href="#dokument-erneut-veroffentlichen" title="Permanent link">#</a></h3>
+<p>Mit dieser Aktion können Sie Dokumente und Assets veröffentlichen. Für Assets ist diese Option besonders relevant: Hierüber können Assets unabhängig von Dokumenten veröffentlicht werden. </p>
+<ul>
+<li>Wählen Sie die gewünschten Dokumente aus, indem Sie die Checkboxen davor aktivieren.</li>
+<li>Führen Sie die Option <strong>Veröffentlichen</strong> unter der Dokumententabelle aus.</li>
+</ul>
+<p><img alt="Dokumente veröffentlichen" src="../images/user/docs/dokument_veroeffentlichen.png" /></p>
+<ul>
+<li>Bestätigen Sie die erscheinende Sicherheitsabfrage mit <strong>Veröffentlichen</strong>.</li>
+</ul>
+<p>Diese Funktion kann auch im <a href="../user.mam/#asset-veroffentlichen">MAM</a> genutzt werden.</p>
+<h3 id="dokument-auf-dem-live-system-loschen">Dokument auf dem Live-System löschen<a class="headerlink" href="#dokument-auf-dem-live-system-loschen" title="Permanent link">#</a></h3>
+<p>Nutzen Sie diese Option, um ein Dokument von allen Live-Systemen zu entfernen. Das Dokument ist anschließend weiterhin im Dokumenten-Browser vorhanden. Wählen Sie diese Option also, wenn Sie ein Dokument nur temporär entfernen möchten.  </p>
+<ul>
+<li>Führen Sie für ein einzelnes Dokument die Option <strong>Live-Löschen</strong> in der Dropdown-Box der Spalte <strong><em>Aktionen</em></strong> aus.</li>
+<li>Wenn Sie mehrere Dokumente auf dem Live-System löschen möchten, wählen Sie die gewünschten Dokumente aus, indem Sie die Checkboxen davor aktivieren.</li>
+<li>Führen Sie die Option <strong>Live-Löschen</strong> unter der Dokumententabelle aus.</li>
+</ul>
+<p><img alt="Auf dem Live-System löschen" src="../images/user/docs/dokument_live_loeschen.png" /></p>
+<ul>
+<li>Bestätigen Sie die erscheinende Sicherheitsabfrage mit <strong>Live-Löschen</strong>.</li>
+</ul>
+<p>Wenn Sie ein Dokument auch vom Dev-System löschen möchten, nutzen Sie die Option <a href="./#dokument-loschen"><strong><em>Dokumente löschen</em></strong></a>. In diesem Fall ist das Dokument nur noch im Archiv vorhanden.</p>
+<h3 id="historie-eines-dokuments-ansehen">Historie eines Dokuments ansehen<a class="headerlink" href="#historie-eines-dokuments-ansehen" title="Permanent link">#</a></h3>
+<p>Alle Stationen des Dokuments, die dieses durchlaufen hat, sowie die Aktionen, die mit dem Dokument ausgeführt wurden, werden in der so genannten "History" des Dokuments festgehalten. Jeder Benutzer, der das Dokument bearbeitet, kann Einträge in der History anlegen oder bestehende Einträge bearbeiten, um anderen Benutzern Hinweise zu geben oder Kommentare zu hinterlassen.</p>
+<ul>
+<li>Öffnen Sie in der Zeile des Dokuments in der Spalte <strong><em>Aktionen</em></strong> die Drop-Down-Liste mit den Handlungsoptionen für das Dokument. Führen Sie die Option <strong>History</strong> aus.</li>
+</ul>
+<p><em>Die History des Dokuments wird in einem eigenen Dialog schreibgeschützt angezeigt.</em></p>
+<p><img alt="History des Dokuments" src="../images/user/docs/history.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.desktop/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Arbeiten mit dem Schreibtisch
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.mam/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Medien verwalten
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

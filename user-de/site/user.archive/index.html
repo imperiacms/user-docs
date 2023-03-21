@@ -1,0 +1,844 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Arbeiten mit dem Archiv - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aufbau-und-funktionsweise-des-archiv-browsers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Arbeiten mit dem Archiv
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Arbeiten mit dem Archiv
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Arbeiten mit dem Archiv
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-archiv-browsers" class="md-nav__link">
+    Aufbau und Funktionsweise des Archiv-Browsers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumentversion-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument/Version in der Vorschau ansehen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historie-eines-dokuments-ansehen" class="md-nav__link">
+    Historie eines Dokuments ansehen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-aus-dem-archiv-wiederherstellen" class="md-nav__link">
+    Version aus dem Archiv wiederherstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aus-dem-archiv-loschen" class="md-nav__link">
+    Aus dem Archiv löschen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anderungen-nachverfolgen" class="md-nav__link">
+    Änderungen nachverfolgen
+  </a>
+  
+    <nav class="md-nav" aria-label="Änderungen nachverfolgen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anderungsverfolgung-uber-das-archiv" class="md-nav__link">
+    Änderungsverfolgung über das Archiv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungsverfolgung-uber-den-schreibtisch" class="md-nav__link">
+    Änderungsverfolgung über den Schreibtisch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungen-beim-genehmigen-anzeigen" class="md-nav__link">
+    Änderungen beim Genehmigen anzeigen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.formgenerator/" class="md-nav__link">
+      Formulare erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-archiv-browsers" class="md-nav__link">
+    Aufbau und Funktionsweise des Archiv-Browsers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumentversion-in-der-vorschau-ansehen" class="md-nav__link">
+    Dokument/Version in der Vorschau ansehen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historie-eines-dokuments-ansehen" class="md-nav__link">
+    Historie eines Dokuments ansehen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-aus-dem-archiv-wiederherstellen" class="md-nav__link">
+    Version aus dem Archiv wiederherstellen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aus-dem-archiv-loschen" class="md-nav__link">
+    Aus dem Archiv löschen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anderungen-nachverfolgen" class="md-nav__link">
+    Änderungen nachverfolgen
+  </a>
+  
+    <nav class="md-nav" aria-label="Änderungen nachverfolgen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anderungsverfolgung-uber-das-archiv" class="md-nav__link">
+    Änderungsverfolgung über das Archiv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungsverfolgung-uber-den-schreibtisch" class="md-nav__link">
+    Änderungsverfolgung über den Schreibtisch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anderungen-beim-genehmigen-anzeigen" class="md-nav__link">
+    Änderungen beim Genehmigen anzeigen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Arbeiten mit dem Archiv</h1>
+                
+                <p>Im Archiv werden alle Änderungen abgelegt, die ein Benutzer an einem Dokument vorgenommen hat. So ist es möglich, jeden Bearbeitungsstand eines Dokuments wiederherzustellen, den ein Benutzer auf dem Weg durch den Workflow gespeichert hat. </p>
+<p>Jede Dokumentversion hat einen Zeitstempel und kann jederzeit von einem berechtigten Benutzer wiederhergestellt werden. Sie können <a href="./#anderungen-nachverfolgen">Änderungen auch nachverfolgen</a>.</p>
+<p>Die Struktur des Archivs entspricht der als Baum dargestellten Rubrikenstruktur.</br>Auch Media-Assets werden archiviert und können hierüber oder direkt im <a href="../user.mam/">MAM</a> aufgerufen werden. </p>
+<p>Ändert ein Benutzer ein Dokument und speichert dieses, dann wird diese Version des Dokuments im zugehörigen Dokumenten-Ast des Archivs abgelegt. Wird dieses Dokument zehn Mal editiert, erscheinen im Archiv entsprechend zehn unterschiedliche Versionen, die alle wiederhergestellt werden können.</p>
+<p>Dokumentversionen aus dem Archiv können wieder in den Workflow importiert oder gelöscht werden.</p>
+<p>Wenn Sie ein Dokument löschen, werden gleichzeitig auch alle gespeicherten Versionen dieses Dokuments gelöscht. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warnung</p>
+<p>Diesen Vorgang können Sie nicht rückgängig machen.</p>
+</div>
+<h3 id="aufbau-und-funktionsweise-des-archiv-browsers">Aufbau und Funktionsweise des Archiv-Browsers<a class="headerlink" href="#aufbau-und-funktionsweise-des-archiv-browsers" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Öffnen Sie das Archiv über das Menü <strong><em>Dokumente &gt; Archiv</em></strong>.</p>
+</li>
+<li>
+<p>Klicken Sie alternativ im <a href="../user.docbrowser/"><strong>Dokumenten-Browser</strong></a>auf die die gewünschte Rubrik und führen Sie im Kontextmenü der Rubrik die Option <strong> Archiv</strong> aus.</p>
+</li>
+</ul>
+<p><img alt="Beispiel eines Rubrikenbaums im Archiv" src="../images/user/docs/dokumenten_archiv_1.png" /></p>
+<p>Im oberen Bereich können Sie die Anzeige der Archivversionen mit Hilfe von <strong>Filtern</strong> einschränken:</p>
+<ul>
+<li>
+<p><strong><em>Alle archivierten Versionen anzeigen</em></strong>: </br> 
+Ist diese Einstellung gewählt, sehen Sie alle Versionen eines Dokuments, die beim Durchlaufen des Workflows entstehen, einschließlich der fertiggestellten (Status "beendet"). </br>Bei Workflows mit vielen Arbeitsschritten und Dokumenten mit langer Lebensdauer können sich sehr viele Versionen ansammeln. Entsprechend lange kann es dauern, bis der Browser den Rubrikenbaum komplett aufgebaut hat.</p>
+</li>
+<li>
+<p><strong><em>Beendete Archiv-Versionen anzeigen</em></strong>:  </br>
+Wählen Sie diese Einstellung, wenn Sie nur die Versionen eines Dokuments sehen möchten, die den Workflow abschließend durchlaufen haben. Diese Versionen enthalten ein "(beendet)" am Ende der Zeile, siehe obige Abbildung. Diese Einstellung empfiehlt sich auch bei Dokumenten mit umfangreichen Workflows oder langer Lebensdauer.</p>
+</li>
+<li>
+<p><strong><em>Aktuell veröffentlichte Dokumente anzeigen</em></strong>:  </br>
+Wählen Sie diese Einstellung, wenn Sie die Liste der angezeigten Versionen zusätzlich auf diejenigen einschränken möchten, die aktuell auf einem Zielsystem online gestellt sind.</p>
+</li>
+</ul>
+<p>Der <strong>Rubrikenbaum</strong> wird ausgehend von der Wurzelrubrik abgebildet. <br>(Unter-)Rubriken oder enthaltene Dokumente lassen sich durch Anklicken von <i class="fa fa-folder"></i> öffnen.</p>
+<p>Die in einer Rubrik enthaltenen <strong>Dokumente</strong> werden ebenfalls zeilenweise angezeigt.</p>
+<p><img alt="Beispiel eines Rubrikenbaums im Archiv" src="../images/user/docs/dokumenten_archiv_2.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Damit der Aufbau der Archivseite schnellstmöglich geschehen kann, zeigt der Archiv-Browser immer nur den Inhalt der Rubrik an, in der Sie sich gerade befinden, sowie die Knotenpunkte bzw. Rubriken, die diese mit höheren Ebenen des Rubrikenbaums verbinden.</br>Klicken Sie auf <strong>START</strong>, werden Ihnen wieder alle Hauptrubriken angezeigt.</p>
+</div>
+<ul>
+<li>Klicken Sie auf ein Dokument, um alle archivierten Versionen des Dokuments einzublenden.</li>
+</ul>
+<p><img alt="Beispiel eines Rubrikenbaums im Archiv" src="../images/user/docs/dokumenten_archiv_3.png" /></p>
+<h3 id="dokumentversion-in-der-vorschau-ansehen">Dokument/Version in der Vorschau ansehen<a class="headerlink" href="#dokumentversion-in-der-vorschau-ansehen" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Um das Dokument in der Dokumentenvorschau anzeigen zu lassen, klicken Sie auf <strong><em>Vorschau</em></strong> in der Dropdown-Box hinter dem Dokument. <br>
+    <em>Es wird Ihnen in der Vorschau die zuletzt beendete Version dieses Dokuments angezeigt.</em></p>
+<p><img alt="Vorschau Dokument" src="../images/user/docs/archiv_kontext_dokument.png" /></p>
+</li>
+<li>
+<p>Um eine bestimmte Version eines Dokuments in der Vorschau anzeigen zu lassen, klicken Sie auf <strong><em>Vorschau</em></strong> in der Dropdown-Box hinter der Version oder klicken Sie direkt auf die Version.</p>
+<p><img alt="Vorschau Dokument" src="../images/user/docs/archiv_kontext_version.png" /></p>
+</li>
+<li>
+<p>Um ein bestimmtes Dokument oder eine bestimmte Version auszuwählen, klicken Sie in die Checkbox vor den entsprechenden Namen. Führen Sie anschließend optional eine der im Folgenden beschriebenen Aktionen aus. </p>
+</li>
+</ul>
+<h3 id="historie-eines-dokuments-ansehen">Historie eines Dokuments ansehen<a class="headerlink" href="#historie-eines-dokuments-ansehen" title="Permanent link">#</a></h3>
+<ul>
+<li>Nutzen Sie die Option <strong>History</strong>, um die <a href="../user.desktop/#historie-eines-dokuments-bearbeiten">Dokumenten-History</a> des Dokuments zu öffnen.</li>
+</ul>
+<p><img alt="History" src="../images/user/docs/archiv_kontext_dokument.png" /></p>
+<p><em>Die History wird schreibgeschützt ausgelesen.</em></p>
+<ul>
+<li>Mit <strong>Archiv</strong> kehren Sie wieder ins Archiv zurück.</li>
+</ul>
+<h3 id="version-aus-dem-archiv-wiederherstellen">Version aus dem Archiv wiederherstellen<a class="headerlink" href="#version-aus-dem-archiv-wiederherstellen" title="Permanent link">#</a></h3>
+<p>Alle Änderungen eines Dokuments, die durch einen Benutzer getätigt wurden, werden im Archiv gespeichert. </p>
+<p>Dokumente, die den Workflow durchlaufen haben, erkennen Sie am Status "(beendet)" hinter der entsprechenden Dokumentversion. Beendete Dokumente befinden sich entweder noch in der Veröffentlichungsliste auf dem Entwicklungssystem oder bereits auf einem Zielsystem, wenn Sie bereits veröffentlicht wurden.</p>
+<p>Sie können jede Version des Dokuments importieren, um sie erneut zu bearbeiten und zu veröffentlichen .</p>
+<div class="admonition warning">
+<p class="admonition-title">Warnung<p>Die importierten Dokumente werden wieder an den Anfang des für sie vorgesehenen Workflows gesetzt und müssen den Workflow durchlaufen, bevor Sie wieder veröffentlicht werden können. Benutzen Sie diese Einstellung also mit Sorgfalt. </p>
+</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Wird ein Dokumenten-Ast zum Import ausgewählt, dann wird automatisch die jüngste bzw. die freigeschaltete Version importiert.</p>
+</div>
+<p><span class="steps">1.</span> <strong>Dokumente/Versionen für den Import auswählen</strong></p>
+<ul>
+<li>Um ein Dokument zu importieren, d.h. die zuletzt beendete Version dieses Dokuments, klicken Sie in der Dropdown-Box hinter dem Dokumenteneintrag auf <strong>Importieren</strong>.</li>
+<li>Um eine bestimmte Vorgängerversion eines Dokuments zu importieren, klicken Sie in der Zeile der gewünschten Version in der Dropdown-Box auf <strong>Importieren</strong>.</li>
+<li>Um mehrere Dokumente/Versionen gleichzeitig zu importieren, markieren Sie die Checkboxen vor den Dokumenten/Versionen. Klicken Sie anschließend auf den Button <strong>Importieren</strong> unter der Liste.</li>
+<li>
+<p>Um alle Dokumente/Versionen gleichzeitig zu importieren, wählen Sie die Checkbox <em>Alle auswählen</em>. Klicken Sie anschließend auf den Button <strong>Importieren</strong> unter der Liste.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Mit der Option <em>Alle auswählen</em> landet gegebenenfalls eine große Anzahl an Dokumenten auf den Schreibtischen aller Benutzer.</p>
+</p>
+</div>
+</li>
+</ul>
+<p><span class="steps">2.</span> <strong>Dokumente/Versionen importieren</strong></p>
+<p>Wenn mehrere Dokumente oder Versionen importiert werden, wird zunächst ein Statusreport mit einer Liste der zum Import anstehenden Dokumentversionen angezeigt.</p>
+<ul>
+<li>Bestätigen Sie den Vorgang mit <strong>Importieren</strong>.</li>
+</ul>
+<p><em>Neben jedem Eintrag ist im Statusreport nun ein </em><em>Bearbeiten</em><em>-Button zu finden.</em> </p>
+<p><img alt="Versionen importieren" src="../images/user/docs/archiv_import_bericht.png" /></p>
+<ul>
+<li>Wählen Sie das gewünschte Dokument zum Bearbeiten aus und klicken Sie auf <strong>Bearbeiten</strong>. </br><em>Sie gelangen zum ersten Workflow-Schritt.</em></li>
+</ul>
+<p>Wenn nur ein einzelnes Dokument importiert wird, gelangen Sie direkt zum ersten Workflow-Schritt und können das Dokument sofort bearbeiten.</p>
+<h3 id="aus-dem-archiv-loschen">Aus dem Archiv löschen<a class="headerlink" href="#aus-dem-archiv-loschen" title="Permanent link">#</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warnung<ul>
+<li>Dokumente, die aus dem Archiv gelöscht wurden, sind unwiederbringlich verloren. Sobald Sie ein Dokument aus dem Archiv löschen, werden auch alle Versionen dieses Dokuments gelöscht.</li>
+<li>Im Gegensatz zu vorherigen Versionen von <em>imperia</em> ist es seit Version 9 nun nicht mehr möglich, dass Dokumente auf dem Zielsystem zurückbleiben, für die es keine Version auf dem Entwicklungssystem gibt.</li>
+</ul>
+</p>
+</div>
+<ul>
+<li>Wenn Sie ein Dokument oder eine Dokumentversion aus dem Archiv löschen möchten, klicken Sie in der Dropdown-Box hinter dem Eintrag auf <strong>Löschen</strong>.</li>
+<li>Wenn Sie mehrere Dokumente oder Dokumentversionen komplett aus dem Archiv löschen möchten, aktivieren Sie die entsprechenden Checkboxen vor den jeweiligen Dokumenten und Versionen oder wählen Sie alternativ die Checkbox <em>Alle auswählen</em>. Klicken Sie anschließend auf <strong>Löschen</strong> unter der Liste. </br> <em>Es wird ein Statusreport angezeigt</em>.</li>
+<li>Bestätigen Sie dort den Löschvorgang mit <strong>Löschen</strong> oder kehren Sie mit <strong>Abbrechen</strong> zurück zum Archiv-Browser.</li>
+</ul>
+<hr />
+<h2 id="anderungen-nachverfolgen">Änderungen nachverfolgen<a class="headerlink" href="#anderungen-nachverfolgen" title="Permanent link">#</a></h2>
+<p><em>imperia</em> bietet die Möglichkeit, Änderungen nachzuverfolgen, die an einem Dokument im Laufe seines Bestehens gemacht wurden. Hierzu können Sie zwei verschiedene Versionen eines Dokuments vergleichen. Neu hinzugefügte, geänderte oder gelöschte Texte oder Bilder werden farbig gekennzeichnet. Geänderte Bilder werden mit einem farbigen Rahmen dargestellt und mit einem Link versehen, der ein weiteres Fenster öffnet, in dem das alte und das neue Bild nebeneinander angezeigt werden.</p>
+<p>Die Farben, die für die Darstellung der Änderungen verwendet werden, können systemweit oder über das verwendete Template definiert werden.</p>
+<p>Die Änderungen an einem Dokument können über das Archiv, über eine eigene Spalte des Schreibtischs oder über das Menü des Genehmigen-Schritts im Workflow verfolgt werden.</p>
+<h3 id="anderungsverfolgung-uber-das-archiv">Änderungsverfolgung über das Archiv<a class="headerlink" href="#anderungsverfolgung-uber-das-archiv" title="Permanent link">#</a></h3>
+<p><span class="steps">1.</span> <strong><em>Änderungen</em>-Dialog öffnen</strong></p>
+<ol>
+<li>Öffnen Sie das Archiv über das Menü <strong><em>Dokumente &gt; Archiv</em></strong>.</li>
+<li>
+<p>Klicken Sie in der Dropdown-Box am Ende der Zeile des gewünschten Dokuments auf <strong><em>Änderungen darstellen</em></strong>.</p>
+<p><img alt="Änderungen darstellen" src="../images/user/docs/archiv_kontext_dokument.png" /></p>
+</li>
+</ol>
+<p>Alle vorhandenen Versionen des entsprechenden Dokuments werden in einer Liste dargestellt.<br>
+ Das <strong><em>Datum</em></strong> der letzten Bearbeitung wird auf auf der linken Seite angezeigt, der <strong><em>Status</em></strong> der jeweiligen Dokumentversion auf der rechten Seite.</p>
+<p><img alt="Versions-Auswahl Dialog" src="../images/user/docs/dlg_track_changes.png" /></p>
+<ul>
+<li>Schränken Sie die Liste optional mit dem <strong><em>Versionsfilter</em></strong> auf Ihre eigenen Versionen oder auf die bereits beendeten Dokumente ein.</li>
+<li>Geben Sie ein, wie viele Versionen pro Seite angezeigt werde sollen.</li>
+</ul>
+<p><span class="steps">2.</span> <strong>Versionen auswählen</strong></p>
+<ol>
+<li>Wählen Sie zunächst im Feld <strong><em>Template</em></strong> oben links zwischen dem Template, mit dem das Dokument erzeugt wurde, und einer tabellarischen Ansicht.</br>Die tabellarische Ansicht bietet die Möglichkeit, auch Änderungen in Meta-Variablen zu sehen, die keinen darstellbaren Inhalt haben und nicht lesbar im Dokument erscheinen. Hierzu zählt zum Beispiel die Meta-Variable <code>directory</code>, die das Zielverzeichnis des Dokuments enthält. In der tabellarischen Ansicht können Sie sich nur die Felder anzeigen lassen, die geändert wurden.</li>
+<li>Legen Sie im Feld <strong><em>Modus</em></strong> fest, wie die Anzeige der Änderung gestaltet werden soll (<em>HTML/Quelltext</em>).</li>
+<li>Wählen Sie dann mit Hilfe der Radio-Buttons <strong><em>Von</em></strong> und <strong><em>Bis</em></strong> die Versionen aus, deren Änderungen Sie anzeigen wollen.</li>
+<li>Klicken Sie auf <strong>Änderungen anzeigen</strong>. </li>
+</ol>
+<!--</br>*Die Änderungen werden beispielsweise wie folgt dargestellt*:</br></br>![Änderungen abbilden - Farben](images/user/docs/changes_colors.png)</br></br> -->
+
+<p>Änderungen zwischen den ausgewählten Versionen sind in den Ansichten farbig gekennzeichnet: Neu hinzugekommener Inhalt ist grün und unterstrichen, gelöschter Inhalt rot und durchgestrichen.</br>
+Diese Farben und Texteigenschaften lassen sich jedoch über ein spezielles Stylesheet oder über das Template verändern. </p>
+<!--
+<span class="steps">3.</span> **Diashow über Änderungen öffnen**
+
+Möchten Sie eine Diashow über alle herausgefilterten Versionen starten, klicken Sie auf  **Diashow öffnen**
+
+![Diashow/Slideshow](images/user/docs/btn_slideshow.png). </br> 
+
+Neben dem eben beschriebenen Dialog zur Anzeige der Änderungen in den Dokumenten wird zusätzlich ein Dialog zur Bedienung der Diashow geöffnet:
+
+![Diashow-Bedienelemente](images/user/docs/diashow.png)
+
+* Um die Änderungen anzuzeigen, aktivieren Sie die Checkbox ***zeige Änderungen***.
+* Nutzen Sie die bekannten Steuerelemente um die Animationzu zu starten, vor- oder zurückzuspulen, sie zu pausieren oder zu stoppen.
+* Klicken Sie auf **Import**, um die alten Versionen auch wieder einzuspielen. Sie gelangen in einen neuen Dialog, in dem Sie den endgültigen Import vorher bestätigen müssen. 
+-->
+
+<h3 id="anderungsverfolgung-uber-den-schreibtisch">Änderungsverfolgung über den Schreibtisch<a class="headerlink" href="#anderungsverfolgung-uber-den-schreibtisch" title="Permanent link">#</a></h3>
+<p>Befindet sich ein Dokument noch innerhalb des Workflows, kann man über den Schreibtisch sehen, welche Änderungen in den einzelnen Workflow-Schritten an diesem Dokument gemacht wurden.</p>
+<p>Dabei kann eine beliebige vorherige Version mit dem aktuellen Stand oder einer anderen vorherigen Version verglichen werden. Unterschiede in diesen Versionen werden, wie oben beschrieben, in unterschiedlichen Farben dargestellt.</p>
+<ol>
+<li>Öffnen Sie den Schreibtisch über das Menü <strong><em>Dokumente &gt; Schreibtisch</em></strong>.</li>
+<li>
+<p>Klicken Sie in der Spalte <strong><em>Mehr</em></strong> in der Dropdown-Box des Dokuments auf <strong><em>Änderungen</em></strong>. </p>
+<p><img alt="Änderungen" src="../images/user/docs/desktop_changes.png" /></p>
+</li>
+<li>
+<p>Gehen Sie weiter vor, wie unter <a href="./#anderungsverfolgung-uber-das-archiv">Änderungsverfolgung über das Archiv</a> beschrieben.</p>
+</li>
+</ol>
+<h3 id="anderungen-beim-genehmigen-anzeigen">Änderungen beim Genehmigen anzeigen<a class="headerlink" href="#anderungen-beim-genehmigen-anzeigen" title="Permanent link">#</a></h3>
+<p>Änderungen einer Dokumentenversion, die genehmigt werden sollen, können im Vergleich zur letzten beendeten Version im <em>Genehmigen</em>-Workflow-Schritt angezeigt werden.</p>
+<ul>
+<li>Führen Sie im Genehmigen-Schritt die Option <strong>Vorschau</strong> aus.</li>
+</ul>
+<p><img alt="Genehmigen" src="../images/user/docs/archiv_genehmigen_1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Die Vorschau mit Änderungsverfolgung ist nur bei re-importierten Dokumenten verfügbar.</p>
+</p>
+</div>
+<ul>
+<li>Klicken Sie in der Funktionsleiste der Vorschau auf den Schalter <strong>Änderungen verfolgen</strong>. </li>
+</ul>
+<p><img alt="Genehmigen" src="../images/user/docs/archiv_genehmigen_3.png" /></p>
+<p><em>Das Dokument wird nun mit den Änderungen angezeigt.</em></p>
+<p><img alt="Genehmigen" src="../images/user/docs/archiv_genehmigen_2.png" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.presets/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dokumentvorlage erstellen und nutzen
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.presets/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Vorlagen erstellen und verwalten
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

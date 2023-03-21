@@ -1,0 +1,822 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+    
+    
+      
+        <title>Formulare erstellen - Benutzer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.19753c6b.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aufbau-und-funktionsweise-des-formulareditors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Benutzer" class="md-header-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Benutzer
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Formulare erstellen
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Benutzer" class="md-nav__button md-logo" aria-label="Benutzer">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Benutzer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Über diese Dokumentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.basics/" class="md-nav__link">
+      Basiswissen imperia
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.dashboard/" class="md-nav__link">
+      Schneller Überblick mit dem Dashboard
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.documents/" class="md-nav__link">
+      Dokumente erstellen und bearbeiten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.content/" class="md-nav__link">
+      Dokumentinhalt erstellen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.desktop/" class="md-nav__link">
+      Arbeiten mit dem Schreibtisch
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docbrowser/" class="md-nav__link">
+      Dokumente verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mam/" class="md-nav__link">
+      Medien verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.linkconsistency/" class="md-nav__link">
+      Link-Konsistenz prüfen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Dokumentvorlage erstellen und nutzen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.archive/" class="md-nav__link">
+      Arbeiten mit dem Archiv
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.presets/" class="md-nav__link">
+      Vorlagen erstellen und verwalten
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.docsearch/" class="md-nav__link">
+      Dokumente durchsuchen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.mailing/" class="md-nav__link">
+      E-Mails senden und empfangen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Formulare erstellen
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Formulare erstellen
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-formulareditors" class="md-nav__link">
+    Aufbau und Funktionsweise des Formulareditors
+  </a>
+  
+    <nav class="md-nav" aria-label="Aufbau und Funktionsweise des Formulareditors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-element-container" class="md-nav__link">
+    Der Element-Container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-formularbereich" class="md-nav__link">
+    Der Formularbereich
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verfugbare-elemente" class="md-nav__link">
+    Verfügbare Elemente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-formulareditor" class="md-nav__link">
+    Arbeiten mit dem Formulareditor
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit dem Formulareditor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formularelement-hinzufugen" class="md-nav__link">
+    Formularelement hinzufügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formularelement-entfernen" class="md-nav__link">
+    Formularelement entfernen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reihenfolge-der-formularelemente-andern" class="md-nav__link">
+    Reihenfolge der Formularelemente ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulareigenschaften-andern" class="md-nav__link">
+    Formulareigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pflichtfelder-definieren" class="md-nav__link">
+    Pflichtfelder definieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neues-auswahlfeld-einfugen" class="md-nav__link">
+    Neues Auswahlfeld einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswahlfeld-entfernen" class="md-nav__link">
+    Auswahlfeld entfernen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user.oneclickedit/" class="md-nav__link">
+      One-Click-Edit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../glossary/" class="md-nav__link">
+      Glossar
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufbau-und-funktionsweise-des-formulareditors" class="md-nav__link">
+    Aufbau und Funktionsweise des Formulareditors
+  </a>
+  
+    <nav class="md-nav" aria-label="Aufbau und Funktionsweise des Formulareditors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#der-element-container" class="md-nav__link">
+    Der Element-Container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#der-formularbereich" class="md-nav__link">
+    Der Formularbereich
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verfugbare-elemente" class="md-nav__link">
+    Verfügbare Elemente
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arbeiten-mit-dem-formulareditor" class="md-nav__link">
+    Arbeiten mit dem Formulareditor
+  </a>
+  
+    <nav class="md-nav" aria-label="Arbeiten mit dem Formulareditor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formularelement-hinzufugen" class="md-nav__link">
+    Formularelement hinzufügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formularelement-entfernen" class="md-nav__link">
+    Formularelement entfernen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reihenfolge-der-formularelemente-andern" class="md-nav__link">
+    Reihenfolge der Formularelemente ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulareigenschaften-andern" class="md-nav__link">
+    Formulareigenschaften ändern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pflichtfelder-definieren" class="md-nav__link">
+    Pflichtfelder definieren
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#neues-auswahlfeld-einfugen" class="md-nav__link">
+    Neues Auswahlfeld einfügen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswahlfeld-entfernen" class="md-nav__link">
+    Auswahlfeld entfernen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Formulare erstellen</h1>
+                
+                <p>Der Formulareditor von <em>imperia</em> erlaubt die einfache Erstellung von HTML-Formularen durch <em>Drag&amp;Drop</em>. </p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Bitte beachten Sie, dass der Formulargenerator ein optionales Feature ist, das separat lizenziert werden muss. Ihre Kontaktperson im <em>imperia</em>-Vertrieb stellt Ihnen gerne weitergehende Informationen zur Verfügung.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Die verfügbaren Formularelemente können in Ihrer Installation von den hier abgebildeten abweichen, da sie vom Template-Programmierer frei definiert werden können.</p>
+</div>
+<p>Wie der Formeditor in einem Template eingebaut wird, ist im <a href="https://portal.pirobase-imperia.com/pb/imperia-cms-dokumentation-private/programmer-en-11/programming.introduction/#document-modes">Programmierhandbuch</a> beschrieben.</p>
+<h2 id="aufbau-und-funktionsweise-des-formulareditors">Aufbau und Funktionsweise des Formulareditors<a class="headerlink" href="#aufbau-und-funktionsweise-des-formulareditors" title="Permanent link">#</a></h2>
+<p>Der Formulareditor besteht aus einem Elemente-Container mit allen verfügbaren Formularelementen und dem Formular-Bereich, in dem die Elemente per <em>Drag&amp;Drop</em> eingefügt werden.</p>
+<h3 id="der-element-container">Der Element-Container<a class="headerlink" href="#der-element-container" title="Permanent link">#</a></h3>
+<p>Der Element-Container enthält alle zur Verfügung stehenden Formularelemente. Je nach Einbindung in das Template werden bei Ihnen unterschiedliche Formularelemente angeboten.
+Die folgende Abbildung zeigt die gebräuchlichsten Formularelemente.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Der Element-Container ist nur in der Editieransicht sichtbar. In allen anderen Ansichten (<em>Vorschau</em>, <em>Speichern</em>, usw.) wird der Container ausgeblendet, und nur noch der mit Elementen gefüllte Formularbereich wird angezeigt. </p>
+</div>
+<p><img alt="Formularelement-Container" src="../images/user/forms/edit_mode_controller.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Hinweis<p>Im Allgemeinen ist es nicht sinnvoll zwei Formulare in einem Editiermodus zu haben.
+</br>Allerdings können Sie Formulare simulieren, indem Sie ein Postconvert-Plug-in schreiben, das diese einfügt.  <comment aus https://jira.pirobase.de/jira/browse/IMPSUP-3221></p>
+</p>
+</div>
+<ul>
+<li>Klicken Sie die Elemente an, die Sie in Ihrem Dokument verwenden wollen, und ziehen Sie diese per <em>Drag&amp;Drop</em> in den Formularbereich.</li>
+</ul>
+<p>Für die Positionierung des Containers gibt es drei Optionen:</p>
+<p><strong>Feststehende Position:</strong> Mit dieser Option ist der Container permanent sichtbar und befindet sich oberhalb des Formularbereichs.</p>
+<p><img alt="Fixe Position des Element-Containers" src="../images/user/forms/edit_mode_ctrl_fixed_position.png" /></p>
+<p><strong>Pop-Up:</strong> Mit dieser Option ist der Container unsichtbar, bis Sie mit der Maus in den Formularbereich klicken.</p>
+<p><img alt="Pop-Up" src="../images/user/forms/edit_mode_ctrl_popup.png" /></p>
+<p><strong> Schieberegler:</strong> Mit dieser Option wird der Container am rechten Rand der Seite platziert, lediglich der linke Teil ist sichtbar. Um ihn in voller Größe sichtbar zu machen, klicken Sie einfach auf den sichtbaren Teil.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Diese Option wird nicht von allen Browsern unterstützt.</p>
+</p>
+</div>
+<p><img alt="Schieberegler" src="../images/user/forms/edit_mode_ctrl_slider.png" /></p>
+<h3 id="der-formularbereich">Der Formularbereich<a class="headerlink" href="#der-formularbereich" title="Permanent link">#</a></h3>
+<p>Der Formularbereich ist der Bereich der Seite, in dem Sie die verfügbaren Elemente platzieren können. Es kann sich dabei um einen beliebigen HTML-Container handeln, je nachdem wie es vom Template-Programmierer festgelegt wurde.</p>
+<h2 id="verfugbare-elemente">Verfügbare Elemente<a class="headerlink" href="#verfugbare-elemente" title="Permanent link">#</a></h2>
+<p>Im Folgenden wird eine Standardauswahl an Formularelementen, die auch in den üblichen HTML-Formularen zu finden sind, beschrieben. Auf Ihrem System können kann die Anzahl der verfügbaren Elemente abweichen.</p>
+<p>Jedes Formularelement hat eine Beschriftung und weitere Eigenschaften.</p>
+<p><strong>Text:</strong> Ein einzeiliges Texteingabefeld. Sie können die Attribute <em>Beschriftung, Platzhalter, Hilfstext, Name, Wert</em> und <em>ID</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_text_input.png" /></p>
+<p><strong>Textarea:</strong> Ein mehrzeiliges Texteingabefeld. Sie können die Attribute <em>Beschriftung, Platzhalter, Name, Wert</em> und <em>ID</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_textarea_input.png" /></p>
+<p><strong>E-Mail: </strong> Ein einzeiliges Texteingabefeld für eine E-Mail-Adresse. Sie können die Attribute <em>Beschriftung, Platzhalter, Name, Wert</em> und <em>ID</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_email_input.png" /></p>
+<p><strong>Checkbox:</strong> Checkboxen erlauben die Auswahl einer oder mehrerer Optionen aus einer Liste. Sie können die Attribute <em>Beschriftung, Name, Wert</em> und <em>Elementbeschriftung</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_checkboxes.png" /></p>
+<p><strong>Radiobutton:</strong> Radiobuttons erlauben die Auswahl einer oder mehrerer Optionen aus einer Liste. Sie können die Attribute <em>Beschriftung, Name, Wert</em> und <em>Elementbeschriftung</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_radio_bttn.png" /></p>
+<p><strong>Auswählen:</strong> Dieses Formularelement erlaubt die Auswahl einer oder mehrerer Optionen aus einer Liste. Sie können die Attribute <em>Beschriftung, Name, Wert</em> und <em>Zusatzbeschriftung</em> ändern. Darüber hinaus können Sie das Feld zu einem Pflichtfeld machen.</p>
+<p><img alt="" src="../images/user/forms/form_gen_select.png" /></p>
+<p><strong>Absenden:</strong> Erzeugt eine Schaltfläche, mit der der Inhalt des Formulars an den Server geschickt wird. Sie können die Attribute <em>Name, Wert</em> und <em>ID</em> ändern.</p>
+<p><img alt="" src="../images/user/forms/form_gen_submit_bttn.png" /></p>
+<h2 id="arbeiten-mit-dem-formulareditor">Arbeiten mit dem Formulareditor<a class="headerlink" href="#arbeiten-mit-dem-formulareditor" title="Permanent link">#</a></h2>
+<h3 id="formularelement-hinzufugen">Formularelement hinzufügen<a class="headerlink" href="#formularelement-hinzufugen" title="Permanent link">#</a></h3>
+<p>Klicken Sie das Formularelement im Element-Container an und ziehen Sie es per <em>Drag&amp;Drop</em> in den Formularbereich.</br>
+Sie können eine beliebige Anzahl Formularelemente einfügen.</p>
+<p><img alt="Formularelement einfügen" src="../images/user/forms/adding_input.png" /></p>
+<h3 id="formularelement-entfernen">Formularelement entfernen<a class="headerlink" href="#formularelement-entfernen" title="Permanent link">#</a></h3>
+<p>Klicken Sie das Formularelement im Formularbereich an und ziehen Sie es per <em>Drag&amp;Drop</em> aus diesem heraus.</p>
+<h3 id="reihenfolge-der-formularelemente-andern">Reihenfolge der Formularelemente ändern<a class="headerlink" href="#reihenfolge-der-formularelemente-andern" title="Permanent link">#</a></h3>
+<p>Klicken Sie das zu verschiebende Formularelement mit der Maus aus und ziehen Sie es bei gedrückter Maustaste an die gewünschte Stelle.</p>
+<h3 id="formulareigenschaften-andern">Formulareigenschaften ändern<a class="headerlink" href="#formulareigenschaften-andern" title="Permanent link">#</a></h3>
+<p>Klicken Sie im Formularbereich auf ein eingefügtes Formularelement.</p>
+<p><img alt="Optionen-Dialog" src="../images/user/forms/form_gen_options_dlg_box.png" /></p>
+<p>In der Kopfzeile des sich öffnenden Dialogs wird der Name des ausgewählten Formularelements ausgelesen.</p>
+<ul>
+<li>Um den Dialog zu verlassen, klicken Sie auf das Symbol <i class="fa fa-close"></i> in der Kopfzeile.</li>
+</ul>
+<p>Unterhalb der Überschrift sehen Sie die Attribute, die Sie ändern können. </p>
+<ul>
+<li>Geben Sie den Wert des Attributs in das Texteingabefeld neben dem jeweiligen Attributnamen ein. </li>
+</ul>
+<p>Das Attribut <em>ID</em> wird von <em>imperia</em> automatisch eingefügt, kann aber von Ihnen auch nachträglich geändert werden. </p>
+<ul>
+<li>Sichern Sie Ihre Änderungen mit <strong>Speichern</strong>.</li>
+</ul>
+<p><strong>Attribute</strong></p>
+<p>Die im Folgenden beschriebenen Attribute können Sie für ein Formularelement anpassen.</p>
+<p><strong>Beschriftung:</strong> Dieses Attribut fügt dem Formularelement eine Beschriftung zu.</p>
+<p><strong>Platzhalter:</strong> Der Platzhalter kann zur Anzeige eines Hinweises für den erwarteten Inhalt des Formularelements verwendet werden. Dieser Hinweis wird nur angezeigt, wenn das Feld leer ist. Entsprechend verschwindet er wieder, sobald eine Eingabe erfolgt.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis<p>Diese Option wird nicht von allen Browsern unterstützt.</p>
+</p>
+</div>
+<p><strong>Hilfetext:</strong> Dieses Attribut ist nur für einzeilige Textfelder verfügbar. Es wird auf der rechten Seite des Eingabefeldes angezeigt und dient als Hinweis auf den erwarteten Inhalt des Textfeldes.</p>
+<p><strong>Name:</strong> Mit diesem Attribut geben Sie dem Element einen Namen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Wichtig<p>Dieses Attribut muss für Radiobuttons gesetzt sein. Wenn Sie keinen Namen vergeben, kann der Benutzer mehr als einen Radiobutton auswählen.</p>
+</p>
+</div>
+<p><strong>Wert:</strong> Dieses Attribut gibt den Inhalt des Formularelements vor. Es erfüllt also eine ähnliche Funktion wie ein Platzhalter, der Text verschwindet jedoch nicht automatisch bei Eingabe eines neuen Wertes.</p>
+<div class="admonition note">
+<p class="admonition-title">Hinweis</p>
+<p>Für das Formularelement <strong>Absenden</strong> ändert das Attribut <em>Wert</em> die Beschriftung der Schaltfläche.</p>
+</div>
+<p><strong>ID:</strong> Dieses Attribut gibt eine eindeutige ID für das Element an. <em>imperia</em> erzeugt automatisch eine ID. Diese kann aber bei Bedarf geändert werden.</p>
+<p><strong>Elementbeschriftung:</strong> Die Elementbeschriftung kann für <em>Radiobuttons</em> und <em>Checkboxen</em> gesetzt werden. Sie bestimmt den Text, der neben der Checkbox oder dem Radiobutton angezeigt wird.</p>
+<p><strong>Pflichtfeld:</strong> Mit dieser Option kann ein Formularelement zum Pflichtfeld gemacht werden. Pflichtfelder sind mit einem Stern neben der Beschriftung gekennzeichnet.</p>
+<h3 id="pflichtfelder-definieren">Pflichtfelder definieren<a class="headerlink" href="#pflichtfelder-definieren" title="Permanent link">#</a></h3>
+<p>Wenn Sie ein bestimmtes Eingabefeld zu einem Pflichtfeld machen wollen, aktivieren Sie die Checkbox <strong><em>Pflichtfeld</em></strong> unterhalb der Attribute.</p>
+<h3 id="neues-auswahlfeld-einfugen">Neues Auswahlfeld einfügen<a class="headerlink" href="#neues-auswahlfeld-einfugen" title="Permanent link">#</a></h3>
+<ol>
+<li>Um für einen <em>Radiobutton</em>, eine <em>Mehrfachauswahl</em> oder eine <em>Checkbox</em> weitere Auswahloptionen hinzuzufügen, klicken Sie das gewünschte Element an.</li>
+<li>Im Dialog <em>Optionen</em> klicken Sie auf das Pluszeichen <i class="fa fa-plus"></i> neben dem Attribut <strong><em>Elementbeschriftung</em></strong>. Mit jedem Klick auf <i class="fa fa-plus"></i> wird eine weitere Option unten angefügt. </li>
+<li>Geben Sie den Wert und die Elementbeschriftung an.</li>
+<li>Sichern Sie Ihr Änderungen, indem Sie auf <strong>Speichern</strong> klicken.</li>
+</ol>
+<h3 id="auswahlfeld-entfernen">Auswahlfeld entfernen<a class="headerlink" href="#auswahlfeld-entfernen" title="Permanent link">#</a></h3>
+<ol>
+<li>Um ein Auswahlfeld wieder zu entfernen, klicken Sie das gewünschte Element an.</li>
+<li>Im Dialog <em>Optionen</em> klicken Sie auf das X-Symbol neben dem Pluszeichen. </br>
+<em>Das Auswahlfeld wird gelöscht</em>.</li>
+<li>Sichern Sie Ihr Änderungen, indem Sie auf <strong>Speichern</strong> klicken.</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user.mailing/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                E-Mails senden und empfangen
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user.oneclickedit/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                One-Click-Edit
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.0ac82a11.min.js"></script>
+      <script src="../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
